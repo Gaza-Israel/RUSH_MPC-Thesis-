@@ -8,100 +8,102 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 2-Level Voltage source Inverter arrangement.}}{8}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Space vector for a 2-level three-phase inverter.}}{9}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Delta-wound \gls {pmsm}.}}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Field Oriented Control - from Texas Instruments~\cite {TI:FOC_TMS320F2837:2016}.}}{19}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Direct Torque Control - from~\citet {Quanjli:DTC_schema:2019}.}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Field Oriented Control - from Texas Instruments~\cite {TI:FOC_TMS320F2837:2016}.}}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Direct Torque Control - from~\citet {Quanjli:DTC_schema:2019}.}}{19}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Machine Characterization and Control Methodology}{22}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flux Linkage characterization.}}{24}{figure.caption.21}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Oscilloscope output @386rpm}}}{24}{figure.caption.21}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Flux Linkage as a function of RPM.}}}{24}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Inductance measurement setup schematic.}}{24}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Inductance measurement setup.}}{25}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Inductance measurement oscilloscope output.}}{26}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces $L_d$ in function of $i_d$.}}{26}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Quadrature Inductance measurement alignment pulse setup.}}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces $L_q$ in function of $i_q$.}}{27}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Identification voltage pulses - from~\citet {Stumberger:saturation_model:2003}.}}{28}{figure.caption.30}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Voltage}}}{28}{figure.caption.30}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Currents}}}{28}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Quadrature Flux linkage @$i_d = -5$A.}}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Flux linkage with different currents on a perpendicular axis.}}{29}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Flux Linkage exponential fit.}}{30}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Maximum Torque per Ampere curve without constraints.}}{33}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Constrained Maximum Torque per Ampere curve at minimum, nominal, and maximum voltages. Reference currents are shown for 0, 13000 and 2000 RPMs.}}{34}{figure.caption.35}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Minimum Voltage}}}{34}{figure.caption.35}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nominal Voltage}}}{34}{figure.caption.35}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Maximum Voltage}}}{34}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Manufacturer inductance curves.}}{36}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces FSMPC Diagram.}}{38}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Finite Set with Null Vector MPC Diagram.}}{39}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Implicit Continuous Set MPC Diagram.}}{40}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Explicit Continuous Set MPC Diagram.}}{40}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Horizon extention by one timestep.}}{41}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Horizon Extension by control time.}}{42}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Speed control diagram.}}{42}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Root locus plot for the closed loop system.}}{44}{figure.caption.44}%
+\contentsline {xchapter}{Machine Characterization and Control Methodology}{21}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flux Linkage characterization.}}{23}{figure.caption.21}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Oscilloscope output @386rpm}}}{23}{figure.caption.21}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Flux Linkage as a function of RPM.}}}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Inductance measurement setup schematic.}}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Inductance measurement setup.}}{24}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Inductance measurement oscilloscope output.}}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces $L_d$ in function of $i_d$.}}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Quadrature Inductance measurement alignment pulse setup.}}{26}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces $L_q$ in function of $i_q$.}}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Identification voltage pulses - from~\citet {Stumberger:saturation_model:2003}.}}{27}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Voltage}}}{27}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Currents}}}{27}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Quadrature Flux linkage @$i_d = -5$A.}}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Flux linkage with different currents on a perpendicular axis.}}{28}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Flux Linkage exponential fit.}}{29}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Maximum Torque per Ampere curve without constraints.}}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Constrained Maximum Torque per Ampere curve at minimum, nominal, and maximum voltages. Reference currents are shown for 0, 13000 and 2000 RPMs.}}{33}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Minimum Voltage}}}{33}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nominal Voltage}}}{33}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Maximum Voltage}}}{33}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Manufacturer inductance curves.}}{35}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces FSMPC Diagram.}}{37}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Finite Set with Null Vector MPC Diagram.}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Implicit Continuous Set MPC Diagram.}}{39}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Explicit Continuous Set MPC Diagram.}}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Horizon extention by one timestep.}}{40}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Horizon Extension by control time.}}{41}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Speed control diagram.}}{41}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Root locus plot for the closed loop system.}}{43}{figure.caption.44}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Simulation and Experimental Results }{45}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Simulink Models, Motor and Inverter.}}{46}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Control methods comparison in a torque step.}}{47}{figure.caption.47}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MPCs comparison. In orange the Finite set MPC, in yellow the finite set MPC with null vector, in green the continuous set implicit MPC, and in purple the proposed continuous set explicit MPC.}}}{47}{figure.caption.47}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Proposed method (in purple) vs Currently used method (in blue).}}}{47}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Monte Carlo Robustness Analysis.}}{49}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Parameter correlation coefficient with performance metrics.}}{50}{figure.caption.50}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Steady State Torque}}}{50}{figure.caption.50}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Current THD}}}{50}{figure.caption.50}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque Rise Time}}}{50}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Control methods comparison on an Acceleration event.}}{51}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Torque profile in the acceleration event using the currently implemented FOC.}}}{51}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Torque profile in the acceleration event using the proposed EMPC}}}{51}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Motor speed profile in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.}}}{51}{figure.caption.51}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Distance traveled in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.}}}{51}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Testbench setup.}}{52}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Torque estimation vs Measured. In the bottom the percentual error between the measured and estimated torques is shown.}}{53}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Line currents measurements at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}}{53}{figure.caption.54}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Meausurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.}}}{53}{figure.caption.54}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current}}}{53}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Line Current measurements with a reference torque step from $0$ to $7Nm$ at $0.02s$.}}{54}{figure.caption.55}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Meausurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.}}}{54}{figure.caption.55}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current}}}{54}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Torque reference follwoing with a step from $0$ to $7Nm$.}}{55}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of torque step response between the proposed method and the currently implemented method.}}{55}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Torque step response for different reference torque values.}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$1Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$3Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$5Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$6Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$7Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$8Nm$}}}{56}{figure.caption.58}%
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {$10Nm$}}}{56}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces RPM step from standstill to 2500RPMs.}}{57}{figure.caption.59}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RPM reference and measured values.}}}{57}{figure.caption.59}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Torque reference and measured values. The torque reference is derived from the speed controller but saturated to $\pm 5Nm$.}}}{57}{figure.caption.59}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque reference tracking error. }}}{57}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Pedal torque profile.}}{58}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Line Currents.}}}{58}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotor speed.}}}{58}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque reference and measured values. The torque reference is derived from the speed controller but saturated to $\pm 5Nm$.}}}{58}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Torque reference tracking error. }}}{58}{figure.caption.60}%
+\contentsline {xchapter}{Simulation and Experimental Results }{44}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simulink Models, Motor and Inverter.}}{45}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Control methods comparison in a torque step.}}{46}{figure.caption.47}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MPCs comparison. In orange the Finite set MPC, in yellow the finite set MPC with null vector, in green the continuous set implicit MPC, and in purple the proposed continuous set explicit MPC.}}}{46}{figure.caption.47}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Proposed method (in purple) vs Currently used method (in blue).}}}{46}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Monte Carlo Robustness Analysis.}}{48}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Parameter correlation coefficient with performance metrics.}}{49}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Steady State Torque}}}{49}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Current THD}}}{49}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque Rise Time}}}{49}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Control methods comparison on an Acceleration event.}}{50}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Torque profile in the acceleration event using the currently implemented FOC.}}}{50}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Torque profile in the acceleration event using the proposed EMPC}}}{50}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Motor speed profile in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.}}}{50}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Distance traveled in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.}}}{50}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Testbench setup.}}{51}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Torque estimation vs Measured. In the bottom the percentual error between the measured and estimated torques is shown.}}{52}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Line currents measurements at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}}{52}{figure.caption.54}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Meausurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.}}}{52}{figure.caption.54}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current}}}{52}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Line Current measurements with a reference torque step from $0$ to $7Nm$ at $0.02s$.}}{53}{figure.caption.55}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Meausurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.}}}{53}{figure.caption.55}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current}}}{53}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Torque reference follwoing with a step from $0$ to $7Nm$.}}{54}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of torque step response between the proposed method and the currently implemented method.}}{54}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Torque step response for different reference torque values.}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$1Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$3Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$5Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$6Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$7Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$8Nm$}}}{55}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {$10Nm$}}}{55}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces RPM step from standstill to 2500RPMs.}}{56}{figure.caption.59}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RPM reference and measured values.}}}{56}{figure.caption.59}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Torque reference and measured values. The torque reference is derived from the speed controller but saturated to $\pm 5Nm$.}}}{56}{figure.caption.59}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque reference tracking error. }}}{56}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Pedal torque profile.}}{57}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Line Currents.}}}{57}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotor speed.}}}{57}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Torque reference and measured values. The torque reference is derived from the speed controller but saturated to $\pm 5Nm$.}}}{57}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Torque reference tracking error. }}}{57}{figure.caption.60}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions}{59}{chapter.5}%
+\contentsline {xchapter}{Conclusions}{58}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{dq0 model with amplitude invariant transformation}{67}{appendix.A}%
+\contentsline {xchapter}{Amplitude invariant dq0 PMSM model}{65}{appendix.A}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Technical Datasheets}{69}{appendix.B}%
+\contentsline {xchapter}{Technical Datasheets}{66}{appendix.B}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Current Reference using characterized inductances}{74}{appendix.C}%
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Constrained Maximum Torque per Ampere curve at minimum, nominal, and maximum voltages. Reference currents are shown for 0, 13000 and 2000 RPMs.}}{75}{figure.caption.63}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Minimum Voltage}}}{75}{figure.caption.63}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nominal Voltage}}}{75}{figure.caption.63}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Maximum Voltage}}}{75}{figure.caption.63}%
+\contentsline {xchapter}{Current Reference using characterized inductances}{70}{appendix.C}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Constrained Maximum Torque per Ampere curve at minimum, nominal, and maximum voltages. Reference currents are shown for 0, 13000 and 2000 RPMs.}}{71}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Minimum Voltage}}}{71}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nominal Voltage}}}{71}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Maximum Voltage}}}{71}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Inverter Design}{76}{appendix.D}%
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Motor power factor and current THD maps as a function of the motor speed and torque.}}{77}{figure.caption.64}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Motor operation points for the 2023 Germany Endurance Event. The color represents the number of points in each bin on a logarithmic scale.}}{78}{figure.caption.65}%
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Combined motor operation points for the 2023 Germany Endurance Event. The color represents the number of points in each bin on a logarithmic scale.}}{79}{figure.caption.66}%
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Render of the PCBs used in the new inverter design.}}{82}{figure.caption.70}%
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Desaturation protection circuit (adapted from~\cite {Costa:MSc}).}}{83}{figure.caption.71}%
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Render of the PCBs used in the new inverter design.}}{85}{figure.caption.72}%
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Render of the final leg module.}}{86}{figure.caption.73}%
+\contentsline {xchapter}{Inverter Design}{72}{appendix.D}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Motor power factor and current THD maps as a function of the motor speed and torque.}}{73}{figure.caption.64}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Motor operation points for the 2023 Germany Endurance Event. The color represents the number of points in each bin on a logarithmic scale.}}{74}{figure.caption.65}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Combined motor operation points for the 2023 Germany Endurance Event. The color represents the number of points in each bin on a logarithmic scale.}}{75}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Render of the PCBs used in the new inverter design.}}{78}{figure.caption.70}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Desaturation protection circuit (adapted from~\cite {Costa:MSc}).}}{79}{figure.caption.71}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Render of the PCBs used in the new inverter design.}}{81}{figure.caption.72}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Render of the final leg module.}}{82}{figure.caption.73}%
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Half Bridge Board Layers.}}{84}{figure.caption.74}%
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Gate Driver Board Layers.}}{94}{figure.caption.75}%

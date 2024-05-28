@@ -1,54 +1,54 @@
 
 \begin{thenomenclature} 
 \nomgroup{G}
-  \item [{$\eta$}]\begingroup Efficiency\nomeqref {0}\nompageref{x}
-  \item [{$\lambda$}]\begingroup Lagrange Multiplier\nomeqref {0}\nompageref{x}
-  \item [{$\omega$}]\begingroup Rotor velocity\nomeqref {0}\nompageref{x}
-  \item [{$\omega_{wheels}$}]\begingroup Wheel rotational velocity\nomeqref {0}\nompageref{x}
-  \item [{$\omega_e$}]\begingroup Rotor electrical velocity\nomeqref {0}\nompageref{x}
-  \item [{$\psi_x$}]\begingroup Flux linkage\nomeqref {0}\nompageref{x}
-  \item [{$\rho$}]\begingroup Air density\nomeqref {0}\nompageref{x}
-  \item [{$\tau$}]\begingroup Time Constant\nomeqref {0}\nompageref{x}
-  \item [{$\theta$}]\begingroup Rotor position\nomeqref {0}\nompageref{x}
-  \item [{$\theta_e$}]\begingroup Rotor electrical position\nomeqref {0}\nompageref{x}
+  \item [{$\eta$}]\begingroup Efficiency\nomeqref {0}\nompageref{xiii}
+  \item [{$\lambda$}]\begingroup Lagrange Multiplier\nomeqref {0}\nompageref{xiii}
+  \item [{$\omega$}]\begingroup Rotor velocity\nomeqref {0}\nompageref{xiii}
+  \item [{$\omega_{wheels}$}]\begingroup Wheel rotational velocity\nomeqref {0}\nompageref{xiii}
+  \item [{$\omega_e$}]\begingroup Rotor electrical velocity\nomeqref {0}\nompageref{xiii}
+  \item [{$\psi_x$}]\begingroup Flux linkage\nomeqref {0}\nompageref{xiii}
+  \item [{$\rho$}]\begingroup Air density\nomeqref {0}\nompageref{xiii}
+  \item [{$\tau$}]\begingroup Time Constant\nomeqref {0}\nompageref{xiii}
+  \item [{$\theta$}]\begingroup Rotor position\nomeqref {0}\nompageref{xiii}
+  \item [{$\theta_e$}]\begingroup Rotor electrical position\nomeqref {0}\nompageref{xiii}
 \nomgroup{R}
-  \item [{$A_{r}$}]\begingroup Car frontal reference area\nomeqref {0}\nompageref{x}
-  \item [{$C_{d}$}]\begingroup Drag coefficient\nomeqref {0}\nompageref{x}
-  \item [{$C_{r}$}]\begingroup Rolling resistance coefficient\nomeqref {0}\nompageref{x}
-  \item [{$\mathcal{C}_{soft}$}]\begingroup MPC soft contraint\nomeqref {0}\nompageref{x}
-  \item [{$E_x$}]\begingroup Back EMF\nomeqref {0}\nompageref{x}
-  \item [{$G_{r}$}]\begingroup Transmission Gear Ratio\nomeqref {0}\nompageref{x}
-  \item [{$h$}]\begingroup Sampling time\nomeqref {0}\nompageref{x}
-  \item [{$i_x$}]\begingroup Current\nomeqref {0}\nompageref{x}
-  \item [{$\mathcal{J}$}]\begingroup MPC cost function\nomeqref {0}\nompageref{x}
-  \item [{$J$}]\begingroup Rotational Inertia\nomeqref {0}\nompageref{x}
-  \item [{$k$}]\begingroup Discrete time index\nomeqref {0}\nompageref{x}
-  \item [{$k_i$}]\begingroup PI integral gain\nomeqref {0}\nompageref{x}
-  \item [{$k_p$}]\begingroup PI proportional gain\nomeqref {0}\nompageref{x}
-  \item [{$K_t$}]\begingroup Torque Constant\nomeqref {0}\nompageref{x}
-  \item [{$K_v$}]\begingroup Voltage Constant\nomeqref {0}\nompageref{x}
-  \item [{$L_x$}]\begingroup Phase self inductance\nomeqref {0}\nompageref{x}
-  \item [{$m$}]\begingroup Modulation index\nomeqref {0}\nompageref{x}
-  \item [{$M_{xy}$}]\begingroup Phase mutual inductance\nomeqref {0}\nompageref{x}
-  \item [{$m_{car}$}]\begingroup Car mass\nomeqref {0}\nompageref{x}
-  \item [{$p$}]\begingroup Number of pole pairs\nomeqref {0}\nompageref{x}
-  \item [{$r_x$}]\begingroup Phase resistance\nomeqref {0}\nompageref{x}
-  \item [{$r_{tire}$}]\begingroup Tire radius\nomeqref {0}\nompageref{x}
-  \item [{$s_x$}]\begingroup MPC cost gains\nomeqref {0}\nompageref{x}
-  \item [{$T_e$}]\begingroup Electromagnetic torque\nomeqref {0}\nompageref{x}
-  \item [{$T_{load}$}]\begingroup Load reaction torque\nomeqref {0}\nompageref{x}
-  \item [{$T_{loss}$}]\begingroup Losses equivalent torque\nomeqref {0}\nompageref{x}
-  \item [{$u_x$}]\begingroup Voltage\nomeqref {0}\nompageref{x}
-  \item [{$v$}]\begingroup Car Velocity\nomeqref {0}\nompageref{x}
-  \item [{$V_{ref}$}]\begingroup Voltage reference vector\nomeqref {0}\nompageref{x}
+  \item [{$A_{r}$}]\begingroup Car frontal reference area\nomeqref {0}\nompageref{xiii}
+  \item [{$C_{d}$}]\begingroup Drag coefficient\nomeqref {0}\nompageref{xiii}
+  \item [{$C_{r}$}]\begingroup Rolling resistance coefficient\nomeqref {0}\nompageref{xiii}
+  \item [{$\mathcal{C}_{soft}$}]\begingroup MPC soft contraint\nomeqref {0}\nompageref{xiii}
+  \item [{$E_x$}]\begingroup Back EMF\nomeqref {0}\nompageref{xiii}
+  \item [{$G_{r}$}]\begingroup Transmission Gear Ratio\nomeqref {0}\nompageref{xiii}
+  \item [{$h$}]\begingroup Sampling time\nomeqref {0}\nompageref{xiii}
+  \item [{$i_x$}]\begingroup Current\nomeqref {0}\nompageref{xiii}
+  \item [{$\mathcal{J}$}]\begingroup MPC cost function\nomeqref {0}\nompageref{xiii}
+  \item [{$J$}]\begingroup Rotational Inertia\nomeqref {0}\nompageref{xiii}
+  \item [{$k$}]\begingroup Discrete time index\nomeqref {0}\nompageref{xiii}
+  \item [{$k_i$}]\begingroup PI integral gain\nomeqref {0}\nompageref{xiii}
+  \item [{$k_p$}]\begingroup PI proportional gain\nomeqref {0}\nompageref{xiii}
+  \item [{$K_t$}]\begingroup Torque Constant\nomeqref {0}\nompageref{xiii}
+  \item [{$K_v$}]\begingroup Voltage Constant\nomeqref {0}\nompageref{xiii}
+  \item [{$L_x$}]\begingroup Phase self inductance\nomeqref {0}\nompageref{xiii}
+  \item [{$m$}]\begingroup Modulation index\nomeqref {0}\nompageref{xiii}
+  \item [{$M_{xy}$}]\begingroup Phase mutual inductance\nomeqref {0}\nompageref{xiii}
+  \item [{$m_{car}$}]\begingroup Car mass\nomeqref {0}\nompageref{xiii}
+  \item [{$p$}]\begingroup Number of pole pairs\nomeqref {0}\nompageref{xiii}
+  \item [{$r_x$}]\begingroup Phase resistance\nomeqref {0}\nompageref{xiii}
+  \item [{$r_{tire}$}]\begingroup Tire radius\nomeqref {0}\nompageref{xiii}
+  \item [{$s_x$}]\begingroup MPC cost gains\nomeqref {0}\nompageref{xiii}
+  \item [{$T_e$}]\begingroup Electromagnetic torque\nomeqref {0}\nompageref{xiii}
+  \item [{$T_{load}$}]\begingroup Load reaction torque\nomeqref {0}\nompageref{xiii}
+  \item [{$T_{loss}$}]\begingroup Losses equivalent torque\nomeqref {0}\nompageref{xiii}
+  \item [{$u_x$}]\begingroup Voltage\nomeqref {0}\nompageref{xiii}
+  \item [{$v$}]\begingroup Car Velocity\nomeqref {0}\nompageref{xiii}
+  \item [{$V_{ref}$}]\begingroup Voltage reference vector\nomeqref {0}\nompageref{xiii}
 \nomgroup{S}
-  \item [{$d, q, 0$}]\begingroup Direct axis, quadrature axis, and zero-sequence components\nomeqref {0}\nompageref{x}
-  \item [{$f,r$}]\begingroup Front and Rear axle\nomeqref {0}\nompageref{x}
-  \item [{$A, B, C$}]\begingroup Line values\nomeqref {0}\nompageref{x}
-  \item [{$a, b, c$}]\begingroup Phase values\nomeqref {0}\nompageref{x}
-  \item [{$PM$}]\begingroup Permanent Magnet component\nomeqref {0}\nompageref{x}
+  \item [{$d, q, 0$}]\begingroup Direct axis, quadrature axis, and zero-sequence components\nomeqref {0}\nompageref{xiii}
+  \item [{$f,r$}]\begingroup Front and Rear axle\nomeqref {0}\nompageref{xiii}
+  \item [{$A, B, C$}]\begingroup Line values\nomeqref {0}\nompageref{xiii}
+  \item [{$a, b, c$}]\begingroup Phase values\nomeqref {0}\nompageref{xiii}
+  \item [{$PM$}]\begingroup Permanent Magnet component\nomeqref {0}\nompageref{xiii}
 \nomgroup{T}
-  \item [{$\dot{}$}]\begingroup Time derivative\nomeqref {0}\nompageref{x}
-  \item [{T}]\begingroup Transpose\nomeqref {0}\nompageref{x}
+  \item [{$\dot{}$}]\begingroup Time derivative\nomeqref {0}\nompageref{xiii}
+  \item [{T}]\begingroup Transpose\nomeqref {0}\nompageref{xiii}
 
 \end{thenomenclature}

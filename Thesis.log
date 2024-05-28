@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  28 MAY 2024 02:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  28 MAY 2024 21:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1180,12 +1180,12 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 
 (./00/00.0Thesis_FrontCover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 15.
-<Figures/IST_A_CMYK_POS.pdf, id=364, 845.0471pt x 597.51233pt>
+<Figures/IST_A_CMYK_POS.pdf, id=316, 845.0471pt x 597.51233pt>
 File: Figures/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use Figures/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: Figures/IST_A_CMYK_POS.pdf  used on input line 15.
 (pdftex.def)             Requested size: -78.38533pt x -90.76195pt.
-<Figures/IMG_8888.jpg, id=365, 583.58025pt x 425.1885pt>
+<Figures/IMG_8888.jpg, id=317, 583.58025pt x 425.1885pt>
 File: Figures/IMG_8888.jpg Graphic file (type jpg)
 <use Figures/IMG_8888.jpg>
 Package pdftex.def Info: Figures/IMG_8888.jpg  used on input line 22.
@@ -1255,48 +1255,18 @@ Package minitoc Info: I0033
 (./Thesis.toc [7
 
 ] [8]
-Overfull \hbox (1.17978pt too wide) detected at line 84
+Overfull \hbox (1.17978pt too wide) detected at line 78
  []\T1/phv/m/n/10 100
  []
 
 
-Overfull \hbox (1.17978pt too wide) detected at line 85
+Overfull \hbox (1.17978pt too wide) detected at line 79
  []\T1/phv/m/n/10 100
  []
 
 
-Overfull \hbox (1.17978pt too wide) detected at line 86
+Overfull \hbox (1.17978pt too wide) detected at line 80
  []\T1/phv/m/n/10 100
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 87
- []\T1/phv/m/n/10 101
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 88
- []\T1/phv/m/n/10 101
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 89
- []\T1/phv/m/n/10 102
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 90
- []\T1/phv/m/n/10 107
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 91
- []\T1/phv/m/n/10 107
- []
-
-
-Overfull \hbox (1.17978pt too wide) detected at line 92
- []\T1/phv/m/n/10 107
  []
 
 )
@@ -1332,7 +1302,7 @@ Chapter 1.
 (./Thesis.mtc1) [1
 
 ]
-<Figures/20230817_11-40-48_7254_grobe.jpg, id=700, 3854.4pt x 2569.6pt>
+<Figures/20230817_11-40-48_7254_grobe.jpg, id=643, 3854.4pt x 2569.6pt>
 File: Figures/20230817_11-40-48_7254_grobe.jpg Graphic file (type jpg)
 <use Figures/20230817_11-40-48_7254_grobe.jpg>
 Package pdftex.def Info: Figures/20230817_11-40-48_7254_grobe.jpg  used on input line 25.
@@ -1351,7 +1321,7 @@ Chapter 2.
 ]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Tracks.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/Tracks.pdf, id=751, 496.87433pt x 350.0809pt>
+<Figures/Tracks.pdf, id=695, 496.87433pt x 350.0809pt>
 File: Figures/Tracks.pdf Graphic file (type pdf)
 <use Figures/Tracks.pdf>
 Package pdftex.def Info: Figures/Tracks.pdf  used on input line 21.
@@ -1359,7 +1329,7 @@ Package pdftex.def Info: Figures/Tracks.pdf  used on input line 21.
 [6 <./Figures/Tracks.pdf>]) (./02Background/02Inverter.tex [7]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Inverter.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Inverter.pdf, id=789, 420.61137pt x 226.9278pt>
+<Figures/Inverter.pdf, id=733, 420.61137pt x 226.9278pt>
 File: Figures/Inverter.pdf Graphic file (type pdf)
 <use Figures/Inverter.pdf>
 Package pdftex.def Info: Figures/Inverter.pdf  used on input line 18.
@@ -1367,7 +1337,7 @@ Package pdftex.def Info: Figures/Inverter.pdf  used on input line 18.
 [8 <./Figures/Inverter.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Space_Vector_revised.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Space_Vector_revised.pdf, id=820, 889.40276pt x 725.8317pt>
+<Figures/Space_Vector_revised.pdf, id=763, 889.40276pt x 725.8317pt>
 File: Figures/Space_Vector_revised.pdf Graphic file (type pdf)
 <use Figures/Space_Vector_revised.pdf>
 Package pdftex.def Info: Figures/Space_Vector_revised.pdf  used on input line 83.
@@ -1375,41 +1345,41 @@ Package pdftex.def Info: Figures/Space_Vector_revised.pdf  used on input line 83
 [9 <./Figures/Space_Vector_revised.pdf>] [10]) (./02Background/02PMSM_model.tex
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Delta_model.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Delta_model.pdf, id=876, 362.3136pt x 313.17pt>
+<Figures/Delta_model.pdf, id=820, 362.3136pt x 313.17pt>
 File: Figures/Delta_model.pdf Graphic file (type pdf)
 <use Figures/Delta_model.pdf>
-Package pdftex.def Info: Figures/Delta_model.pdf  used on input line 116.
+Package pdftex.def Info: Figures/Delta_model.pdf  used on input line 115.
 (pdftex.def)             Requested size: 273.14923pt x 236.09544pt.
-[11] [12 <./Figures/Delta_model.pdf>] [13] [14]
-Underfull \vbox (badness 2809) has occurred while \output is active []
+[11]
+Underfull \vbox (badness 1264) has occurred while \output is active []
 
- [15] [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [12 <./Figures/Delta_model.pdf>] [13] [14]
+Underfull \vbox (badness 1975) has occurred while \output is active []
 
- [17]) (./02Background/02Control_methods_overview.tex
-<Figures/foc_texas_instruments.jpg, id=1032, 475.7775pt x 251.13824pt>
+ [15] [16]) (./02Background/02Control_methods_overview.tex [17]
+<Figures/foc_texas_instruments.jpg, id=978, 475.7775pt x 251.13824pt>
 File: Figures/foc_texas_instruments.jpg Graphic file (type jpg)
 <use Figures/foc_texas_instruments.jpg>
 Package pdftex.def Info: Figures/foc_texas_instruments.jpg  used on input line 19.
 (pdftex.def)             Requested size: 455.24411pt x 240.31207pt.
- [18] [19 <./Figures/foc_texas_instruments.jpg>]
-<Figures/dtc_schema.jpg, id=1060, 939.51pt x 542.025pt>
+ [18 <./Figures/foc_texas_instruments.jpg>]
+<Figures/dtc_schema.jpg, id=995, 939.51pt x 542.025pt>
 File: Figures/dtc_schema.jpg Graphic file (type jpg)
 <use Figures/dtc_schema.jpg>
 Package pdftex.def Info: Figures/dtc_schema.jpg  used on input line 49.
 (pdftex.def)             Requested size: 364.19667pt x 210.10695pt.
- [20 <./Figures/dtc_schema.jpg>])) [21] (./03Thesis_Implementation.tex
+ [19 <./Figures/dtc_schema.jpg>])) [20] (./03Thesis_Implementation.tex
 Chapter 3.
 \openout6 = `Thesis.mtc'.
 
 \openout6 = `Thesis.mtc'.
 
-(./Thesis.mtc3) (./03/03Motor_characterization.tex [22
+(./Thesis.mtc3) (./03/03Motor_characterization.tex [21
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
-<Figures/flux_test.JPEG, id=1114, 1296.845pt x 967.11313pt>
+<Figures/flux_test.JPEG, id=1053, 1296.845pt x 967.11313pt>
 File: Figures/flux_test.JPEG Graphic file (type jpg)
 <use Figures/flux_test.JPEG>
 Package pdftex.def Info: Figures/flux_test.JPEG  used on input line 59.
@@ -1423,7 +1393,7 @@ Package epstopdf Info: Source file: <Figures/Flux_test.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Flux_test-eps-converted-to.pdf Figures/Flux_test.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Flux_test-eps-converted-to.pdf, id=1115, 333.245pt x 264.99pt>
+<Figures/Flux_test-eps-converted-to.pdf, id=1054, 333.245pt x 264.99pt>
 File: Figures/Flux_test-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Flux_test-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Flux_test-eps-converted-to.pdf  used on input line 60.
@@ -1431,21 +1401,21 @@ Package pdftex.def Info: Figures/Flux_test-eps-converted-to.pdf  used on input l
 
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
- [23]
+ [22]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Ld_measure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Ld_measure.pdf, id=1127, 434.58359pt x 313.17pt>
+<Figures/Ld_measure.pdf, id=1067, 434.58359pt x 313.17pt>
 File: Figures/Ld_measure.pdf Graphic file (type pdf)
 <use Figures/Ld_measure.pdf>
 Package pdftex.def Info: Figures/Ld_measure.pdf  used on input line 77.
 (pdftex.def)             Requested size: 273.14923pt x 196.84416pt.
-<Figures/induc_test.jpg, id=1130, 723.795pt x 542.025pt>
+<Figures/induc_test.jpg, id=1070, 723.795pt x 542.025pt>
 File: Figures/induc_test.jpg Graphic file (type jpg)
 <use Figures/induc_test.jpg>
 Package pdftex.def Info: Figures/induc_test.jpg  used on input line 95.
 (pdftex.def)             Requested size: 273.14923pt x 204.54909pt.
-[24 <./Figures/flux_test.JPEG> <./Figures/Flux_test-eps-converted-to.pdf> <./Figures/Ld_measure.pdf>]
-<Figures/induc_oscilloscope.JPEG, id=1159, 1283.29437pt x 962.59625pt>
+[23 <./Figures/flux_test.JPEG> <./Figures/Flux_test-eps-converted-to.pdf> <./Figures/Ld_measure.pdf>]
+<Figures/induc_oscilloscope.JPEG, id=1099, 1283.29437pt x 962.59625pt>
 File: Figures/induc_oscilloscope.JPEG Graphic file (type jpg)
 <use Figures/induc_oscilloscope.JPEG>
 Package pdftex.def Info: Figures/induc_oscilloscope.JPEG  used on input line 117.
@@ -1459,20 +1429,20 @@ Package epstopdf Info: Source file: <Figures/Ld_id.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Ld_id-eps-converted-to.pdf Figures/Ld_id.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Ld_id-eps-converted-to.pdf, id=1160, 569.12625pt x 265.99374pt>
+<Figures/Ld_id-eps-converted-to.pdf, id=1100, 569.12625pt x 265.99374pt>
 File: Figures/Ld_id-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Ld_id-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Ld_id-eps-converted-to.pdf  used on input line 128.
 (pdftex.def)             Requested size: 455.24411pt x 212.77904pt.
- [25 <./Figures/induc_test.jpg>]
+ [24 <./Figures/induc_test.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Lq_measure_prep.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Lq_measure_prep.pdf, id=1173, 434.58359pt x 313.17pt>
+<Figures/Lq_measure_prep.pdf, id=1112, 434.58359pt x 313.17pt>
 File: Figures/Lq_measure_prep.pdf Graphic file (type pdf)
 <use Figures/Lq_measure_prep.pdf>
 Package pdftex.def Info: Figures/Lq_measure_prep.pdf  used on input line 143.
 (pdftex.def)             Requested size: 318.66948pt x 229.64914pt.
-[26 <./Figures/induc_oscilloscope.JPEG> <./Figures/Ld_id-eps-converted-to.pdf>]
+[25 <./Figures/induc_oscilloscope.JPEG> <./Figures/Ld_id-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Lq_iq.eps>
 (epstopdf)                    date: 2024-04-20 17:59:04
 (epstopdf)                    size: 55715 bytes
@@ -1482,18 +1452,18 @@ Package epstopdf Info: Source file: <Figures/Lq_iq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Lq_iq-eps-converted-to.pdf Figures/Lq_iq.eps>
 (epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Lq_iq-eps-converted-to.pdf, id=1188, 569.12625pt x 266.9975pt>
+<Figures/Lq_iq-eps-converted-to.pdf, id=1127, 569.12625pt x 266.9975pt>
 File: Figures/Lq_iq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Lq_iq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Lq_iq-eps-converted-to.pdf  used on input line 152.
 (pdftex.def)             Requested size: 455.24411pt x 213.58197pt.
- [27 <./Figures/Lq_measure_prep.pdf> <./Figures/Lq_iq-eps-converted-to.pdf>]
-<Figures/stepwise_uq.jpg, id=1218, 977.6525pt x 529.98pt>
+ [26 <./Figures/Lq_measure_prep.pdf> <./Figures/Lq_iq-eps-converted-to.pdf>]
+<Figures/stepwise_uq.jpg, id=1158, 977.6525pt x 529.98pt>
 File: Figures/stepwise_uq.jpg Graphic file (type jpg)
 <use Figures/stepwise_uq.jpg>
 Package pdftex.def Info: Figures/stepwise_uq.jpg  used on input line 188.
 (pdftex.def)             Requested size: 223.07211pt x 120.92241pt.
-<Figures/stewise_currents_response.jpg, id=1219, 967.11313pt x 479.29062pt>
+<Figures/stewise_currents_response.jpg, id=1159, 967.11313pt x 479.29062pt>
 File: Figures/stewise_currents_response.jpg Graphic file (type jpg)
 <use Figures/stewise_currents_response.jpg>
 Package pdftex.def Info: Figures/stewise_currents_response.jpg  used on input line 189.
@@ -1507,12 +1477,12 @@ Package epstopdf Info: Source file: <Figures/id-5__vq-30.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/id-5__vq-30-eps-converted-to.pdf Figures/id-5__vq-30.eps>
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/id-5__vq-30-eps-converted-to.pdf, id=1222, 361.35pt x 318.18875pt>
+<Figures/id-5__vq-30-eps-converted-to.pdf, id=1162, 361.35pt x 318.18875pt>
 File: Figures/id-5__vq-30-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/id-5__vq-30-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/id-5__vq-30-eps-converted-to.pdf  used on input line 196.
 (pdftex.def)             Requested size: 273.14923pt x 240.52477pt.
- [28 <./Figures/stepwise_uq.jpg> <./Figures/stewise_currents_response.jpg>]
+ [27 <./Figures/stepwise_uq.jpg> <./Figures/stewise_currents_response.jpg>]
 Package epstopdf Info: Source file: <Figures/all_pulses.eps>
 (epstopdf)                    date: 2024-04-20 17:28:45
 (epstopdf)                    size: 377940 bytes
@@ -1522,12 +1492,12 @@ Package epstopdf Info: Source file: <Figures/all_pulses.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/all_pulses-eps-converted-to.pdf Figures/all_pulses.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/all_pulses-eps-converted-to.pdf, id=1238, 528.97626pt x 341.275pt>
+<Figures/all_pulses-eps-converted-to.pdf, id=1177, 528.97626pt x 341.275pt>
 File: Figures/all_pulses-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/all_pulses-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/all_pulses-eps-converted-to.pdf  used on input line 205.
 (pdftex.def)             Requested size: 455.24411pt x 293.70427pt.
- [29 <./Figures/id-5__vq-30-eps-converted-to.pdf> <./Figures/all_pulses-eps-converted-to.pdf>]
+ [28 <./Figures/id-5__vq-30-eps-converted-to.pdf> <./Figures/all_pulses-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Ldq.eps>
 (epstopdf)                    date: 2024-04-20 17:33:07
 (epstopdf)                    size: 826232 bytes
@@ -1537,7 +1507,7 @@ Package epstopdf Info: Source file: <Figures/Ldq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Ldq-eps-converted-to.pdf Figures/Ldq.eps>
 (epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Ldq-eps-converted-to.pdf, id=1267, 606.265pt x 517.935pt>
+<Figures/Ldq-eps-converted-to.pdf, id=1207, 606.265pt x 517.935pt>
 File: Figures/Ldq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Ldq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Ldq-eps-converted-to.pdf  used on input line 220.
@@ -1545,7 +1515,7 @@ Package pdftex.def Info: Figures/Ldq-eps-converted-to.pdf  used on input line 22
 ) (./03/03Current_Reference.tex
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [30 <./Figures/Ldq-eps-converted-to.pdf>] [31]
+ [29 <./Figures/Ldq-eps-converted-to.pdf>] [30]
 Package epstopdf Info: Source file: <Figures/Torque_MTPA_simple.eps>
 (epstopdf)                    date: 2024-04-21 22:10:08
 (epstopdf)                    size: 204506 bytes
@@ -1555,12 +1525,12 @@ Package epstopdf Info: Source file: <Figures/Torque_MTPA_simple.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Torque_MTPA_simple-eps-converted-to.pdf Figures/Torque_MTPA_simple.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Torque_MTPA_simple-eps-converted-to.pdf, id=1319, 398.48875pt x 431.6125pt>
+<Figures/Torque_MTPA_simple-eps-converted-to.pdf, id=1258, 398.48875pt x 431.6125pt>
 File: Figures/Torque_MTPA_simple-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Torque_MTPA_simple-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Torque_MTPA_simple-eps-converted-to.pdf  used on input line 121.
 (pdftex.def)             Requested size: 273.14923pt x 295.86353pt.
- [32]
+ [31]
 Package epstopdf Info: Source file: <Figures/Motor_map@420V.eps>
 (epstopdf)                    date: 2024-04-23 18:26:15
 (epstopdf)                    size: 292923 bytes
@@ -1570,7 +1540,7 @@ Package epstopdf Info: Source file: <Figures/Motor_map@420V.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@420V-eps-converted-to.pdf Figures/Motor_map@420V.eps>
 (epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@420V-eps-converted-to.pdf, id=1342, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@420V-eps-converted-to.pdf, id=1282, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@420V-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@420V-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@420V-eps-converted-to.pdf  used on input line 201.
@@ -1584,7 +1554,7 @@ Package epstopdf Info: Source file: <Figures/Motor_map@532V.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@532V-eps-converted-to.pdf Figures/Motor_map@532V.eps>
 (epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@532V-eps-converted-to.pdf, id=1343, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@532V-eps-converted-to.pdf, id=1283, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@532V-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@532V-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@532V-eps-converted-to.pdf  used on input line 202.
@@ -1598,15 +1568,15 @@ Package epstopdf Info: Source file: <Figures/Motor_map@600V.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@600V-eps-converted-to.pdf Figures/Motor_map@600V.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@600V-eps-converted-to.pdf, id=1344, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@600V-eps-converted-to.pdf, id=1284, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@600V-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@600V-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@600V-eps-converted-to.pdf  used on input line 205.
 (pdftex.def)             Requested size: 223.07211pt x 261.89809pt.
- [33 <./Figures/Torque_MTPA_simple-eps-converted-to.pdf>]
+ [32 <./Figures/Torque_MTPA_simple-eps-converted-to.pdf>]
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [34 <./Figures/Motor_map@420V-eps-converted-to.pdf> <./Figures/Motor_map@532V-eps-converted-to.pdf> <./Figures/Motor_map@600V-eps-converted-to.pdf>]
+ [33 <./Figures/Motor_map@420V-eps-converted-to.pdf> <./Figures/Motor_map@532V-eps-converted-to.pdf> <./Figures/Motor_map@600V-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/ldq_manufacturer.eps>
 (epstopdf)                    date: 2024-04-21 22:25:39
 (epstopdf)                    size: 28249 bytes
@@ -1616,7 +1586,7 @@ Package epstopdf Info: Source file: <Figures/ldq_manufacturer.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/ldq_manufacturer-eps-converted-to.pdf Figures/ldq_manufacturer.eps>
 (epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/ldq_manufacturer-eps-converted-to.pdf, id=1396, 350.30875pt x 208.78pt>
+<Figures/ldq_manufacturer-eps-converted-to.pdf, id=1335, 350.30875pt x 208.78pt>
 File: Figures/ldq_manufacturer-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/ldq_manufacturer-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/ldq_manufacturer-eps-converted-to.pdf  used on input line 224.
@@ -1624,18 +1594,18 @@ Package pdftex.def Info: Figures/ldq_manufacturer-eps-converted-to.pdf  used on 
 ) (./03/03Load_Profile.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] [36 <./Figures/ldq_manufacturer-eps-converted-to.pdf>]) (./03/03proposed_control.tex [37]
+ [34] [35 <./Figures/ldq_manufacturer-eps-converted-to.pdf>]) (./03/03proposed_control.tex [36]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/FSMPC.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/FSMPC.pdf, id=1449, 615.25856pt x 110.3322pt>
+<Figures/FSMPC.pdf, id=1389, 615.25856pt x 110.3322pt>
 File: Figures/FSMPC.pdf Graphic file (type pdf)
 <use Figures/FSMPC.pdf>
 Package pdftex.def Info: Figures/FSMPC.pdf  used on input line 43.
 (pdftex.def)             Requested size: 364.19667pt x 65.30922pt.
-[38 <./Figures/FSMPC.pdf>]
+[37 <./Figures/FSMPC.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/FSMPC_null_vector.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/FSMPC_null_vector.pdf, id=1469, 831.105pt x 254.8722pt>
+<Figures/FSMPC_null_vector.pdf, id=1409, 831.105pt x 254.8722pt>
 File: Figures/FSMPC_null_vector.pdf Graphic file (type pdf)
 <use Figures/FSMPC_null_vector.pdf>
 Package pdftex.def Info: Figures/FSMPC_null_vector.pdf  used on input line 75.
@@ -1643,21 +1613,21 @@ Package pdftex.def Info: Figures/FSMPC_null_vector.pdf  used on input line 75.
 
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Implicit_CSMPC.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Implicit_CSMPC.pdf, id=1472, 398.4486pt x 110.3322pt>
+<Figures/Implicit_CSMPC.pdf, id=1412, 398.4486pt x 110.3322pt>
 File: Figures/Implicit_CSMPC.pdf Graphic file (type pdf)
 <use Figures/Implicit_CSMPC.pdf>
 Package pdftex.def Info: Figures/Implicit_CSMPC.pdf  used on input line 87.
 (pdftex.def)             Requested size: 295.90588pt x 81.93915pt.
-[39 <./Figures/FSMPC_null_vector.pdf>]
-<Figures/Explicit_CSMPC.pdf, id=1491, 647.5392pt x 79.2561pt>
+[38 <./Figures/FSMPC_null_vector.pdf>]
+<Figures/Explicit_CSMPC.pdf, id=1431, 647.5392pt x 79.2561pt>
 File: Figures/Explicit_CSMPC.pdf Graphic file (type pdf)
 <use Figures/Explicit_CSMPC.pdf>
 Package pdftex.def Info: Figures/Explicit_CSMPC.pdf  used on input line 151.
 (pdftex.def)             Requested size: 455.24411pt x 55.71954pt.
- [40 <./Figures/Implicit_CSMPC.pdf> <./Figures/Explicit_CSMPC.pdf>] (./03/03Horizon_extention.tex
+ [39 <./Figures/Implicit_CSMPC.pdf> <./Figures/Explicit_CSMPC.pdf>] (./03/03Horizon_extention.tex
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Horizon Extension default Timeline.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Horizon Extension default Timeline.pdf, id=1528, 853.26776pt x 270.0489pt>
+<Figures/Horizon Extension default Timeline.pdf, id=1466, 853.26776pt x 270.0489pt>
 File: Figures/Horizon Extension default Timeline.pdf Graphic file (type pdf)
 <use Figures/Horizon Extension default Timeline.pdf>
 Package pdftex.def Info: Figures/Horizon Extension default Timeline.pdf  used on input line 23.
@@ -1665,18 +1635,18 @@ Package pdftex.def Info: Figures/Horizon Extension default Timeline.pdf  used on
 
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Horizon Extension Timeline.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Horizon Extension Timeline.pdf, id=1530, 853.26776pt x 270.0489pt>
+<Figures/Horizon Extension Timeline.pdf, id=1468, 853.26776pt x 270.0489pt>
 File: Figures/Horizon Extension Timeline.pdf Graphic file (type pdf)
 <use Figures/Horizon Extension Timeline.pdf>
 Package pdftex.def Info: Figures/Horizon Extension Timeline.pdf  used on input line 32.
 (pdftex.def)             Requested size: 455.24411pt x 144.08122pt.
-[41 <./Figures/Horizon Extension default Timeline.pdf>])
-<Figures/Speed_control.pdf, id=1552, 650.43pt x 84.315pt>
+[40 <./Figures/Horizon Extension default Timeline.pdf>])
+<Figures/Speed_control.pdf, id=1492, 650.43pt x 84.315pt>
 File: Figures/Speed_control.pdf Graphic file (type pdf)
 <use Figures/Speed_control.pdf>
 Package pdftex.def Info: Figures/Speed_control.pdf  used on input line 168.
 (pdftex.def)             Requested size: 455.24411pt x 59.01492pt.
- [42 <./Figures/Horizon Extension Timeline.pdf> <./Figures/Speed_control.pdf>] [43]
+ [41 <./Figures/Horizon Extension Timeline.pdf> <./Figures/Speed_control.pdf>] [42]
 Package epstopdf Info: Source file: <Figures/rlocus_speed.eps>
 (epstopdf)                    date: 2024-04-26 18:55:06
 (epstopdf)                    size: 131781 bytes
@@ -1686,24 +1656,24 @@ Package epstopdf Info: Source file: <Figures/rlocus_speed.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/rlocus_speed-eps-converted-to.pdf Figures/rlocus_speed.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/rlocus_speed-eps-converted-to.pdf, id=1608, 569.12625pt x 285.065pt>
+<Figures/rlocus_speed-eps-converted-to.pdf, id=1548, 569.12625pt x 285.065pt>
 File: Figures/rlocus_speed-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/rlocus_speed-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/rlocus_speed-eps-converted-to.pdf  used on input line 244.
 (pdftex.def)             Requested size: 455.24411pt x 228.0349pt.
-)) [44 <./Figures/rlocus_speed-eps-converted-to.pdf>] (./04Thesis_Results.tex
+)) [43 <./Figures/rlocus_speed-eps-converted-to.pdf>] (./04Thesis_Results.tex
 Chapter 4.
 \openout6 = `Thesis.mtc'.
 
 \openout6 = `Thesis.mtc'.
 
 (./Thesis.mtc4) (./04Simulation/04Simulation.tex
-<Figures/motor_and_inverter_simulink1.pdf, id=1626, 794.97pt x 614.295pt>
+<Figures/motor_and_inverter_simulink1.pdf, id=1566, 794.97pt x 614.295pt>
 File: Figures/motor_and_inverter_simulink1.pdf Graphic file (type pdf)
 <use Figures/motor_and_inverter_simulink1.pdf>
 Package pdftex.def Info: Figures/motor_and_inverter_simulink1.pdf  used on input line 21.
 (pdftex.def)             Requested size: 455.24411pt x 194.41014pt.
- [45
+ [44
 
 ]
 Package epstopdf Info: Source file: <Figures/Step_@12000RPM.eps>
@@ -1715,7 +1685,7 @@ Package epstopdf Info: Source file: <Figures/Step_@12000RPM.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Step_@12000RPM-eps-converted-to.pdf Figures/Step_@12000RPM.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Step_@12000RPM-eps-converted-to.pdf, id=1639, 569.12625pt x 284.06125pt>
+<Figures/Step_@12000RPM-eps-converted-to.pdf, id=1578, 569.12625pt x 284.06125pt>
 File: Figures/Step_@12000RPM-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Step_@12000RPM-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Step_@12000RPM-eps-converted-to.pdf  used on input line 78.
@@ -1733,10 +1703,10 @@ File: Figures/Step_@12000RPM-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Step_@12000RPM-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Step_@12000RPM-eps-converted-to.pdf  used on input line 81.
 (pdftex.def)             Requested size: 455.24411pt x 102.04922pt.
- [46 <./Figures/motor_and_inverter_simulink1.pdf>] [47 <./Figures/Step_@12000RPM-eps-converted-to.pdf>]
+ [45 <./Figures/motor_and_inverter_simulink1.pdf>] [46 <./Figures/Step_@12000RPM-eps-converted-to.pdf>]
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
- [48]
+ [47]
 Package epstopdf Info: Source file: <Figures/MonteCarlo.eps>
 (epstopdf)                    date: 2024-04-20 16:58:21
 (epstopdf)                    size: 627861 bytes
@@ -1746,7 +1716,7 @@ Package epstopdf Info: Source file: <Figures/MonteCarlo.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/MonteCarlo-eps-converted-to.pdf Figures/MonteCarlo.eps>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/MonteCarlo-eps-converted-to.pdf, id=1758, 683.55376pt x 342.27875pt>
+<Figures/MonteCarlo-eps-converted-to.pdf, id=1698, 683.55376pt x 342.27875pt>
 File: Figures/MonteCarlo-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/MonteCarlo-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/MonteCarlo-eps-converted-to.pdf  used on input line 230.
@@ -1760,11 +1730,11 @@ Package epstopdf Info: Source file: <Figures/corr_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/corr_tq-eps-converted-to.pdf Figures/corr_tq.eps>
 (epstopdf)             \includegraphics on input line 240.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/corr_tq-eps-converted-to.pdf, id=1760, 304.13625pt x 308.15125pt>
+<Figures/corr_tq-eps-converted-to.pdf, id=1700, 304.13625pt x 308.15125pt>
 File: Figures/corr_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/corr_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/corr_tq-eps-converted-to.pdf  used on input line 240.
-(pdftex.def)             Requested size: 223.07211pt x 226.02058pt.
+(pdftex.def)             Requested size: 182.09486pt x 184.50189pt.
 Package epstopdf Info: Source file: <Figures/corr_thd.eps>
 (epstopdf)                    date: 2024-04-20 16:39:33
 (epstopdf)                    size: 18022 bytes
@@ -1774,11 +1744,11 @@ Package epstopdf Info: Source file: <Figures/corr_thd.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/corr_thd-eps-converted-to.pdf Figures/corr_thd.eps>
 (epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/corr_thd-eps-converted-to.pdf, id=1761, 304.13625pt x 308.15125pt>
+<Figures/corr_thd-eps-converted-to.pdf, id=1701, 304.13625pt x 308.15125pt>
 File: Figures/corr_thd-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/corr_thd-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/corr_thd-eps-converted-to.pdf  used on input line 241.
-(pdftex.def)             Requested size: 223.07211pt x 226.02058pt.
+(pdftex.def)             Requested size: 182.09486pt x 184.50189pt.
 Package epstopdf Info: Source file: <Figures/corr_risetime.eps>
 (epstopdf)                    date: 2024-04-20 16:39:33
 (epstopdf)                    size: 18023 bytes
@@ -1788,12 +1758,12 @@ Package epstopdf Info: Source file: <Figures/corr_risetime.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/corr_risetime-eps-converted-to.pdf Figures/corr_risetime.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/corr_risetime-eps-converted-to.pdf, id=1762, 304.13625pt x 308.15125pt>
+<Figures/corr_risetime-eps-converted-to.pdf, id=1702, 304.13625pt x 308.15125pt>
 File: Figures/corr_risetime-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/corr_risetime-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/corr_risetime-eps-converted-to.pdf  used on input line 244.
-(pdftex.def)             Requested size: 223.07211pt x 226.02058pt.
- [49 <./Figures/MonteCarlo-eps-converted-to.pdf>] [50 <./Figures/corr_tq-eps-converted-to.pdf> <./Figures/corr_thd-eps-converted-to.pdf> <./Figures/corr_risetime-eps-converted-to.pdf>]
+(pdftex.def)             Requested size: 182.09486pt x 184.50189pt.
+ [48 <./Figures/MonteCarlo-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/acc_empc.eps>
 (epstopdf)                    date: 2024-04-21 21:27:13
 (epstopdf)                    size: 238058 bytes
@@ -1803,7 +1773,7 @@ Package epstopdf Info: Source file: <Figures/acc_empc.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/acc_empc-eps-converted-to.pdf Figures/acc_empc.eps>
 (epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/acc_empc-eps-converted-to.pdf, id=1806, 455.7025pt x 227.85126pt>
+<Figures/acc_empc-eps-converted-to.pdf, id=1715, 455.7025pt x 227.85126pt>
 File: Figures/acc_empc-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/acc_empc-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/acc_empc-eps-converted-to.pdf  used on input line 262.
@@ -1817,7 +1787,7 @@ Package epstopdf Info: Source file: <Figures/acc_foc.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/acc_foc-eps-converted-to.pdf Figures/acc_foc.eps>
 (epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/acc_foc-eps-converted-to.pdf, id=1808, 455.7025pt x 227.85126pt>
+<Figures/acc_foc-eps-converted-to.pdf, id=1717, 455.7025pt x 227.85126pt>
 File: Figures/acc_foc-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/acc_foc-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/acc_foc-eps-converted-to.pdf  used on input line 263.
@@ -1831,7 +1801,7 @@ Package epstopdf Info: Source file: <Figures/acc_rpm.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/acc_rpm-eps-converted-to.pdf Figures/acc_rpm.eps>
 (epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/acc_rpm-eps-converted-to.pdf, id=1810, 400.49625pt x 211.79124pt>
+<Figures/acc_rpm-eps-converted-to.pdf, id=1719, 400.49625pt x 211.79124pt>
 File: Figures/acc_rpm-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/acc_rpm-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/acc_rpm-eps-converted-to.pdf  used on input line 266.
@@ -1845,17 +1815,21 @@ Package epstopdf Info: Source file: <Figures/acc_dist.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/acc_dist-eps-converted-to.pdf Figures/acc_dist.eps>
 (epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/acc_dist-eps-converted-to.pdf, id=1811, 383.4325pt x 211.79124pt>
+<Figures/acc_dist-eps-converted-to.pdf, id=1720, 383.4325pt x 211.79124pt>
 File: Figures/acc_dist-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/acc_dist-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/acc_dist-eps-converted-to.pdf  used on input line 267.
 (pdftex.def)             Requested size: 216.24373pt x 119.44576pt.
-) (./04Simulation/04Experimental.tex [51 <./Figures/acc_rpm-eps-converted-to.pdf> <./Figures/acc_dist-eps-converted-to.pdf> <./Figures/acc_empc-eps-converted-to.pdf> <./Figures/acc_foc-eps-converted-to.pdf>]
-<Figures/testbench_setup.jpg, id=1853, 725.766pt x 546.186pt>
+) (./04Simulation/04Experimental.tex
+Underfull \vbox (badness 4144) has occurred while \output is active []
+
+ [49 <./Figures/corr_tq-eps-converted-to.pdf> <./Figures/corr_thd-eps-converted-to.pdf> <./Figures/corr_risetime-eps-converted-to.pdf>]
+<Figures/testbench_setup.jpg, id=1756, 725.766pt x 546.186pt>
 File: Figures/testbench_setup.jpg Graphic file (type jpg)
 <use Figures/testbench_setup.jpg>
 Package pdftex.def Info: Figures/testbench_setup.jpg  used on input line 20.
 (pdftex.def)             Requested size: 364.19667pt x 274.08408pt.
+ [50 <./Figures/acc_rpm-eps-converted-to.pdf> <./Figures/acc_dist-eps-converted-to.pdf> <./Figures/acc_empc-eps-converted-to.pdf> <./Figures/acc_foc-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/constantTq.eps>
 (epstopdf)                    date: 2024-04-21 22:42:03
 (epstopdf)                    size: 2806078 bytes
@@ -1865,7 +1839,7 @@ Package epstopdf Info: Source file: <Figures/constantTq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/constantTq-eps-converted-to.pdf Figures/constantTq.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/constantTq-eps-converted-to.pdf, id=1855, 744.7825pt x 379.4175pt>
+<Figures/constantTq-eps-converted-to.pdf, id=1794, 744.7825pt x 379.4175pt>
 File: Figures/constantTq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/constantTq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/constantTq-eps-converted-to.pdf  used on input line 29.
@@ -1879,7 +1853,7 @@ Package epstopdf Info: Source file: <Figures/const_curr_7NM.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/const_curr_7NM-eps-converted-to.pdf Figures/const_curr_7NM.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/const_curr_7NM-eps-converted-to.pdf, id=1857, 225.84375pt x 223.83624pt>
+<Figures/const_curr_7NM-eps-converted-to.pdf, id=1796, 225.84375pt x 223.83624pt>
 File: Figures/const_curr_7NM-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/const_curr_7NM-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/const_curr_7NM-eps-converted-to.pdf  used on input line 39.
@@ -1893,12 +1867,12 @@ Package epstopdf Info: Source file: <Figures/const_curr_osc_7nm-01.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/const_curr_osc_7nm-01-eps-converted-to.pdf Figures/const_curr_osc_7nm-01.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/const_curr_osc_7nm-01-eps-converted-to.pdf, id=1858, 490.83376pt x 490.83376pt>
+<Figures/const_curr_osc_7nm-01-eps-converted-to.pdf, id=1797, 490.83376pt x 490.83376pt>
 File: Figures/const_curr_osc_7nm-01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/const_curr_osc_7nm-01-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/const_curr_osc_7nm-01-eps-converted-to.pdf  used on input line 40.
 (pdftex.def)             Requested size: 236.72888pt x 236.72844pt.
- [52 <./Figures/testbench_setup.jpg>] [53 <./Figures/constantTq-eps-converted-to.pdf> <./Figures/const_curr_7NM-eps-converted-to.pdf> <./Figures/const_curr_osc_7nm-01-eps-converted-to.pdf>]
+ [51 <./Figures/testbench_setup.jpg>] [52 <./Figures/constantTq-eps-converted-to.pdf> <./Figures/const_curr_7NM-eps-converted-to.pdf> <./Figures/const_curr_osc_7nm-01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/tq_step_curr.eps>
 (epstopdf)                    date: 2024-04-23 22:13:15
 (epstopdf)                    size: 206999 bytes
@@ -1908,7 +1882,7 @@ Package epstopdf Info: Source file: <Figures/tq_step_curr.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/tq_step_curr-eps-converted-to.pdf Figures/tq_step_curr.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/tq_step_curr-eps-converted-to.pdf, id=1897, 225.84375pt x 223.83624pt>
+<Figures/tq_step_curr-eps-converted-to.pdf, id=1837, 225.84375pt x 223.83624pt>
 File: Figures/tq_step_curr-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/tq_step_curr-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/tq_step_curr-eps-converted-to.pdf  used on input line 52.
@@ -1922,7 +1896,7 @@ Package epstopdf Info: Source file: <Figures/tq_step_osc-01.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/tq_step_osc-01-eps-converted-to.pdf Figures/tq_step_osc-01.eps>
 (epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/tq_step_osc-01-eps-converted-to.pdf, id=1898, 490.83376pt x 490.83376pt>
+<Figures/tq_step_osc-01-eps-converted-to.pdf, id=1838, 490.83376pt x 490.83376pt>
 File: Figures/tq_step_osc-01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/tq_step_osc-01-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/tq_step_osc-01-eps-converted-to.pdf  used on input line 53.
@@ -1936,12 +1910,12 @@ Package epstopdf Info: Source file: <Figures/Tq_step.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Tq_step-eps-converted-to.pdf Figures/Tq_step.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Tq_step-eps-converted-to.pdf, id=1900, 319.1925pt x 223.83624pt>
+<Figures/Tq_step-eps-converted-to.pdf, id=1840, 319.1925pt x 223.83624pt>
 File: Figures/Tq_step-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Tq_step-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Tq_step-eps-converted-to.pdf  used on input line 65.
 (pdftex.def)             Requested size: 250.38564pt x 175.58546pt.
- [54 <./Figures/tq_step_curr-eps-converted-to.pdf> <./Figures/tq_step_osc-01-eps-converted-to.pdf>]
+ [53 <./Figures/tq_step_curr-eps-converted-to.pdf> <./Figures/tq_step_osc-01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Car_Tq_step.eps>
 (epstopdf)                    date: 2024-05-20 13:48:25
 (epstopdf)                    size: 39844 bytes
@@ -1951,7 +1925,7 @@ Package epstopdf Info: Source file: <Figures/Car_Tq_step.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Car_Tq_step-eps-converted-to.pdf Figures/Car_Tq_step.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Car_Tq_step-eps-converted-to.pdf, id=1930, 455.7025pt x 227.85126pt>
+<Figures/Car_Tq_step-eps-converted-to.pdf, id=1870, 455.7025pt x 227.85126pt>
 File: Figures/Car_Tq_step-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Car_Tq_step-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Car_Tq_step-eps-converted-to.pdf  used on input line 74.
@@ -1965,7 +1939,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_1Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_1Nm_tq-eps-converted-to.pdf Figures/torque_step_1Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_1Nm_tq-eps-converted-to.pdf, id=1932, 207.77625pt x 130.4875pt>
+<Figures/torque_step_1Nm_tq-eps-converted-to.pdf, id=1872, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_1Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_1Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_1Nm_tq-eps-converted-to.pdf  used on input line 84.
@@ -1979,7 +1953,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_3Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_3Nm_tq-eps-converted-to.pdf Figures/torque_step_3Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_3Nm_tq-eps-converted-to.pdf, id=1933, 207.77625pt x 130.4875pt>
+<Figures/torque_step_3Nm_tq-eps-converted-to.pdf, id=1873, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_3Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_3Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_3Nm_tq-eps-converted-to.pdf  used on input line 85.
@@ -1993,7 +1967,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_5Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_5Nm_tq-eps-converted-to.pdf Figures/torque_step_5Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_5Nm_tq-eps-converted-to.pdf, id=1934, 207.77625pt x 130.4875pt>
+<Figures/torque_step_5Nm_tq-eps-converted-to.pdf, id=1874, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_5Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_5Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_5Nm_tq-eps-converted-to.pdf  used on input line 86.
@@ -2007,7 +1981,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_6Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_6Nm_tq-eps-converted-to.pdf Figures/torque_step_6Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_6Nm_tq-eps-converted-to.pdf, id=1935, 207.77625pt x 130.4875pt>
+<Figures/torque_step_6Nm_tq-eps-converted-to.pdf, id=1875, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_6Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_6Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_6Nm_tq-eps-converted-to.pdf  used on input line 89.
@@ -2021,7 +1995,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_7Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_7Nm_tq-eps-converted-to.pdf Figures/torque_step_7Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_7Nm_tq-eps-converted-to.pdf, id=1936, 207.77625pt x 130.4875pt>
+<Figures/torque_step_7Nm_tq-eps-converted-to.pdf, id=1876, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_7Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_7Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_7Nm_tq-eps-converted-to.pdf  used on input line 90.
@@ -2035,7 +2009,7 @@ Package epstopdf Info: Source file: <Figures/torque_step_8Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_8Nm_tq-eps-converted-to.pdf Figures/torque_step_8Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_8Nm_tq-eps-converted-to.pdf, id=1937, 207.77625pt x 130.4875pt>
+<Figures/torque_step_8Nm_tq-eps-converted-to.pdf, id=1877, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_8Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_8Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_8Nm_tq-eps-converted-to.pdf  used on input line 91.
@@ -2049,12 +2023,12 @@ Package epstopdf Info: Source file: <Figures/torque_step_10Nm_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/torque_step_10Nm_tq-eps-converted-to.pdf Figures/torque_step_10Nm_tq.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/torque_step_10Nm_tq-eps-converted-to.pdf, id=1938, 207.77625pt x 130.4875pt>
+<Figures/torque_step_10Nm_tq-eps-converted-to.pdf, id=1878, 207.77625pt x 130.4875pt>
 File: Figures/torque_step_10Nm_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/torque_step_10Nm_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/torque_step_10Nm_tq-eps-converted-to.pdf  used on input line 93.
 (pdftex.def)             Requested size: 141.12456pt x 88.63275pt.
- [55 <./Figures/Tq_step-eps-converted-to.pdf> <./Figures/Car_Tq_step-eps-converted-to.pdf>]
+ [54 <./Figures/Tq_step-eps-converted-to.pdf> <./Figures/Car_Tq_step-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/rpm_step_rpm.eps>
 (epstopdf)                    date: 2024-04-23 17:42:03
 (epstopdf)                    size: 52892 bytes
@@ -2064,7 +2038,7 @@ Package epstopdf Info: Source file: <Figures/rpm_step_rpm.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/rpm_step_rpm-eps-converted-to.pdf Figures/rpm_step_rpm.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/rpm_step_rpm-eps-converted-to.pdf, id=1958, 568.1225pt x 158.5925pt>
+<Figures/rpm_step_rpm-eps-converted-to.pdf, id=1898, 568.1225pt x 158.5925pt>
 File: Figures/rpm_step_rpm-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/rpm_step_rpm-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/rpm_step_rpm-eps-converted-to.pdf  used on input line 104.
@@ -2078,7 +2052,7 @@ Package epstopdf Info: Source file: <Figures/rpm_step_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/rpm_step_tq-eps-converted-to.pdf Figures/rpm_step_tq.eps>
 (epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/rpm_step_tq-eps-converted-to.pdf, id=1959, 556.0775pt x 161.60374pt>
+<Figures/rpm_step_tq-eps-converted-to.pdf, id=1899, 556.0775pt x 161.60374pt>
 File: Figures/rpm_step_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/rpm_step_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/rpm_step_tq-eps-converted-to.pdf  used on input line 106.
@@ -2092,7 +2066,7 @@ Package epstopdf Info: Source file: <Figures/rpm_step_tq_error.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/rpm_step_tq_error-eps-converted-to.pdf Figures/rpm_step_tq_error.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/rpm_step_tq_error-eps-converted-to.pdf, id=1960, 559.08875pt x 114.4275pt>
+<Figures/rpm_step_tq_error-eps-converted-to.pdf, id=1900, 559.08875pt x 114.4275pt>
 File: Figures/rpm_step_tq_error-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/rpm_step_tq_error-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/rpm_step_tq_error-eps-converted-to.pdf  used on input line 108.
@@ -2106,7 +2080,7 @@ Package epstopdf Info: Source file: <Figures/pedal_profile_curr.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/pedal_profile_curr-eps-converted-to.pdf Figures/pedal_profile_curr.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pedal_profile_curr-eps-converted-to.pdf, id=1962, 567.11874pt x 158.5925pt>
+<Figures/pedal_profile_curr-eps-converted-to.pdf, id=1902, 567.11874pt x 158.5925pt>
 File: Figures/pedal_profile_curr-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pedal_profile_curr-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pedal_profile_curr-eps-converted-to.pdf  used on input line 118.
@@ -2120,7 +2094,7 @@ Package epstopdf Info: Source file: <Figures/pedal_profile_rpm.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/pedal_profile_rpm-eps-converted-to.pdf Figures/pedal_profile_rpm.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pedal_profile_rpm-eps-converted-to.pdf, id=1963, 574.145pt x 158.5925pt>
+<Figures/pedal_profile_rpm-eps-converted-to.pdf, id=1903, 574.145pt x 158.5925pt>
 File: Figures/pedal_profile_rpm-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pedal_profile_rpm-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pedal_profile_rpm-eps-converted-to.pdf  used on input line 120.
@@ -2134,7 +2108,7 @@ Package epstopdf Info: Source file: <Figures/pedal_profile_tq.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/pedal_profile_tq-eps-converted-to.pdf Figures/pedal_profile_tq.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pedal_profile_tq-eps-converted-to.pdf, id=1964, 564.1075pt x 158.5925pt>
+<Figures/pedal_profile_tq-eps-converted-to.pdf, id=1904, 564.1075pt x 158.5925pt>
 File: Figures/pedal_profile_tq-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pedal_profile_tq-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pedal_profile_tq-eps-converted-to.pdf  used on input line 122.
@@ -2148,19 +2122,22 @@ Package epstopdf Info: Source file: <Figures/pedal_profile_tq_error.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/pedal_profile_tq_error-eps-converted-to.pdf Figures/pedal_profile_tq_error.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/pedal_profile_tq_error-eps-converted-to.pdf, id=1965, 562.1pt x 114.4275pt>
+<Figures/pedal_profile_tq_error-eps-converted-to.pdf, id=1905, 562.1pt x 114.4275pt>
 File: Figures/pedal_profile_tq_error-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/pedal_profile_tq_error-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/pedal_profile_tq_error-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 386.96027pt x 78.77347pt.
-)) [56 <./Figures/torque_step_1Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_3Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_5Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_6Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_7Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_8Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_10Nm_tq-eps-converted-to.pdf>] (./05Thesis_Conclusions.tex [57 <./Figures/rpm_step_rpm-eps-converted-to.pdf> <./Figures/rpm_step_tq-eps-converted-to.pdf> <./Figures/rpm_step_tq_error-eps-converted-to.pdf>] [58 <./Figures/pedal_profile_curr-eps-converted-to.pdf> <./Figures/pedal_profile_rpm-eps-converted-to.pdf> <./Figures/pedal_profile_tq-eps-converted-to.pdf> <./Figures/pedal_profile_tq_error-eps-converted-to.pdf>]
+)) [55 <./Figures/torque_step_1Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_3Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_5Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_6Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_7Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_8Nm_tq-eps-converted-to.pdf> <./Figures/torque_step_10Nm_tq-eps-converted-to.pdf>] (./05Thesis_Conclusions.tex [56 <./Figures/rpm_step_rpm-eps-converted-to.pdf> <./Figures/rpm_step_tq-eps-converted-to.pdf> <./Figures/rpm_step_tq_error-eps-converted-to.pdf>] [57 <./Figures/pedal_profile_curr-eps-converted-to.pdf> <./Figures/pedal_profile_rpm-eps-converted-to.pdf> <./Figures/pedal_profile_tq-eps-converted-to.pdf> <./Figures/pedal_profile_tq_error-eps-converted-to.pdf>]
 Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59
+ [58
 
-] [60]) [61] (./Thesis.bbl [62
+] [59]) [60] (./Thesis.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 91.
@@ -2171,7 +2148,13 @@ Underfull \hbox (badness 4229) in paragraph at lines 111--114
 []\T1/phv/m/n/10 Microchip.  Over-mod-u-la-tion man-age-ment for field-oriented con-trol of three-phase mo-
  []
 
-[63{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [64]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
 Underfull \hbox (badness 10000) in paragraph at lines 261--264
 []\T1/phv/m/sl/10 EasyDUAL mod-ule FF8MR12W1M1H_B11 Datasheet\T1/phv/m/n/10 .  In-fi-neon, [][]$\T1/cmtt/m/n/10 https : / / www .
  []
@@ -2193,19 +2176,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--269
 \T1/cmtt/m/n/10 / / www . infineon . com / dgdl / Infineon-[]1ED332xMC12N-[]DataSheet-[]v01 _ 02-[]EN . pdf ? fileId =
  []
 
-[65]) [66] (./Appendix/90Thesis_Appendix_A.tex
+) [64] (./Appendix/90Thesis_Appendix_A.tex
 Appendix A.
 
 Overfull \hbox (5.30406pt too wide) detected at line 68
 [][][][][][] \OT1/cmr/m/n/10 = [] [] []
  []
 
+) (./Appendix/91Thesis_Appendix_B.tex [65
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67
-
-]) [68] (./Appendix/91Thesis_Appendix_B.tex
+]
 Appendix B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
@@ -2215,7 +2195,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
 
 pdfTeX warning: pdflatex.exe (file ./Appendix/motor_data_sheet_a2370dd_dd5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2162, 845.1575pt x 597.23125pt>
+<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2094, 845.1575pt x 597.23125pt>
 File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf  used on input line 23.
@@ -2233,7 +2213,7 @@ pdfTeX warning: pdflatex.exe (file ./Appendix/motor_data_sheet_a2370dd_dd5.pdf):
 
 
 pdfTeX warning: pdflatex.exe (file ./Appendix/motor_data_sheet_a2370dd_dd5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2165, page=1, 845.1575pt x 597.23125pt>
+<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2097, page=1, 845.1575pt x 597.23125pt>
 File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page 1>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf , page1 used on input line 23.
@@ -2242,7 +2222,7 @@ File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page 1>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf , page1 used on input line 23.
 (pdftex.def)             Requested size: 760.63474pt x 537.50316pt.
-[69
+[66
 
 ]
 File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
@@ -2257,7 +2237,7 @@ File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page 1>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf , page1 used on input line 23.
 (pdftex.def)             Requested size: 760.63474pt x 537.50316pt.
- [70
+ [67
 
  <./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page is rotated 90 degrees>]
 File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
@@ -2277,7 +2257,7 @@ pdfTeX warning: pdflatex.exe (file ./Appendix/motor_data_sheet_a2370dd_dd5.pdf):
 
 
 pdfTeX warning: pdflatex.exe (file ./Appendix/motor_data_sheet_a2370dd_dd5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2212, page=2, 845.1575pt x 597.23125pt>
+<./Appendix/motor_data_sheet_a2370dd_dd5.pdf, id=2142, page=2, 845.1575pt x 597.23125pt>
 File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page 2>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf , page2 used on input line 24.
@@ -2298,10 +2278,10 @@ File: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf Graphic file (type pdf)
 <use ./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page 2>
 Package pdftex.def Info: ./Appendix/motor_data_sheet_a2370dd_dd5.pdf , page2 used on input line 24.
 (pdftex.def)             Requested size: 760.63474pt x 537.50316pt.
-[71
+[68
 
  <./Appendix/motor_data_sheet_a2370dd_dd5.pdf, page is rotated 90 degrees>]
-<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2229, 597.51233pt x 845.0471pt>
+<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2159, 597.51233pt x 845.0471pt>
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>
 Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf  used on input line 29.
@@ -2310,62 +2290,50 @@ File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>
 Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf  used on input line 29.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2232, page=16, 597.51233pt x 845.0471pt>
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
-(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
-(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
-(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
-(pdftex.def)             Requested size: 478.01051pt x 676.0386pt.
- [72
-
- <./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>]
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf  used on input line 30.
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf  used on input line 29.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2163, page=16, 597.51233pt x 845.0471pt>
+File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
+<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf  used on input line 30.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2258, page=17, 597.51233pt x 845.0471pt>
+<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
+(pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
+File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
+<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
+(pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
+File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
+<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
+(pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
+<./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, id=2164, page=17, 597.51233pt x 845.0471pt>
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 17>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 30.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 17>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 30.
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 29.
 (pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 17>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 30.
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 29.
+(pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
+File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
+<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 16>
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page16 used on input line 29.
 (pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
 File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
 <use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 17>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 30.
+Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 29.
 (pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
-File: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf Graphic file (type pdf)
-<use ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf, page 17>
-Package pdftex.def Info: ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf , page17 used on input line 30.
-(pdftex.def)             Requested size: 537.75612pt x 760.53537pt.
- [73
+ [69
 
- <./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf>]) (./Appendix/92Thesis_Appendix_C.tex
+ <./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf> <./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./Appendix/92Thesis_Appendix_C.tex
 Appendix C.
 Package epstopdf Info: Source file: <Figures/Motor_map@420V_charact.eps>
 (epstopdf)                    date: 2024-04-20 17:18:59
@@ -2376,7 +2344,7 @@ Package epstopdf Info: Source file: <Figures/Motor_map@420V_charact.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@420V_charact-eps-converted-to.pdf Figures/Motor_map@420V_charact.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@420V_charact-eps-converted-to.pdf, id=2266, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@420V_charact-eps-converted-to.pdf, id=2191, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@420V_charact-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@420V_charact-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@420V_charact-eps-converted-to.pdf  used on input line 17.
@@ -2390,7 +2358,7 @@ Package epstopdf Info: Source file: <Figures/Motor_map@532V_charact.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@532V_charact-eps-converted-to.pdf Figures/Motor_map@532V_charact.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@532V_charact-eps-converted-to.pdf, id=2267, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@532V_charact-eps-converted-to.pdf, id=2192, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@532V_charact-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@532V_charact-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@532V_charact-eps-converted-to.pdf  used on input line 18.
@@ -2404,16 +2372,16 @@ Package epstopdf Info: Source file: <Figures/Motor_map@600V_charact.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Motor_map@600V_charact-eps-converted-to.pdf Figures/Motor_map@600V_charact.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Motor_map@600V_charact-eps-converted-to.pdf, id=2268, 340.27126pt x 399.4925pt>
+<Figures/Motor_map@600V_charact-eps-converted-to.pdf, id=2193, 340.27126pt x 399.4925pt>
 File: Figures/Motor_map@600V_charact-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Motor_map@600V_charact-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Motor_map@600V_charact-eps-converted-to.pdf  used on input line 21.
 (pdftex.def)             Requested size: 223.07211pt x 261.89809pt.
-) [74
+) [70
 
-] (./Appendix/93Thesis_Appendix_D.tex [75 <./Figures/Motor_map@420V_charact-eps-converted-to.pdf> <./Figures/Motor_map@532V_charact-eps-converted-to.pdf> <./Figures/Motor_map@600V_charact-eps-converted-to.pdf>]
+] (./Appendix/93Thesis_Appendix_D.tex [71 <./Figures/Motor_map@420V_charact-eps-converted-to.pdf> <./Figures/Motor_map@532V_charact-eps-converted-to.pdf> <./Figures/Motor_map@600V_charact-eps-converted-to.pdf>]
 Appendix D.
-[76
+[72
 
 ]
 Package epstopdf Info: Source file: <Figures/motor_power_factor.eps>
@@ -2425,7 +2393,7 @@ Package epstopdf Info: Source file: <Figures/motor_power_factor.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/motor_power_factor-eps-converted-to.pdf Figures/motor_power_factor.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/motor_power_factor-eps-converted-to.pdf, id=2321, 253.94875pt x 211.79124pt>
+<Figures/motor_power_factor-eps-converted-to.pdf, id=2246, 253.94875pt x 211.79124pt>
 File: Figures/motor_power_factor-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/motor_power_factor-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/motor_power_factor-eps-converted-to.pdf  used on input line 49.
@@ -2439,7 +2407,7 @@ Package epstopdf Info: Source file: <Figures/THD_map.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/THD_map-eps-converted-to.pdf Figures/THD_map.eps>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/THD_map-eps-converted-to.pdf, id=2322, 257.96375pt x 210.7875pt>
+<Figures/THD_map-eps-converted-to.pdf, id=2247, 257.96375pt x 210.7875pt>
 File: Figures/THD_map-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/THD_map-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/THD_map-eps-converted-to.pdf  used on input line 50.
@@ -2447,7 +2415,7 @@ Package pdftex.def Info: Figures/THD_map-eps-converted-to.pdf  used on input lin
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77 <./Figures/motor_power_factor-eps-converted-to.pdf> <./Figures/THD_map-eps-converted-to.pdf>]
+ [73 <./Figures/motor_power_factor-eps-converted-to.pdf> <./Figures/THD_map-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Endurance_FSG_4wd.eps>
 (epstopdf)                    date: 2024-05-10 19:42:52
 (epstopdf)                    size: 1037656 bytes
@@ -2457,7 +2425,7 @@ Package epstopdf Info: Source file: <Figures/Endurance_FSG_4wd.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Endurance_FSG_4wd-eps-converted-to.pdf Figures/Endurance_FSG_4wd.eps>
 (epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Endurance_FSG_4wd-eps-converted-to.pdf, id=2344, 455.7025pt x 364.36125pt>
+<Figures/Endurance_FSG_4wd-eps-converted-to.pdf, id=2268, 455.7025pt x 364.36125pt>
 File: Figures/Endurance_FSG_4wd-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Endurance_FSG_4wd-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Endurance_FSG_4wd-eps-converted-to.pdf  used on input line 63.
@@ -2471,7 +2439,7 @@ Package epstopdf Info: Source file: <Figures/Endurance_FSG_combined.eps>
 (epstopdf)             Command: <epstopdf --outfile=Figures/Endurance_FSG_combined-eps-converted-to.pdf Figures/Endurance_FSG_combined.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Endurance_FSG_combined-eps-converted-to.pdf, id=2347, 455.7025pt x 364.36125pt>
+<Figures/Endurance_FSG_combined-eps-converted-to.pdf, id=2271, 455.7025pt x 364.36125pt>
 File: Figures/Endurance_FSG_combined-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Endurance_FSG_combined-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Endurance_FSG_combined-eps-converted-to.pdf  used on input line 72.
@@ -2479,14 +2447,11 @@ Package pdftex.def Info: Figures/Endurance_FSG_combined-eps-converted-to.pdf  us
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78 <./Figures/Endurance_FSG_4wd-eps-converted-to.pdf>]
+ [74 <./Figures/Endurance_FSG_4wd-eps-converted-to.pdf>]
 
 LaTeX Warning: Reference `fig:efficiency_inverter' on page 1 undefined on input line 77.
 
-[79 <./Figures/Endurance_FSG_combined-eps-converted-to.pdf>] [80]
-
-LaTeX Warning: Reference `fig:efficiency_inverter' on page 1 undefined on input line 165.
-
+[75 <./Figures/Endurance_FSG_combined-eps-converted-to.pdf>] [76]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
@@ -2571,29 +2536,29 @@ Missing character: There is no ` in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81] [82]
-<Figures/desat_circuit.png, id=2396, 1091.87926pt x 732.336pt>
+ [77] [78]
+<Figures/desat_circuit.png, id=2322, 1091.87926pt x 732.336pt>
 File: Figures/desat_circuit.png Graphic file (type png)
 <use Figures/desat_circuit.png>
 Package pdftex.def Info: Figures/desat_circuit.png  used on input line 313.
 (pdftex.def)             Requested size: 227.62206pt x 152.66647pt.
- [83 <./Figures/desat_circuit.png>] [84]
-<Figures/Half Bridge.png, id=2416, 626.94225pt x 497.4585pt>
+ [79 <./Figures/desat_circuit.png>] [80]
+<Figures/Half Bridge.png, id=2342, 626.94225pt x 497.4585pt>
 File: Figures/Half Bridge.png Graphic file (type png)
 <use Figures/Half Bridge.png>
 Package pdftex.def Info: Figures/Half Bridge.png  used on input line 343.
 (pdftex.def)             Requested size: 218.51521pt x 173.38438pt.
-<Figures/Driver_Board.png, id=2417, 741.972pt x 540.21825pt>
+<Figures/Driver_Board.png, id=2343, 741.972pt x 540.21825pt>
 File: Figures/Driver_Board.png Graphic file (type png)
 <use Figures/Driver_Board.png>
 Package pdftex.def Info: Figures/Driver_Board.png  used on input line 344.
 (pdftex.def)             Requested size: 218.51521pt x 159.09097pt.
-<Figures/Curr_Sensor.png, id=2418, 508.90125pt x 416.15475pt>
+<Figures/Curr_Sensor.png, id=2344, 508.90125pt x 416.15475pt>
 File: Figures/Curr_Sensor.png Graphic file (type png)
 <use Figures/Curr_Sensor.png>
 Package pdftex.def Info: Figures/Curr_Sensor.png  used on input line 347.
 (pdftex.def)             Requested size: 227.62206pt x 186.1376pt.
-<Figures/Assembly.png, id=2419, 681.747pt x 617.9085pt>
+<Figures/Assembly.png, id=2345, 681.747pt x 617.9085pt>
 File: Figures/Assembly.png Graphic file (type png)
 <use Figures/Assembly.png>
 Package pdftex.def Info: Figures/Assembly.png  used on input line 355.
@@ -2601,8 +2566,8 @@ Package pdftex.def Info: Figures/Assembly.png  used on input line 355.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85 <./Figures/Half Bridge.png> <./Figures/Driver_Board.png> <./Figures/Curr_Sensor.png>]
-<./Appendix/Job3.pdf, id=2430, 831.105pt x 549.05125pt>
+ [81 <./Figures/Half Bridge.png> <./Figures/Driver_Board.png> <./Figures/Curr_Sensor.png>]
+<./Appendix/Job3.pdf, id=2356, 831.105pt x 549.05125pt>
 File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf>
 Package pdftex.def Info: ./Appendix/Job3.pdf  used on input line 365.
@@ -2611,7 +2576,7 @@ File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf>
 Package pdftex.def Info: ./Appendix/Job3.pdf  used on input line 365.
 (pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-<./Appendix/Job3.pdf, id=2433, page=1, 831.105pt x 549.05125pt>
+<./Appendix/Job3.pdf, id=2359, page=1, 831.105pt x 549.05125pt>
 File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf, page 1>
 Package pdftex.def Info: ./Appendix/Job3.pdf , page1 used on input line 365.
@@ -2620,7 +2585,7 @@ File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf, page 1>
 Package pdftex.def Info: ./Appendix/Job3.pdf , page1 used on input line 365.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [86 <./Figures/Assembly.png>]
+ [82 <./Figures/Assembly.png>]
 File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf, page 1>
 Package pdftex.def Info: ./Appendix/Job3.pdf , page1 used on input line 365.
@@ -2632,398 +2597,401 @@ Package pdftex.def Info: ./Appendix/Job3.pdf , page1 used on input line 365.
 File: ./Appendix/Job3.pdf Graphic file (type pdf)
 <use ./Appendix/Job3.pdf, page 1>
 Package pdftex.def Info: ./Appendix/Job3.pdf , page1 used on input line 365.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [83
+
+ <./Appendix/Job3.PDF>]
+<Appendix/Job3.pdf, id=2387, page=2, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 2>
+Package pdftex.def Info: Appendix/Job3.pdf , page2 used on input line 370.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2388, page=3, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 3>
+Package pdftex.def Info: Appendix/Job3.pdf , page3 used on input line 371.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2389, page=4, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 4>
+Package pdftex.def Info: Appendix/Job3.pdf , page4 used on input line 372.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2390, page=5, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 5>
+Package pdftex.def Info: Appendix/Job3.pdf , page5 used on input line 373.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2391, page=6, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 6>
+Package pdftex.def Info: Appendix/Job3.pdf , page6 used on input line 376.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2392, page=7, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 7>
+Package pdftex.def Info: Appendix/Job3.pdf , page7 used on input line 377.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2393, page=8, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 8>
+Package pdftex.def Info: Appendix/Job3.pdf , page8 used on input line 378.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<Appendix/Job3.pdf, id=2394, page=9, 324.21124pt x 607.26875pt>
+File: Appendix/Job3.pdf Graphic file (type pdf)
+<use Appendix/Job3.pdf, page 9>
+Package pdftex.def Info: Appendix/Job3.pdf , page9 used on input line 379.
+(pdftex.def)             Requested size: 91.04742pt x 170.53445pt.
+<./Appendix/Job1.pdf, id=2395, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf>
+Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 386.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf>
+Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 386.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+<./Appendix/Job1.pdf, id=2398, page=1, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [84 <./Appendix/Job3.PDF> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job3.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 386.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [85
+
+ <./Appendix/Job1.PDF>]
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf>
+Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 387.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf>
+Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 387.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+<./Appendix/Job1.pdf, id=2500, page=2, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 387.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [86
+
+ <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2516, page=3, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [87
 
- <./Appendix/Job3.PDF>]
-<./Appendix/Job3.pdf, id=2461, page=2, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page2 used on input line 372.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job3.pdf, id=2462, page=3, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page3 used on input line 376.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job3.pdf, id=2463, page=4, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page4 used on input line 380.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88 <./Appendix/Job3.PDF> <./Appendix/Job3.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Appendix/Job3.pdf, id=2486, page=5, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page5 used on input line 384.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job3.pdf, id=2487, page=6, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 6>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page6 used on input line 388.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job3.pdf, id=2488, page=7, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 7>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page7 used on input line 392.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
- [89 <./Appendix/Job3.PDF> <./Appendix/Job3.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Appendix/Job3.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Appendix/Job3.pdf, id=2518, page=8, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 8>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page8 used on input line 396.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job3.pdf, id=2519, page=9, 324.21124pt x 607.26875pt>
-File: ./Appendix/Job3.pdf Graphic file (type pdf)
-<use ./Appendix/Job3.pdf, page 9>
-Package pdftex.def Info: ./Appendix/Job3.pdf , page9 used on input line 400.
-(pdftex.def)             Requested size: 136.57462pt x 255.81096pt.
-<./Appendix/Job1.pdf, id=2520, 831.105pt x 549.05125pt>
+ <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2532, page=4, 831.105pt x 549.05125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf>
-Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 405.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf>
-Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 405.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-<./Appendix/Job1.pdf, id=2523, page=1, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 405.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 405.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [90 <./Appendix/Job3.PDF> <./Appendix/Job3.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Appendix/Job3.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job3.PDF): PDF inclusion: multiple pdfs with page group included in a single page
->]
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 405.
+<use ./Appendix/Job1.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 405.
+<use ./Appendix/Job1.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page1 used on input line 405.
+<use ./Appendix/Job1.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [88
+
+ <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2556, page=5, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [89
+
+ <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2574, page=6, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 6>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 6>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 6>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+ [90
+
+ <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2591, page=7, 831.105pt x 549.05125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 7>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 7>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 387.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 7>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [91
 
  <./Appendix/Job1.PDF>]
+<./Appendix/Job1.pdf, id=2607, page=8, 831.105pt x 549.05125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf>
-Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 406.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf>
-Package pdftex.def Info: ./Appendix/Job1.pdf  used on input line 406.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-<./Appendix/Job1.pdf, id=2577, page=2, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 406.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 406.
+<use ./Appendix/Job1.pdf, page 8>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 406.
+<use ./Appendix/Job1.pdf, page 8>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 406.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page2 used on input line 406.
+<use ./Appendix/Job1.pdf, page 8>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [92
 
  <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2593, page=3, 831.105pt x 549.05125pt>
+<./Appendix/Job1.pdf, id=2625, page=9, 831.105pt x 549.05125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 406.
+<use ./Appendix/Job1.pdf, page 9>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 406.
+<use ./Appendix/Job1.pdf, page 9>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page3 used on input line 406.
+<use ./Appendix/Job1.pdf, page 9>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 387.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [93
 
  <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2609, page=4, 831.105pt x 549.05125pt>
+<./Appendix/Job1.pdf, id=2641, page=10, 365.365pt x 645.41125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 406.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+<use ./Appendix/Job1.pdf, page 10>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page10 used on input line 393.
+(pdftex.def)             Requested size: 159.33821pt x 281.47055pt.
+<./Appendix/Job1.pdf, id=2642, page=11, 365.365pt x 645.41125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 406.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+<use ./Appendix/Job1.pdf, page 11>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page11 used on input line 394.
+(pdftex.def)             Requested size: 159.33821pt x 281.47055pt.
+<./Appendix/Job1.pdf, id=2643, page=12, 365.365pt x 645.41125pt>
 File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page4 used on input line 406.
+<use ./Appendix/Job1.pdf, page 12>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page12 used on input line 399.
+(pdftex.def)             Requested size: 159.33821pt x 281.47055pt.
+<./Appendix/Job1.pdf, id=2644, page=13, 365.365pt x 645.41125pt>
+File: ./Appendix/Job1.pdf Graphic file (type pdf)
+<use ./Appendix/Job1.pdf, page 13>
+Package pdftex.def Info: ./Appendix/Job1.pdf , page13 used on input line 400.
+(pdftex.def)             Requested size: 159.33821pt x 281.47055pt.
+<./Appendix/Job2.pdf, id=2645, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf>
+Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 408.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf>
+Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 408.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+<./Appendix/Job2.pdf, id=2648, page=1, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 408.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 408.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [94
+ [94 <./Appendix/Job1.PDF> <./Appendix/Job1.PDF
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2633, page=5, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 406.
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job1.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job1.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job1.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Appendix/Job1.PDF
+
+pdfTeX warning: pdflatex.exe (file ./Appendix/Job1.PDF): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 408.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 408.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page5 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 1>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 408.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [95
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2651, page=6, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 6>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 406.
+ <./Appendix/Job2.PDF>]
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf>
+Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 409.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf>
+Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 409.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+<./Appendix/Job2.pdf, id=2714, page=2, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 409.
+(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 6>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 6>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page6 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 409.
+(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 2>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [96
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2667, page=7, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 7>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 406.
+ <./Appendix/Job2.PDF>]
+<./Appendix/Job2.pdf, id=2731, page=3, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 7>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 7>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page7 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 3>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [97
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2683, page=8, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 8>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 406.
+ <./Appendix/Job2.PDF>]
+<./Appendix/Job2.pdf, id=2752, page=4, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 8>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 8>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page8 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 4>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [98
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2701, page=9, 831.105pt x 549.05125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 9>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 406.
+ <./Appendix/Job2.PDF>]
+<./Appendix/Job2.pdf, id=2768, page=5, 831.105pt x 549.05125pt>
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 9>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 9>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page9 used on input line 406.
+File: ./Appendix/Job2.pdf Graphic file (type pdf)
+<use ./Appendix/Job2.pdf, page 5>
+Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 409.
 (pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
  [99
 
- <./Appendix/Job1.PDF>]
-<./Appendix/Job1.pdf, id=2717, page=10, 365.365pt x 645.41125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 10>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page10 used on input line 410.
-(pdftex.def)             Requested size: 213.96529pt x 377.96292pt.
-<./Appendix/Job1.pdf, id=2718, page=11, 365.365pt x 645.41125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 11>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page11 used on input line 414.
-(pdftex.def)             Requested size: 213.96529pt x 377.96292pt.
-<./Appendix/Job1.pdf, id=2719, page=12, 365.365pt x 645.41125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 12>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page12 used on input line 418.
-(pdftex.def)             Requested size: 213.96529pt x 377.96292pt.
- [100 <./Appendix/Job1.PDF> <./Appendix/Job1.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job1.PDF): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Appendix/Job1.pdf, id=2743, page=13, 365.365pt x 645.41125pt>
-File: ./Appendix/Job1.pdf Graphic file (type pdf)
-<use ./Appendix/Job1.pdf, page 13>
-Package pdftex.def Info: ./Appendix/Job1.pdf , page13 used on input line 422.
-(pdftex.def)             Requested size: 213.96529pt x 377.96292pt.
-<./Appendix/Job2.pdf, id=2744, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf>
-Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 426.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf>
-Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 426.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-<./Appendix/Job2.pdf, id=2747, page=1, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 426.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 426.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [101 <./Appendix/Job1.PDF> <./Appendix/Job1.PDF
-
-pdfTeX warning: pdflatex.exe (file ./Appendix/Job1.PDF): PDF inclusion: multiple pdfs with page group included in a single page
->]
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 426.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 426.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 1>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page1 used on input line 426.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [102
-
  <./Appendix/Job2.PDF>]
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf>
-Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 427.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf>
-Package pdftex.def Info: ./Appendix/Job2.pdf  used on input line 427.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-<./Appendix/Job2.pdf, id=2792, page=2, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 427.
-(pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 2>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page2 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [103
-
- <./Appendix/Job2.PDF>]
-<./Appendix/Job2.pdf, id=2808, page=3, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 3>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page3 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [104
-
- <./Appendix/Job2.PDF>]
-<./Appendix/Job2.pdf, id=2829, page=4, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 4>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page4 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [105
-
- <./Appendix/Job2.PDF>]
-<./Appendix/Job2.pdf, id=2845, page=5, 831.105pt x 549.05125pt>
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
-File: ./Appendix/Job2.pdf Graphic file (type pdf)
-<use ./Appendix/Job2.pdf, page 5>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page5 used on input line 427.
-(pdftex.def)             Requested size: 664.8849pt x 439.2416pt.
- [106
-
- <./Appendix/Job2.PDF>]
-<./Appendix/Job2.pdf, id=2863, page=6, 244.915pt x 390.45876pt>
+<./Appendix/Job2.pdf, id=2784, page=6, 244.915pt x 390.45876pt>
 File: ./Appendix/Job2.pdf Graphic file (type pdf)
 <use ./Appendix/Job2.pdf, page 6>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page6 used on input line 431.
+Package pdftex.def Info: ./Appendix/Job2.pdf , page6 used on input line 413.
 (pdftex.def)             Requested size: 227.62206pt x 362.89648pt.
-<./Appendix/Job2.pdf, id=2864, page=7, 244.915pt x 390.45876pt>
+<./Appendix/Job2.pdf, id=2785, page=7, 244.915pt x 390.45876pt>
 File: ./Appendix/Job2.pdf Graphic file (type pdf)
 <use ./Appendix/Job2.pdf, page 7>
-Package pdftex.def Info: ./Appendix/Job2.pdf , page7 used on input line 435.
+Package pdftex.def Info: ./Appendix/Job2.pdf , page7 used on input line 417.
 (pdftex.def)             Requested size: 227.62206pt x 362.89648pt.
 )
 Package minitoc Info: I0009
@@ -3031,7 +2999,7 @@ Package minitoc Info: I0009
 (minitoc)             Creating the Thesis.maf file.
 \openout6 = `Thesis.maf'.
 
- [107 <./Appendix/Job2.PDF> <./Appendix/Job2.PDF
+ [100 <./Appendix/Job2.PDF> <./Appendix/Job2.PDF
 
 pdfTeX warning: pdflatex.exe (file ./Appendix/Job2.PDF): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./Thesis.aux)
@@ -3047,21 +3015,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9A2F6F3A43C4F248A5A47D4BC2C71893;16685.
+(rerunfilecheck)             Checksum: 16441CB75B8544135AFF310233A4A450;14437.
  ) 
 Here is how much of TeX's memory you used:
- 53610 strings out of 473992
- 1216130 string characters out of 5745048
- 2098383 words of memory out of 5000000
- 74563 multiletter control sequences out of 15000+600000
+ 53601 strings out of 473992
+ 1215939 string characters out of 5745048
+ 2098536 words of memory out of 5000000
+ 74559 multiletter control sequences out of 15000+600000
  617583 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,19n,134p,2456b,2774s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Thesis.pdf (122 pages, 24075883 bytes).
+Output written on Thesis.pdf (115 pages, 24071567 bytes).
 PDF statistics:
- 3096 PDF objects out of 3580 (max. 8388607)
- 2421 compressed objects within 25 object streams
- 533 named destinations out of 1000 (max. 500000)
- 1442 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3017 PDF objects out of 3580 (max. 8388607)
+ 2351 compressed objects within 24 object streams
+ 528 named destinations out of 1000 (max. 500000)
+ 1341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

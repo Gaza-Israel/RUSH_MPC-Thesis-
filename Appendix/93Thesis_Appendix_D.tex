@@ -162,7 +162,7 @@ For each semiconductor in the list, an efficiency map was created using the effi
 	}
 \end{table}
 
-Although it does not have the highest efficiency, the Infineon FF8MR12W1M1H\_B11~\cite{Infineon:Module_Datasheet:2023} was chosen as it has one of the smallest footprints, while having good efficiency and a reasonable price.  It also brings significant performance gains when compared to the discrete option used on the current inverter design that averaged at $97\%$ efficiency, and even more when compared with the inverter currently used on the vehicle, which averages at only $86\%$. One interesting factor to note here is the dominance of the conduction losses over the switching losses, indicating an increase in switching frequency could be beneficial to the efficiency of the inverter as it would reduce the current \gls{thd} and thus the conduction losses. The resulting inverter efficiency is presented in \Cref{fig:efficiency_inverter}.
+Although it does not have the highest efficiency, the Infineon FF8MR12W1M1H\_B11~\cite{Infineon:Module_Datasheet:2023} was chosen as it has one of the smallest footprints, while having good efficiency and a reasonable price.  It also brings significant performance gains when compared to the discrete option used on the current inverter design that averaged at $97\%$ efficiency, and even more when compared with the inverter currently used on the vehicle, which averages at only $86\%$. One interesting factor to note here is the dominance of the conduction losses over the switching losses, indicating an increase in switching frequency could be beneficial to the efficiency of the inverter as it would reduce the current \gls{thd} and thus the conduction losses. The resulting inverter efficiency is presented in \Cref{fig:efficiency}.
 
 % \begin{figure}[H]
 % 	\centering
@@ -363,64 +363,46 @@ The resulting schematics and layers of the inverter are presented in the next pa
 
 \def\excerpt{\subsection{Half Bridge Board Schematic}\label{section:half_bridge_files}}
 \includepdf[pages={1},nup=1x1,landscape=true,scale=0.8,pagecommand={\excerpt}]{./Appendix/Job3.pdf}
-\def\excerpt{\subsection{Half Bridge Board Layers}
-From top to bottom: Top Layer, Inner Layer 1, Inner Layer 2, Bottom Layer.}
-% \includepdf[pages={2-5},nup=1x4,landscape=false,scale=0.7,angle=90,pagecommand={\excerpt}]{./Appendix/Job3.pdf}
 \subsection{Half Bridge Board Layers}
-\subsubsection{Top Layer}
-\begin{center}
-	\includegraphics[page=2,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 1}
-\begin{center}
-	\includegraphics[page=3,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 2}
-\begin{center}
-	\includegraphics[page=4,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 3}
-\begin{center}
-	\includegraphics[page=5,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 4}
-\begin{center}
-	\includegraphics[page=6,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 5}
-\begin{center}
-	\includegraphics[page=7,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Inner Layer 6}
-\begin{center}
-	\includegraphics[page=8,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-\subsubsection{Bottom Layer}
-\begin{center}
-	\includegraphics[page=9,width=0.3\textwidth,angle=90,origin=c]{./Appendix/Job3.pdf}
-\end{center}
-
+\begin{figure}[H]
+	\centering
+	\begin{subfigmatrix}{4}
+		\subfigure[Top Layer.]{\includegraphics[page=2,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Inner Layer 1.]{\includegraphics[page=3,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Inner Layer 2.]{\includegraphics[page=4,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Inner Layer 3.]{\includegraphics[page=5,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+	\end{subfigmatrix}
+	\begin{subfigmatrix}{4}
+		\subfigure[Inner Layer 4.]{\includegraphics[page=6,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Inner Layer 5.]{\includegraphics[page=7,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Inner Layer 6.]{\includegraphics[page=8,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+		\subfigure[Bottom Layer.]{\includegraphics[page=9,width=0.2\textwidth,angle=0,origin=c]{Appendix/Job3.pdf}}
+	\end{subfigmatrix}
+	\caption{Half Bridge Board Layers.}
+	\label{fig:half_bridge_board_layers}
+\end{figure}
 
 \def\excerpt{\subsection{Gate Driver Board Schematic}\label{section:gate_driver_files}}
 \includepdf[pages={1},nup=1x1,landscape=true,scale=0.8,pagecommand={\excerpt}]{./Appendix/Job1.pdf}
 \includepdf[pages={2-9},nup=1x1,landscape=true,scale=0.8,pagecommand={}]{./Appendix/Job1.pdf}
 \subsection{Gate Driver Board Layers}
-\subsubsection{Top Layer}
-\begin{center}
-	\includegraphics[page=10,width=0.47\textwidth,angle=90,origin=c]{./Appendix/Job1.pdf}
-\end{center}
-\subsubsection{Inner Layer 1}
-\begin{center}
-	\includegraphics[page=11,width=0.47\textwidth,angle=90,origin=c]{./Appendix/Job1.pdf}
-\end{center}
-\subsubsection{Inner Layer 2}
-\begin{center}
-	\includegraphics[page=12,width=0.47\textwidth,angle=90,origin=c]{./Appendix/Job1.pdf}
-\end{center}
-\subsubsection{Bottom Layer}
-\begin{center}
-	\includegraphics[page=13,width=0.47\textwidth,angle=90,origin=c]{./Appendix/Job1.pdf}
-\end{center}
+\begin{figure}[H]
+	\centering
+	\begin{subfigmatrix}{2}
+		\hfill{ }
+		\subfigure[Top Layer.]{\includegraphics[page=10,width=0.35\textwidth,angle=0,origin=c]{./Appendix/Job1.pdf}}
+		\subfigure[Inner Layer 1.]{\includegraphics[page=11,width=0.35\textwidth,angle=0,origin=c]{./Appendix/Job1.pdf}}
+		\hfill{ }
+	\end{subfigmatrix}
+	\begin{subfigmatrix}{2}
+		\hfill{ }
+		\subfigure[Inner Layer 2.]{\includegraphics[page=12,width=0.35\textwidth,angle=0,origin=c]{./Appendix/Job1.pdf}}
+		\subfigure[Bottom Layer.]{\includegraphics[page=13,width=0.35\textwidth,angle=0,origin=c]{./Appendix/Job1.pdf}}
+		\hfill{ }
+	\end{subfigmatrix}
+	\caption{Gate Driver Board Layers.}
+	\label{fig:gate_driver_board_layers}
+\end{figure}
 
 \def\excerpt{\subsection{Current Sensor Board Schematic}\label{section:current_sensor_files}}
 \includepdf[pages={1},nup=1x1,landscape=true,scale=0.8,pagecommand={\excerpt}]{./Appendix/Job2.pdf}

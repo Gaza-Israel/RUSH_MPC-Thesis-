@@ -2,11 +2,11 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Two Level Voltage Source Inverter}{\reset@font\mtcSfont 8}{section.2.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Space Vector Modulation}{\reset@font\mtcSSfont 9}{subsection.2.2.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}PMSM model}{\reset@font\mtcSfont 11}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}PMSM in ABC coordinates}{\reset@font\mtcSSfont 12}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}PMSM in ABC coordinates}{\reset@font\mtcSSfont 11}{subsection.2.3.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}dq0 Transformation}{\reset@font\mtcSSfont 13}{subsection.2.3.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}PMSM in dq0 coordinates}{\reset@font\mtcSSfont 14}{subsection.2.3.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Discretization of the PMSM model}{\reset@font\mtcSSfont 16}{subsection.2.3.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Control Methods State of the Art}{\reset@font\mtcSfont 18}{section.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Field Oriented Control}{\reset@font\mtcSSfont 19}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Field Oriented Control}{\reset@font\mtcSSfont 18}{subsection.2.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Direct Torque Control}{\reset@font\mtcSSfont 19}{subsection.2.4.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Model Predictive Control}{\reset@font\mtcSSfont 20}{subsection.2.4.3}}
