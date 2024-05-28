@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Nomenclature.tex                                    %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The definitions can be placed anywhere in the document body
+% and their order is sorted by <symbol> automatically when
+% calling makeindex in the makefile
+%
+% The \glossary command has the following syntax:
+%
+% \glossary{entry}
+%
+% The \nomenclature command has the following syntax:
+%
+% \nomenclature[<prefix>]{<symbol>}{<description>}
+%
+% where <prefix> is used for fine-tuning the sort order,
+% <symbol> is the symbol to be described, and <description> is
+% the actual description.
+
+% ----------------------------------------------------------------------
+% Roman symbols [r]
+\nomenclature[ri_x]{$i_x$}{Current}
+\nomenclature[rE_x]{$E_x$}{Back EMF}
+\nomenclature[ru_x]{$u_x$}{Voltage}
+\nomenclature[rr_x]{$r_x$}{Phase resistance}
+\nomenclature[rL_x]{$L_x$}{Phase self inductance}
+\nomenclature[rM_xy]{$M_{xy}$}{Phase mutual inductance}
+\nomenclature[rT_e]{$T_e$}{Electromagnetic torque}
+\nomenclature[rT_load]{$T_{load}$}{Load reaction torque}
+\nomenclature[rT_loss]{$T_{loss}$}{Losses equivalent torque}
+\nomenclature[rp]{$p$}{Number of pole pairs}
+\nomenclature[rh]{$h$}{Sampling time}
+\nomenclature[rk]{$k$}{Discrete time index}
+\nomenclature[rm]{$m$}{Modulation index}
+\nomenclature[rVref]{$V_{ref}$}{Voltage reference vector}
+\nomenclature[rK_v]{$K_v$}{Voltage Constant}
+\nomenclature[rK_t]{$K_t$}{Torque Constant}
+\nomenclature[rJ]{$J$}{Rotational Inertia}
+\nomenclature[rv]{$v$}{Car Velocity}
+\nomenclature[rAref]{$A_{r}$}{Car frontal reference area}
+\nomenclature[rCd]{$C_{d}$}{Drag coefficient}
+\nomenclature[rCr]{$C_{r}$}{Rolling resistance coefficient}
+\nomenclature[rmcar]{$m_{car}$}{Car mass}
+\nomenclature[rrtire]{$r_{tire}$}{Tire radius}
+\nomenclature[rGr]{$G_{r}$}{Transmission Gear Ratio}
+\nomenclature[rJ]{$\mathcal{J}$}{MPC cost function}
+\nomenclature[rCs]{$\mathcal{C}_{soft}$}{MPC soft contraint}
+\nomenclature[rs_x]{$s_x$}{MPC cost gains}
+\nomenclature[rk_p]{$k_p$}{PI proportional gain}
+\nomenclature[rk_i]{$k_i$}{PI integral gain}
+% ----------------------------------------------------------------------
+% Greek symbols [g]
+\nomenclature[gtheta_e]{$\theta_e$}{Rotor electrical position}
+\nomenclature[gtheta]{$\theta$}{Rotor position}
+\nomenclature[gomega_e]{$\omega_e$}{Rotor electrical velocity}
+\nomenclature[gomega]{$\omega$}{Rotor velocity}
+\nomenclature[gomega]{$\omega_{wheels}$}{Wheel rotational velocity}
+\nomenclature[gpsi]{$\psi_x$}{Flux linkage}
+\nomenclature[glambda]{$\lambda$}{Lagrange Multiplier}
+\nomenclature[grho]{$\rho$}{Air density}
+\nomenclature[geta]{$\eta$}{Efficiency}
+\nomenclature[gtau]{$\tau$}{Time Constant}
+
+
+% ----------------------------------------------------------------------
+% Subscripts [s]
+\nomenclature[sp]{$a, b, c$}{Phase values}
+\nomenclature[sl]{$A, B, C$}{Line values}
+\nomenclature[sdq0]{$d, q, 0$}{Direct axis, quadrature axis, and zero-sequence components}
+\nomenclature[spm]{$PM$}{Permanent Magnet component}
+\nomenclature[sf]{$f,r$}{Front and Rear axle}
+
+% ----------------------------------------------------------------------
+% Superscripts [t]
+\nomenclature[tT]{T}{Transpose}
+\nomenclature[t]{$\dot{}$}{Time derivative}
+
+

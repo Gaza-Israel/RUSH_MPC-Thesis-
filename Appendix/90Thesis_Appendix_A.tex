@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Appendix_A.tex                                      %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{dq0 model with amplitude invariant transformation}
+\label{chapter:appendixdq0_amplitude}
+
+Starting with \Cref{eq:flx_voltage_balance} and replacing the currents and flux for the ones presented in \Cref{eq:variables_dq0} results in \Cref{eq:flx_voltage_balance_abc_to_dq}.
+
+\begin{equation}
+	\begin{aligned}
+		\mathbf{u_{abc}}
+		=
+		\mathbf{R_{abc}}
+		\mathbf{T}^*_{(\theta_e)} \mathbf{i_{dq0}}
+		+
+		\frac{d\left(\mathbf{T}^*_{(\theta_e)} \pmb{\psi_{dq0}}\right)}{dt}
+		\\
+		=
+		\mathbf{R_{abc}}
+		\mathbf{T}^*_{(\theta_e)} \mathbf{i_{dq0}}
+		+\dot{\theta}_e\frac{d\mathbf{T}^*_{(\theta_e)}}{d\theta_e}\pmb{\psi_{dq0}}
+		+\mathbf{T}^*_{(\theta_e)}\frac{d \pmb{\psi_{dq0}}}{dt}
+	\end{aligned}
+	\label{eq:flx_voltage_balance_abc_to_dq}
+\end{equation}
+
+Replacing $\dot{\theta}_e$ with $\omega_e$, and multiplying ${\mathbf{T}^*_{(\theta_e)}}^{-1}$ to the left yields \Cref{eq:flx_voltage_balance_abc_to_dq_transform,eq:flx_voltage_balance_abc_to_dq_transform1}.
+\begin{equation}
+	\begin{aligned}
+		\mathbf{u_{dq0}}
+		=
+		\mathbf{R_{dq0}}\mathbf{i_{dq0}}
+		+{\mathbf{T}^*_{(\theta_e)}}^{-1}\omega_e\frac{d\mathbf{T}^*_{(\theta_e)}}{d\theta_e}\pmb{\psi_{dq0}}
+		+{\mathbf{T}^*_{(\theta_e)}}^{-1}\mathbf{T}^*_{(\theta_e)}\frac{d \pmb{\psi_{dq0}}}{dt}
+	\end{aligned}
+	\label{eq:flx_voltage_balance_abc_to_dq_transform}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		\mathbf{u_{dq0}}
+		=
+		\mathbf{R_{dq0}}\mathbf{i_{dq0}}
+		+\omega_e{\mathbf{T}^*_{(\theta_e)}}^{-1}\frac{d\mathbf{T}^*_{(\theta_e)}}{d\theta_e}\pmb{\psi_{dq0}}
+		+\frac{d \pmb{\psi_{dq0}}}{dt}
+	\end{aligned}
+	\label{eq:flx_voltage_balance_abc_to_dq_transform1}
+\end{equation}
+Lastly, calculate the derivative of the transformation as in \Cref{eq:transformation_derivative_ampl}, resulting in \Cref{eq:transformation_derivative_ampl_result}.
+\begin{equation}
+	{\mathbf{T}^*_{(\theta_e)}}^{-1}\frac{d\mathbf{T}^*_{(\theta_e)}}{d\theta_e} = 	\frac{2}{3}
+	\begin{bmatrix}
+		\cos{\left(\theta_e\right)}		&	\cos{\left(\theta_e-\frac{2\pi}{3}\right)}		&	\cos{\left(\theta_e-\frac{4\pi}{3}\right)}	\\
+		-\sin{\left(\theta_e\right)} 	&	-\sin{\left(\theta_e-\frac{2\pi}{3}\right)}		&	-\sin{\left(\theta_e-\frac{4\pi}{3}\right)}	\\
+		\frac{1}{2}						&					\frac{1}{2}						&				 \frac{1}{2}					 \\
+	\end{bmatrix}
+	\begin{bmatrix}
+		-\sin{\left(\theta_e\right)}                & -\cos{\left(\theta_e\right)}                & 0 \\
+		-\sin{\left(\theta_e-\frac{2\pi}{3}\right)} & -\cos{\left(\theta_e-\frac{2\pi}{3}\right)} & 0 \\
+		-\sin{\left(\theta_e-\frac{4\pi}{3}\right)} & -\cos{\left(\theta_e-\frac{4\pi}{3}\right)} & 0 \\
+	\end{bmatrix}
+	\label{eq:transformation_derivative_ampl}
+\end{equation}
+\begin{equation}
+	{\mathbf{T}^*_{(\theta_e)}}^{-1}\frac{d\mathbf{T}^*_{(\theta_e)}}{d\theta_e} =
+	\begin{bmatrix}
+		0 & -1 & 0 \\
+		1 & 0  & 0 \\
+		0 & 0  & 0 \\
+	\end{bmatrix}
+	\label{eq:transformation_derivative_ampl_result}
+\end{equation}
+Thus, the \gls{pmsm} model in the dq0 frame using amplitude invariant transformation is presented in \Cref{eq:flx_voltage_balance_dq0_amplitude}. This result is the same as \Cref{eq:flx_voltage_balance_dq0}with the currents, voltages, and fluxes scaled by a factor of $\sqrt{\frac{3}{2}}$ in the direct and quadrature axis, but in the zero axis some results may vary.
+\begin{equation}
+	\mathbf{u_{dq0}}
+	=
+	\mathbf{R_{dq0}}\mathbf{i_{dq0}}
+	+\omega_e	\begin{bmatrix}
+		0 & -1 & 0 \\
+		1 & 0  & 0 \\
+		0 & 0  & 0 \\
+	\end{bmatrix}
+	\pmb{\psi_{dq0}}
+	+\frac{d \pmb{\psi_{dq0}}}{dt}
+	\label{eq:flx_voltage_balance_dq0_amplitude}
+\end{equation}

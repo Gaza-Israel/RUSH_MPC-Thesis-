@@ -1,0 +1,1 @@
+unset surface; set cntrparam levels discrete 95,97.5,98.5,99,99.25,99.5,99.7; set contour; set table "Thesis_contourtmp3.table"; splot "Thesis_contourtmp3.dat";

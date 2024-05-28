@@ -1,0 +1,285 @@
+\begin{thebibliography}{49}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wang et~al.(2020)Wang, Lucia, Zhang, Gao, Guan, and Xu]{Wang:power_converter_review:2020}
+Y.~Wang, O.~Lucia, Z.~Zhang, S.~Gao, Y.~Guan, and D.~Xu.
+\newblock A review of high frequency power converters and related technologies.
+\newblock \emph{IEEE Open Journal of the Industrial Electronics Society}, 1:\penalty0 247--260, 2020.
+\newblock ISSN 2644-1284.
+\newblock \doi{10.1109/OJIES.2020.3023691}.
+
+\bibitem[Karamanakos et~al.(2020)Karamanakos, Liegmann, Geyer, and Kennel]{Karamanakos:MPC_in_power_electronics:2020}
+P.~Karamanakos, E.~Liegmann, T.~Geyer, and R.~Kennel.
+\newblock Model predictive control of power electronic systems: Methods, results, and challenges.
+\newblock \emph{IEEE Open Journal of Industry Applications}, 1:\penalty0 95--114, 2020.
+\newblock ISSN 2644-1241.
+\newblock \doi{10.1109/OJIA.2020.3020184}.
+
+\bibitem[Palmour(2006)]{Palmour:wide_bandgap_efficiency:2006}
+J.~W. Palmour.
+\newblock Energy efficient wide bandgap devices.
+\newblock In \emph{2006 IEEE Compound Semiconductor Integrated Circuit Symposium}, pages 4--7, Nov 2006.
+\newblock \doi{10.1109/CSICS.2006.319904}.
+
+\bibitem[Sarrico(2017)]{Sarrico:MSc}
+J.~G. V.~V. Sarrico.
+\newblock Design and implementation of a 20kw, 12000rpm permanent magnet synchronous motor ({PMSM}) for the {IST} formula student powertrain.
+\newblock {MSc} {T}hesis in {E}lectrical and {C}omputer {E}ngineering, Instituto Superior T\'ecnico, Lisboa, Portugal, June 2017.
+
+\bibitem[de~Sousa Correia~da Costa(2018)]{Costa:MSc}
+P.~M.~B. de~Sousa Correia~da Costa.
+\newblock Compact three-phase sic inverter for the {IST} formula student prototype.
+\newblock {MSc} {T}hesis in {E}lectrical and {C}omputer {E}ngineering, Instituto Superior T\'ecnico, Lisboa, Portugal, October 2018.
+
+\bibitem[Bianchi et~al.(2022)Bianchi, Carlet, Cinti, and Ortombina]{Bianchi:control_review}
+N.~Bianchi, P.~G. Carlet, L.~Cinti, and L.~Ortombina.
+\newblock A review about flux-weakening operating limits and control techniques for synchronous motor drives.
+\newblock \emph{Energies}, 15\penalty0 (5), 2022.
+\newblock ISSN 1996-1073.
+\newblock \doi{10.3390/en15051930}.
+
+\bibitem[Neacsu(2001)]{Neacsu:SVM_intro:2001:IECON}
+D.~Neacsu.
+\newblock Space vector modulation - an introduction.
+\newblock \emph{IECON}, 01 2001.
+
+\bibitem[Vazquez et~al.(2017)Vazquez, Rodriguez, Rivera, Franquelo, and Norambuena]{Vazquez:MPC_in_power_systems_review:2017:IEEE}
+S.~Vazquez, J.~Rodriguez, M.~Rivera, L.~G. Franquelo, and M.~Norambuena.
+\newblock Model predictive control for power converters and drives: Advances and trends.
+\newblock \emph{IEEE Transactions on Industrial Electronics}, 64\penalty0 (2):\penalty0 935--947, Feb 2017.
+\newblock ISSN 1557-9948.
+\newblock \doi{10.1109/TIE.2016.2625238}.
+
+\bibitem[Merzoug and Naceri(2008)]{Merzoug:FOCvsDTC:2008}
+M.~Merzoug and F.~Naceri.
+\newblock Comparison of field-oriented control and direct torque control for permanent magnet synchronous motor ({PMSM}).
+\newblock \emph{International Journal of Electrical and Computer Engineering}, 2\penalty0 (9):\penalty0 1797--1802, 2008.
+
+\bibitem[Korkmaz et~al.(2013)Korkmaz, Topalo\u{g}lu, \c{C}akir, and Gürbüz]{Korkmaz:FOCvsDTC:2013}
+F.~Korkmaz, I.~Topalo\u{g}lu, M.~F. \c{C}akir, and R.~Gürbüz.
+\newblock Comparative performance evaluation of {FOC} and {DTC} controlled {PMSM} drives.
+\newblock In \emph{4th International Conference on Power Engineering, Energy and Electrical Drives}, pages 705--708, May 2013.
+\newblock \doi{10.1109/PowerEng.2013.6635696}.
+
+\bibitem[Souad and Zeroug(2008)]{Souad:FOCvsDTC:2008}
+R.~Souad and H.~Zeroug.
+\newblock Comparison between direct torque control and vector control of a permanent magnet synchronous motor drive.
+\newblock In \emph{2008 13th International Power Electronics and Motion Control Conference}, pages 1209--1214, Sep. 2008.
+\newblock \doi{10.1109/EPEPEMC.2008.4635433}.
+
+\bibitem[Wang et~al.(2017)Wang, Mei, Rodríguez, and Kennel]{Wang:MPC_in_Electrical_Machines_review:2017:IEEE}
+F.~Wang, X.~Mei, J.~Rodríguez, and R.~Kennel.
+\newblock Model predictive control for electrical drive systems-an overview.
+\newblock \emph{CES TRANSACTIONS ON ELECTRICAL MACHINES AND SYSTEMS}, 1\penalty0 (3):\penalty0 219--230, Sep 2017.
+
+\bibitem[Ma et~al.(2014)Ma, Saeidi, and Kennel]{Ma:MPC_Syntetic_vector:2014:IEEE}
+Z.~Ma, S.~Saeidi, and R.~Kennel.
+\newblock Fpga implementation of model predictive control with constant switching frequency for {PMSM} drives.
+\newblock \emph{IEEE Transactions on Industrial Informatics}, 10\penalty0 (4):\penalty0 2055--2063, Nov 2014.
+
+\bibitem[AMK(2018)]{amk:DD5-14-10-POW}
+\emph{{DYNASYN} synchronous servo motor DD5-14-10-POW-18600-B5}.
+\newblock AMKmotion GmbH + Co KG, 2018.
+
+\bibitem[Germany(2023)]{FSG:rules:2023}
+F.~S. Germany.
+\newblock Formula student rules 2023 v1.1, 2023.
+\newblock URL \url{https://www.formulastudent.de/fileadmin/user_upload/all/2023/rules/FS-Rules_2023_v1.1.pdf}.
+
+\bibitem[AMK(2022)]{amk:KW26-S5-FSE-4Q}
+\emph{{AMKASYN} inverter KW26-S5-FSE-2Q}.
+\newblock AMKmotion GmbH + Co KG, 2022.
+\newblock Version 15.
+
+\bibitem[Gurpinar and Castellazzi(2016)]{Gurpinar:si_sic_gan_comparison:2016:IEEE}
+E.~Gurpinar and A.~Castellazzi.
+\newblock Single-phase t-type inverter performance benchmark using {Si} {IGBT}s, {SiC} {MOSFETs}, and {GaN} {HEMTs}.
+\newblock \emph{IEEE Transactions on Power Electronics}, 31\penalty0 (10):\penalty0 7148--7160, Oct 2016.
+\newblock ISSN 1941-0107.
+\newblock \doi{10.1109/TPEL.2015.2506400}.
+
+\bibitem[Asadzadeh et~al.(2019)Asadzadeh, Dastfan, and Darabi]{Asadzadeh:selective_harmonic_elimination:2019}
+V.~Asadzadeh, A.~Dastfan, and A.~Darabi.
+\newblock Selective harmonic elimination in direct torque controlled permanent magnet synchronous motor drive.
+\newblock \emph{COMPEL-The international journal for computation and mathematics in electrical and electronic engineering}, 38\penalty0 (1):\penalty0 153--166, 2019.
+
+\bibitem[Microchip(2023)]{Microchip:Overmodulation:2023}
+Microchip.
+\newblock Overmodulation management for field-oriented control of three-phase motors, 2023.
+\newblock URL \url{https://microchipdeveloper.com/xwiki/bin/view/applications/motors/control-algorithms/3-phase-foc/}.
+
+\bibitem[Briz et~al.(2001)Briz, Diez, Degner, and Lorenz]{Briz:overmodulation_technique_field_weakening:2001}
+F.~Briz, A.~Diez, M.~Degner, and R.~Lorenz.
+\newblock Current and flux regulation in field-weakening operation.
+\newblock \emph{Industry Applications, IEEE Transactions on}, 37:\penalty0 42 -- 50, 02 2001.
+\newblock \doi{10.1109/28.903125}.
+
+\bibitem[Mehrizi‐Sani(2007)]{MehriziSani:advanced_modulation_techniques:2007}
+A.~Mehrizi‐Sani.
+\newblock Advanced modulation techniques for power converters.
+\newblock Master's thesis, University of Manitoba, Winnipeg, Canada, 2007.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:58809651}.
+
+\bibitem[Microchip(2024)]{Microchip:ZSM_viewer:2023}
+Microchip.
+\newblock Zsm viewer, 2024.
+\newblock URL \url{https://developerhelp.microchip.com/xwiki/bin/view/applications/motors/control-algorithms/zsm/zsm/zsm-viewer/}.
+
+\bibitem[Marques(2002)]{Marques:Dinamica_das_maquinas_eletricas:2002}
+G.~Marques.
+\newblock \emph{Dinâmica das Máquinas Eléctricas}.
+\newblock April 2002.
+
+\bibitem[Pramod(2023)]{Pramod:circulating_currents_delta_winding:2023}
+P.~Pramod.
+\newblock Circulating current induced electromagnetic torque generation in electric machines with delta windings, 2023.
+
+\bibitem[Ohm(2000)]{Ohm:saturation_inductance:2000}
+D.~Ohm.
+\newblock Dynamic model of {PM} synchronous motors, 2000.
+\newblock URL \url{http://www.drivetechinc.com/id16.html}.
+\newblock Drivetech Inc., Technical Article.
+
+\bibitem[De~Doncker and Novotny(1994)]{Doncker:Universal_FOC:1994}
+R.~De~Doncker and D.~Novotny.
+\newblock The universal field oriented controller.
+\newblock \emph{IEEE Transactions on Industry Applications}, 30\penalty0 (1):\penalty0 92--100, 1994.
+\newblock \doi{10.1109/28.273626}.
+
+\bibitem[{{Tex}}(2016)]{TI:FOC_TMS320F2837:2016}
+\emph{Sensored Field Oriented Control of 3-Phase Permanent Magnet Synchronous Motors Using {TMS320F2837x}}.
+\newblock {{Texas Instruments}}, 2016.
+
+\bibitem[Le-Huy(1999)]{Hoang:FOC_vs_DTC_induction:1999}
+H.~Le-Huy.
+\newblock Comparison of field-oriented control and direct torque control for induction motor drives.
+\newblock In \emph{Conference Record of the 1999 IEEE Industry Applications Conference. Thirty-Forth IAS Annual Meeting (Cat. No.99CH36370)}, volume~2, pages 1245--1252 vol.2, 1999.
+\newblock \doi{10.1109/IAS.1999.801662}.
+
+\bibitem[Matsuo and Lipo(1993)]{Matsuo:FOC_reluctance:1993}
+T.~Matsuo and T.~Lipo.
+\newblock Field oriented control of synchronous reluctance machine.
+\newblock In \emph{Proceedings of IEEE Power Electronics Specialist Conference - PESC '93}, pages 425--431, 1993.
+\newblock \doi{10.1109/PESC.1993.471965}.
+
+\bibitem[Adhavan et~al.(2011)Adhavan, Kuppuswamy, Jayabaskaran, and Jagannathan]{Adhavan:FOC_fuzzy:2011}
+B.~Adhavan, A.~Kuppuswamy, G.~Jayabaskaran, and V.~Jagannathan.
+\newblock Field oriented control of permanent magnet synchronous motor ({PMSM}) using fuzzy logic controller.
+\newblock In \emph{2011 IEEE Recent Advances in Intelligent Computational Systems}, pages 587--592, 2011.
+\newblock \doi{10.1109/RAICS.2011.6069379}.
+
+\bibitem[Buja et~al.(1997)Buja, Casadei, and Serra]{Buja:DTC_lookup_strategies:1997}
+G.~Buja, D.~Casadei, and G.~Serra.
+\newblock {DTC}-based strategies for induction motor drives.
+\newblock In \emph{Proceedings of the IECON'97 23rd International Conference on Industrial Electronics, Control, and Instrumentation (Cat. No.97CH36066)}, volume~4, pages 1506--1516 vol.4, 1997.
+\newblock \doi{10.1109/IECON.1997.664908}.
+
+\bibitem[Nasr et~al.(2022)Nasr, Gu, Wang, Buticchi, Bozhko, and Gerada]{Nasr:DTC_PMSM_improvement:2022}
+A.~Nasr, C.~Gu, X.~Wang, G.~Buticchi, S.~Bozhko, and C.~Gerada.
+\newblock Torque-performance improvement for direct torque-controlled {PMSM} drives based on duty-ratio regulation.
+\newblock \emph{IEEE Transactions on Power Electronics}, 37\penalty0 (1):\penalty0 749--760, 2022.
+\newblock \doi{10.1109/TPEL.2021.3093344}.
+
+\bibitem[El~Ouanjli et~al.(2019)El~Ouanjli, Derouich, Abdelaziz, Motahhir, Ali, El~Mourabit, and Taoussi]{Quanjli:DTC_schema:2019}
+N.~El~Ouanjli, A.~Derouich, e.~g. Abdelaziz, S.~Motahhir, C.~Ali, Y.~El~Mourabit, and M.~Taoussi.
+\newblock Modern improvement techniques of direct torque control for induction motor drives-a review.
+\newblock \emph{Protection and Control of Modern Power Systems}, 4, 05 2019.
+\newblock \doi{10.1186/s41601-019-0125-5}.
+
+\bibitem[Zhong et~al.(1997)Zhong, Rahman, Hu, and Lim]{Zhong:DTC_pmsm_dynamics:1997}
+L.~Zhong, M.~Rahman, W.~Hu, and K.~Lim.
+\newblock Analysis of direct torque control in permanent magnet synchronous motor drives.
+\newblock \emph{IEEE Transactions on Power Electronics}, 12\penalty0 (3):\penalty0 528--536, 1997.
+\newblock \doi{10.1109/63.575680}.
+
+\bibitem[Niu et~al.(2016)Niu, Wang, Babel, Li, and Strangas]{Niu:DTC_vs_other_DTC_vs_FOC:2016}
+F.~Niu, B.~Wang, A.~S. Babel, K.~Li, and E.~G. Strangas.
+\newblock Comparative evaluation of direct torque control strategies for permanent magnet synchronous machines.
+\newblock \emph{IEEE Transactions on Power Electronics}, 31\penalty0 (2):\penalty0 1408--1424, 2016.
+\newblock \doi{10.1109/TPEL.2015.2421321}.
+
+\bibitem[Vazquez et~al.(2014)Vazquez, Leon, Franquelo, Rodriguez, Young, Marquez, and Zanchetta]{Vazquez:MPC_uses:2014}
+S.~Vazquez, J.~I. Leon, L.~G. Franquelo, J.~Rodriguez, H.~A. Young, A.~Marquez, and P.~Zanchetta.
+\newblock Model predictive control: A review of its applications in power electronics.
+\newblock \emph{IEEE Industrial Electronics Magazine}, 8\penalty0 (1):\penalty0 16--31, 2014.
+\newblock \doi{10.1109/MIE.2013.2290138}.
+
+\bibitem[Sun et~al.(2021)Sun, Cao, Lei, Guo, and Zhu]{Sun:MPC_deadbeat_PMSM:2021}
+X.~Sun, J.~Cao, G.~Lei, Y.~Guo, and J.~Zhu.
+\newblock A robust deadbeat predictive controller with delay compensation based on composite sliding-mode observer for {PMSMs}.
+\newblock \emph{IEEE Transactions on Power Electronics}, 36\penalty0 (9):\penalty0 10742--10752, 2021.
+\newblock \doi{10.1109/TPEL.2021.3063226}.
+
+\bibitem[Errouissi et~al.(2012)Errouissi, Ouhrouche, Chen, and Trzynadlowski]{Errouissi:MPC_taylor_series:2012}
+R.~Errouissi, M.~Ouhrouche, W.-H. Chen, and A.~M. Trzynadlowski.
+\newblock Robust nonlinear predictive controller for permanent-magnet synchronous motors with an optimized cost function.
+\newblock \emph{IEEE Transactions on Industrial Electronics}, 59\penalty0 (7):\penalty0 2849--2858, 2012.
+\newblock \doi{10.1109/TIE.2011.2157276}.
+
+\bibitem[Wijenayake and Schmidt(1997)]{Wijenayake:saturation_model:1997}
+A.~Wijenayake and P.~Schmidt.
+\newblock Modeling and analysis of permanent magnet synchronous motor by taking saturation and core loss into account.
+\newblock In \emph{Proceedings of Second International Conference on Power Electronics and Drive Systems}, volume~2, pages 530--534 vol.2, May 1997.
+\newblock \doi{10.1109/PEDS.1997.627416}.
+
+\bibitem[Stumberger et~al.(2003)Stumberger, Stumberger, Dolinar, Hamler, and Trlep]{Stumberger:saturation_model:2003}
+B.~Stumberger, G.~Stumberger, D.~Dolinar, A.~Hamler, and M.~Trlep.
+\newblock Evaluation of saturation and cross-magnetization effects in interior permanent-magnet synchronous motor.
+\newblock \emph{IEEE Transactions on Industry Applications}, 39\penalty0 (5):\penalty0 1264--1271, Sep. 2003.
+\newblock ISSN 1939-9367.
+\newblock \doi{10.1109/TIA.2003.816538}.
+
+\bibitem[Barros et~al.(2013)Barros, Silva, and Jesus]{Fernando:fast_predictive:2013}
+J.~D. Barros, J.~F.~A. Silva, and {\'E}.~G.~A. Jesus.
+\newblock Fast-predictive optimal control of {NPC} multilevel converters.
+\newblock \emph{IEEE Transactions on Industrial Electronics}, 60\penalty0 (2):\penalty0 619--627, 2013.
+\newblock \doi{10.1109/TIE.2012.2206352}.
+
+\bibitem[Jung et~al.(2013)Jung, Hong, and Nam]{Jung:Online_MTPA_Ferrari:2013}
+S.-Y. Jung, J.~Hong, and K.~Nam.
+\newblock Current minimizing torque control of the {IPMSM} using ferrari’s method.
+\newblock \emph{IEEE Transactions on Power Electronics}, 28\penalty0 (12):\penalty0 5603--5617, 2013.
+\newblock \doi{10.1109/TPEL.2013.2245920}.
+
+\bibitem[Costa et~al.(2023)Costa, Pinto, and Silva]{Costa:SiC_MOSFET_losses:2023}
+P.~Costa, S.~Pinto, and F.~Silva.
+\newblock A novel analytical formulation of {SiC-MOSFET} losses to size high-efficiency three-phase inverters.
+\newblock \emph{Energies}, 16:\penalty0 818, 01 2023.
+\newblock \doi{10.3390/en16020818}.
+
+\bibitem[Song et~al.(2019)Song, Wang, Zhang, Li, and Ahmad]{Song:SiC_MOSFET_losses:2019}
+Q.~Song, W.~Wang, S.~Zhang, Y.~Li, and M.~Ahmad.
+\newblock The analysis of power losses of power inverter based on {SiC} {MOSFETs}.
+\newblock In \emph{2019 1st Global Power, Energy and Communication Conference (GPECOM)}, pages 152--157, 2019.
+\newblock \doi{10.1109/GPECOM.2019.8778499}.
+
+\bibitem[Inf(2023{\natexlab{a}})]{Infineon:Module_Datasheet:2023}
+\emph{{EasyDUAL} module {FF8MR12W1M1H\_B11} Datasheet}.
+\newblock Infineon, \url{https://www.infineon.com/dgdl/Infineon-FF8MR12W1M1H_B11-DataSheet-v00_30-EN.pdf?fileId=8ac78c8c8b6555fe018b72791dec7c06}, 02 2023{\natexlab{a}}.
+\newblock Version 0.30.
+
+\bibitem[Inf(2023{\natexlab{b}})]{Infineon:GateDriver_Datasheet:2023}
+\emph{{EiceDRIVER™} {1ED332xMC12N} Enhanced ({1ED-F3}) Datasheet}.
+\newblock Infineon, \url{https://www.infineon.com/dgdl/Infineon-1ED332xMC12N-DataSheet-v01_02-EN.pdf?fileId=8ac78c8c7ddc01d7017e49e76a311599}, 05 2023{\natexlab{b}}.
+\newblock Version 1.02.
+
+\bibitem[Tex(2022)]{TexasInstruments:GateDriver_Datasheet:2022}
+\emph{{UCC27614} 30-V, 10-A Single Channel Low Side Gate Driver Datasheet}.
+\newblock Texas Instruments, \url{https://www.ti.com/lit/ds/symlink/ucc27614.pdf?ts=1636432512065}, 01 2022.
+
+\bibitem[LEM(2018)]{LEM:Current_sensor_datahseet:2018}
+\emph{Current Transducer {LA} {100-P} Datasheet}.
+\newblock LEM International, \url{https://www.lem.com/sites/default/files/products_datasheets/la_100-p_e_.pdf}, 11 2018.
+\newblock Version 13.
+
+\bibitem[for Interconnecting and Packaging Electronic Circuits~(Northbrook(1998)]{IPC-2221:1998}
+I.~for Interconnecting and I.~Packaging Electronic Circuits~(Northbrook.
+\newblock \emph{Generic Standard on Printed Board Design: {IPC-2221}}.
+\newblock IPC, 1998.
+\newblock URL \url{https://books.google.pt/books?id=nHPFoQEACAAJ}.
+
+\end{thebibliography}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+The style file: Packages/abbrvunsrtnat.bst
+Database file #1: Thesis_bib_DB.bib
+Warning--empty publisher in Marques:Dinamica_das_maquinas_eletricas:2002
+You've used 49 entries,
+            2481 wiz_defined-function locations,
+            910 strings with 16660 characters,
+and the built_in function-call counts, 19103 in all, are:
+= -- 1667
+> -- 864
+< -- 31
++ -- 353
+- -- 254
+* -- 1499
+:= -- 2947
+add.period$ -- 179
+call.type$ -- 49
+change.case$ -- 91
+chr.to.int$ -- 48
+cite$ -- 50
+duplicate$ -- 977
+empty$ -- 1784
+format.name$ -- 310
+if$ -- 4172
+int.to.chr$ -- 2
+int.to.str$ -- 50
+missing$ -- 36
+newline$ -- 285
+num.names$ -- 126
+pop$ -- 391
+preamble$ -- 1
+purify$ -- 49
+quote$ -- 0
+skip$ -- 609
+stack$ -- 0
+substring$ -- 877
+swap$ -- 219
+text.length$ -- 12
+text.prefix$ -- 7
+top$ -- 0
+type$ -- 337
+warning$ -- 1
+while$ -- 124
+width$ -- 0
+write$ -- 702
+(There was 1 warning)

@@ -1,0 +1,644 @@
+\glsdefs@newdocentry{fst}%
+{%
+name={\acronymfont {\glsentryshort {fst}}},%
+sort={FST Lisboa},%
+type={main},%
+first={FST Lisboa},%
+firstplural={FST Lisboas},%
+text={FST Lisboa},%
+plural={FST Lisboas},%
+description={Formula Student Team of Técnico Lisboa},%
+descriptionplural={Formula Student Team of Técnico Lisboa},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Formula Student Team of Técnico Lisboa},%
+longplural={Formula Student Team of Técnico Lisboas},%
+short={FST Lisboa},%
+shortplural={FST Lisboas},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fsg}%
+{%
+name={\acronymfont {\glsentryshort {fsg}}},%
+sort={FSG},%
+type={main},%
+first={FSG},%
+firstplural={FSGs},%
+text={FSG},%
+plural={FSGs},%
+description={Formula Student Germany},%
+descriptionplural={Formula Student Germany},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Formula Student Germany},%
+longplural={Formula Student Germanys},%
+short={FSG},%
+shortplural={FSGs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{igbt}%
+{%
+name={\acronymfont {\glsentryshort {igbt}}},%
+sort={IGBT},%
+type={main},%
+first={IGBT},%
+firstplural={IGBTs},%
+text={IGBT},%
+plural={IGBTs},%
+description={Insulated-Gate Bipolar Transistor},%
+descriptionplural={Insulated-Gate Bipolar Transistor},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Insulated-Gate Bipolar Transistor},%
+longplural={Insulated-Gate Bipolar Transistors},%
+short={IGBT},%
+shortplural={IGBTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{foc}%
+{%
+name={\acronymfont {\glsentryshort {foc}}},%
+sort={FOC},%
+type={main},%
+first={FOC},%
+firstplural={FOCs},%
+text={FOC},%
+plural={FOCs},%
+description={Field Oriented Control},%
+descriptionplural={Field Oriented Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Field Oriented Control},%
+longplural={Field Oriented Controls},%
+short={FOC},%
+shortplural={FOCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dtc}%
+{%
+name={\acronymfont {\glsentryshort {dtc}}},%
+sort={DTC},%
+type={main},%
+first={DTC},%
+firstplural={DTCs},%
+text={DTC},%
+plural={DTCs},%
+description={Direct Torque Control},%
+descriptionplural={Direct Torque Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Direct Torque Control},%
+longplural={Direct Torque Controls},%
+short={DTC},%
+shortplural={DTCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mpc}%
+{%
+name={\acronymfont {\glsentryshort {mpc}}},%
+sort={MPC},%
+type={main},%
+first={MPC},%
+firstplural={MPCs},%
+text={MPC},%
+plural={MPCs},%
+description={Model Predictive Control},%
+descriptionplural={Model Predictive Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Model Predictive Control},%
+longplural={Model Predictive Controls},%
+short={MPC},%
+shortplural={MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{csmpc}%
+{%
+name={\acronymfont {\glsentryshort {csmpc}}},%
+sort={CS-MPC},%
+type={main},%
+first={CS-MPC},%
+firstplural={CS-MPCs},%
+text={CS-MPC},%
+plural={CS-MPCs},%
+description={Continuous Set Model Predictive Control},%
+descriptionplural={Continuous Set Model Predictive Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Continuous Set Model Predictive Control},%
+longplural={Continuous Set Model Predictive Controls},%
+short={CS-MPC},%
+shortplural={CS-MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fsmpc}%
+{%
+name={\acronymfont {\glsentryshort {fsmpc}}},%
+sort={FS-MPC},%
+type={main},%
+first={FS-MPC},%
+firstplural={FS-MPCs},%
+text={FS-MPC},%
+plural={FS-MPCs},%
+description={Finite Set Model Predictive Control},%
+descriptionplural={Finite Set Model Predictive Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Finite Set Model Predictive Control},%
+longplural={Finite Set Model Predictive Controls},%
+short={FS-MPC},%
+shortplural={FS-MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mtpa}%
+{%
+name={\acronymfont {\glsentryshort {mtpa}}},%
+sort={MTPA},%
+type={main},%
+first={MTPA},%
+firstplural={MTPAs},%
+text={MTPA},%
+plural={MTPAs},%
+description={Maximum Torque per Ampere},%
+descriptionplural={Maximum Torque per Ampere},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Maximum Torque per Ampere},%
+longplural={Maximum Torque per Amperes},%
+short={MTPA},%
+shortplural={MTPAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{svm}%
+{%
+name={\acronymfont {\glsentryshort {svm}}},%
+sort={SVM},%
+type={main},%
+first={SVM},%
+firstplural={SVMs},%
+text={SVM},%
+plural={SVMs},%
+description={Space Vector Modulation},%
+descriptionplural={Space Vector Modulation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Space Vector Modulation},%
+longplural={Space Vector Modulations},%
+short={SVM},%
+shortplural={SVMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pmsm}%
+{%
+name={\acronymfont {\glsentryshort {pmsm}}},%
+sort={PMSM},%
+type={main},%
+first={PMSM},%
+firstplural={PMSMs},%
+text={PMSM},%
+plural={PMSMs},%
+description={Permanent Magnet Synchronous Motor},%
+descriptionplural={Permanent Magnet Synchronous Motor},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Permanent Magnet Synchronous Motor},%
+longplural={Permanent Magnet Synchronous Motors},%
+short={PMSM},%
+shortplural={PMSMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pwm}%
+{%
+name={\acronymfont {\glsentryshort {pwm}}},%
+sort={PWM},%
+type={main},%
+first={PWM},%
+firstplural={PWMs},%
+text={PWM},%
+plural={PWMs},%
+description={Pulse Width Modulator},%
+descriptionplural={Pulse Width Modulator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Pulse Width Modulator},%
+longplural={Pulse Width Modulators},%
+short={PWM},%
+shortplural={PWMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vsi}%
+{%
+name={\acronymfont {\glsentryshort {vsi}}},%
+sort={VSI},%
+type={main},%
+first={VSI},%
+firstplural={VSIs},%
+text={VSI},%
+plural={VSIs},%
+description={Voltage Source Inverter},%
+descriptionplural={Voltage Source Inverter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Voltage Source Inverter},%
+longplural={Voltage Source Inverters},%
+short={VSI},%
+shortplural={VSIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spwm}%
+{%
+name={\acronymfont {\glsentryshort {spwm}}},%
+sort={SPWM},%
+type={main},%
+first={SPWM},%
+firstplural={SPWMs},%
+text={SPWM},%
+plural={SPWMs},%
+description={Sinusoidal Pulse-Width Modulation},%
+descriptionplural={Sinusoidal Pulse-Width Modulation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sinusoidal Pulse-Width Modulation},%
+longplural={Sinusoidal Pulse-Width Modulations},%
+short={SPWM},%
+shortplural={SPWMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{she}%
+{%
+name={\acronymfont {\glsentryshort {she}}},%
+sort={SHE},%
+type={main},%
+first={SHE},%
+firstplural={SHEs},%
+text={SHE},%
+plural={SHEs},%
+description={Selective Harmonic Elimination},%
+descriptionplural={Selective Harmonic Elimination},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Selective Harmonic Elimination},%
+longplural={Selective Harmonic Eliminations},%
+short={SHE},%
+shortplural={SHEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{thd}%
+{%
+name={\acronymfont {\glsentryshort {thd}}},%
+sort={THD},%
+type={main},%
+first={THD},%
+firstplural={THDs},%
+text={THD},%
+plural={THDs},%
+description={Total Harmonic Distortion},%
+descriptionplural={Total Harmonic Distortion},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Total Harmonic Distortion},%
+longplural={Total Harmonic Distortions},%
+short={THD},%
+shortplural={THDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sic}%
+{%
+name={\acronymfont {\glsentryshort {sic}}},%
+sort={SiC},%
+type={main},%
+first={SiC},%
+firstplural={SiCs},%
+text={SiC},%
+plural={SiCs},%
+description={Silicon Carbide},%
+descriptionplural={Silicon Carbide},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Silicon Carbide},%
+longplural={Silicon Carbides},%
+short={SiC},%
+shortplural={SiCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{asr}%
+{%
+name={\acronymfont {\glsentryshort {asr}}},%
+sort={ASR},%
+type={main},%
+first={ASR},%
+firstplural={ASRs},%
+text={ASR},%
+plural={ASRs},%
+description={Autonomous System Responsible},%
+descriptionplural={Autonomous System Responsible},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Autonomous System Responsible},%
+longplural={Autonomous System Responsibles},%
+short={ASR},%
+shortplural={ASRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{oem}%
+{%
+name={\acronymfont {\glsentryshort {oem}}},%
+sort={OEM},%
+type={main},%
+first={OEM},%
+firstplural={OEMs},%
+text={OEM},%
+plural={OEMs},%
+description={Original Equipment Manufacturer},%
+descriptionplural={Original Equipment Manufacturer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Original Equipment Manufacturer},%
+longplural={Original Equipment Manufacturers},%
+short={OEM},%
+shortplural={OEMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{emi}%
+{%
+name={\acronymfont {\glsentryshort {emi}}},%
+sort={EMI},%
+type={main},%
+first={EMI},%
+firstplural={EMIs},%
+text={EMI},%
+plural={EMIs},%
+description={Electromagnetic Interference},%
+descriptionplural={Electromagnetic Interference},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Electromagnetic Interference},%
+longplural={Electromagnetic Interferences},%
+short={EMI},%
+shortplural={EMIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mad}%
+{%
+name={\acronymfont {\glsentryshort {mad}}},%
+sort={MAD},%
+type={main},%
+first={MAD},%
+firstplural={MADs},%
+text={MAD},%
+plural={MADs},%
+description={Median Absolute Deviation},%
+descriptionplural={Median Absolute Deviation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Median Absolute Deviation},%
+longplural={Median Absolute Deviations},%
+short={MAD},%
+shortplural={MADs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fpga}%
+{%
+name={\acronymfont {\glsentryshort {fpga}}},%
+sort={FPGA},%
+type={main},%
+first={FPGA},%
+firstplural={FPGAs},%
+text={FPGA},%
+plural={FPGAs},%
+description={Field Gate Programmable Array},%
+descriptionplural={Field Gate Programmable Array},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Field Gate Programmable Array},%
+longplural={Field Gate Programmable Arrays},%
+short={FPGA},%
+shortplural={FPGAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rush}%
+{%
+name={\acronymfont {\glsentryshort {rush}}},%
+sort={RUSH MPC},%
+type={main},%
+first={RUSH MPC},%
+firstplural={RUSH MPCs},%
+text={RUSH MPC},%
+plural={RUSH MPCs},%
+description={Real-time Ultra Short Horizon extention MPC},%
+descriptionplural={Real-time Ultra Short Horizon extention MPC},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Real-time Ultra Short Horizon extention MPC},%
+longplural={Real-time Ultra Short Horizon extention MPCs},%
+short={RUSH MPC},%
+shortplural={RUSH MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+

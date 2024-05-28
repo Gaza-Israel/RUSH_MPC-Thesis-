@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Appendix_B.tex                                      %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Technical Datasheets}
+\label{chapter:appendixDatasheets} %chktex 24
+
+The datasheets for the current inverter and motor used in the project are presented in this appendix. The inverter datasheet is an excerpt from the original document with the main characteristics, while the motor datasheet is the full document. More information about the kit is available at the manufacturer's website\footnote{\url{https://www.amk-motion.com/amk-dokucd/dokucd/en/DokuCD_HTML5_en.htm\#projekt/doku-cd_html5/topics/amk_automotive.htm}}.
+
+% It is possible to add PDF files to the document, such as technical sheets of some equipment used in the work.
+
+% ----------------------------------------------------------------------
+% See more options to include PDF files in
+% http://mirror.unl.edu/ctan/macros/latex/contrib/pdfpages/pdfpages.pdf
+% \includepdf[pages={1-2},nup=1x2,landscape=true]{Figures/SolarCell_Sunpower_C60.pdf}
+\def\excerpt{\section{AMK Motor Datasheet}\label{section:AMK_Motor_datasheet}}
+\includepdf[pages={1},nup=1x1,landscape=true,scale=0.9,pagecommand={\excerpt}]{./Appendix/motor_data_sheet_a2370dd_dd5.pdf}
+\includepdf[pages={2},nup=1x1,landscape=true,scale=0.9,pagecommand={}]{./Appendix/motor_data_sheet_a2370dd_dd5.pdf}
+
+% \section{AMK Inverter Datasheet}
+% \label{section:AMK_Inverter_datasheet} %chktex 24
+\includepdf[pages={16},nup=1x1,landscape=false,scale=0.8,pagecommand=\section{AMK Inverter Datasheet}
+\label{section:AMK_Inverter_datasheet}]{./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf}
+\includepdf[pages={17},nup=1x1,landscape=false,scale=0.9,pagecommand={}]{./Appendix/pdk_205481_kw26-s5-fse-4q_en_.pdf}

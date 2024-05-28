@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Conclusions.tex                                     %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusions}
+\label{chapter:conclusions}
+% \minitoc% Creating a minitoc
+
+The work developed in this thesis aimed to fill the identified gap in the process of a powertrain developed fully in-house for the \gls{fst} that is the control strategy for the motors. This necessity led to a study of control strategies and motor models that was performed with an emphasis on improving the dynamic response of the motor torque and the system efficiency.
+
+To achieve those goals, the motor was characterized by performing several measurements and tests. This not only provided a plant model to simulate the control algorithms but also provided the Formula Student team of Instituto Superior Técnico with valuable information about their motor characteristics and performance.
+
+ With the motor parametrized, it was possible to set up a simulation environment and some control strategies were implemented in it. This allowed a comparison between the different strategies and the selection of the most suitable for the application. The selected strategy was the \acrfull{rush} due to its fast response, low current ripple, and computational efficiency. 
+
+The proposed control was then implemented in an \gls{fpga} and the hardware necessary to test the control in a test bench was developed. The motors and inverter were then assembled on a test bench to perform experimental tests. Although the testbench hardware was later verified to be a limiting factor, the experimental results were very promising.
+
+The simulation and experimental results were compared and analyzed showing a close match between them. The torque estimation was also validated and the control strategy was able to control the motor torque with a dynamic response orders of magnitude smaller than the current solution and with a very low torque ripple. The system efficiency was also improved due to the reduction in current \gls{thd}.
+
+While not exhaustive the developed system continued to build on the great work of the previous thesis and the team's work, creating a solid platform from which the team can continue the work and implement it on the next prototypes. The work done in this thesis was a major step towards the team's goal of developing a fully in-house powertrain.
+% ----------------------------------------------------------------------
+\section{Achievements}
+\label{section:achievements}
+
+The major achievement of the present work was the development of a control strategy capable of greatly increasing the dynamic response of the motor while also improving its efficiency. This work showed that by changing the control strategy there are performance gains to be achieved without hardware changes, only by using a control strategy that is tailored to the motor characteristics. The ability to control the currently used motor without any hardware modifications on the motor enables the team to develop its own inverter and control strategy without changing the motor, unlocking major advances in powertrain efficiency, performance, and density. Additionally, it provided some valuable information about the motor characteristics and performance that can be used in future work and at competition design events.
+
+Summing up the achievements of this thesis, the following points can be highlighted:
+\begin{itemize}
+    \item The currently used motor is characterized and a simulation environment was created;
+    \item Several \gls{mpc} strategies were compared with the current \gls{foc} solution leading to the selection of the explicit \gls{mpc};
+    \item The proposed control strategy was implemented in an \gls{fpga};
+    \item The necessary hardware for a test bench setup was developed and tested to a high level of accuracy;
+    \item Simulation data was validated with experimental results comparison;
+    \item Motor characterization validated by comparing the torque estimation with a commercial transducer;
+    \item System efficiency improved by the reduction of the current \gls{thd};
+    \item The torque response was improved by orders of magnitude compared to the current solution.
+    \item A new inverter was designed to overcome the limitations of the current one.
+\end{itemize}
+
+
+% ----------------------------------------------------------------------
+\section{Future Work}
+\label{section:future}
+
+One of the major setbacks of this work was the test bench hardware, which was later verified to be a limiting factor. The used setup was not able to properly align the motor shafts and the transducer, leading to excentricity-induced vibrations. Those vibrations not only caused some torque oscillations in the experimental results but also limited the tested maximum speed. The test bench hardware should be redesigned to allow for a proper alignment of the motor shafts and the transducer, allowing for higher speeds and more accurate results.
+
+The inverter used was also deemed a limitation, as it was developed to a maximum current of $90A$, limiting the maximum torque that could be applied to the motor. A revision of the inverter was developed, but time constraints impeded it to be tested. The new inverter should be tested to verify if the limitations of the current inverter are overcome and to verify if it meets the efficiency and performance requirements of the team. Some design aspects of the inverter should also be revised, such as the thermal design of the components, and the DC link capacitance, which could be reduced to save space and weight. The voltage measurement circuit should also be revised to include filters and improve the \gls{emi} immunity of the system. 
+
+Regarding the motor characterization, the inverter limitations did not allow for a full current range characterization of the inductances, which could be performed in the future. The current reference maps should also be updated with the maps generated using the characterization inductances, to replace the ones that used the manufacturer's data. 
+
+A proper study of the tradeoff between the reduction of the current \gls{thd} by increasing the switching frequency and the losses in the inverter and motor derived from such increase should be performed. An optimal point should be found to maximize the efficiency of the system.
+
+A known drawback of the chosen strategy is the dependence on a good model of the system. A calibration routine should be developed to allow for the controller to automatically adjust the model parameters to the real system. Another alternative is the development of a real-time parameter identification algorithm to adjust the model parameters in real-time, but this would require the current references to be solved in real-time, similar to the work done in~\cite{Jung:Online_MTPA_Ferrari:2013}.
+
+The current implementation uses the rotor speed to estimate the current position of the rotor in between encoder readings, which is a known limitation of the system. A better approach would be to use the \gls{mpc} predictions to estimate the rotor position, which would also benefit from a load torque observer, to improve the velocity and position predictions.
+
+The proposed speed controller although capable of controlling the motor speed, could be improved, as it was not the focus of this work. It could be incorporated into the \gls{mpc} controller and account for the load torque estimation to preemptively adjust the torque reference to allow for a more robust control.
+
+Another known limitation is the encoder sampling rate, which is very reduced when compared to the control frequency. That, combined with the elevated level of complexity of the encoder protocol and its scarce documentation, suggests that the encoder should be replaced by a more modern and faster sensor.
+
+Lastly, the current implementation of the FPGA uses almost all the available resources, which limits the implementation of more complex algorithms. It also is currently controlling only one motor, but by pipelining the control, it could control two motors, limited by the number of available GPIOs in the Zybo board. One solution could be to switch the control algorithm from floating point to fixed point, which would require fewer resources and would allow for more complex algorithms to be implemented. Another solution would be to use a more powerful FPGA, which would also enable the control of the four motors in only one FPGA, reducing the cost and volume of the system.

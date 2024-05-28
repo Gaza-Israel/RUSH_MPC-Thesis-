@@ -1,0 +1,46 @@
+\nomenclatureentry{ri_x$i_x$@[{$i_x$}]\begingroup Current\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rE_x$E_x$@[{$E_x$}]\begingroup Back EMF\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ru_x$u_x$@[{$u_x$}]\begingroup Voltage\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rr_x$r_x$@[{$r_x$}]\begingroup Phase resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rL_x$L_x$@[{$L_x$}]\begingroup Phase self inductance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rM_xy$M_{xy}$@[{$M_{xy}$}]\begingroup Phase mutual inductance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_e$T_e$@[{$T_e$}]\begingroup Electromagnetic torque\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_load$T_{load}$@[{$T_{load}$}]\begingroup Load reaction torque\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_loss$T_{loss}$@[{$T_{loss}$}]\begingroup Losses equivalent torque\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rp$p$@[{$p$}]\begingroup Number of pole pairs\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rh$h$@[{$h$}]\begingroup Sampling time\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rk$k$@[{$k$}]\begingroup Discrete time index\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rm$m$@[{$m$}]\begingroup Modulation index\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rVref$V_{ref}$@[{$V_{ref}$}]\begingroup Voltage reference vector\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rK_v$K_v$@[{$K_v$}]\begingroup Voltage Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rK_t$K_t$@[{$K_t$}]\begingroup Torque Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ$J$@[{$J$}]\begingroup Rotational Inertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rv$v$@[{$v$}]\begingroup Car Velocity\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rAref$A_{r}$@[{$A_{r}$}]\begingroup Car frontal reference area\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rCd$C_{d}$@[{$C_{d}$}]\begingroup Drag coefficient\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rCr$C_{r}$@[{$C_{r}$}]\begingroup Rolling resistance coefficient\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rmcar$m_{car}$@[{$m_{car}$}]\begingroup Car mass\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rrtire$r_{tire}$@[{$r_{tire}$}]\begingroup Tire radius\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rGr$G_{r}$@[{$G_{r}$}]\begingroup Transmission Gear Ratio\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ$\mathcal{J}$@[{$\mathcal{J}$}]\begingroup MPC cost function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rCs$\mathcal{C}_{soft}$@[{$\mathcal{C}_{soft}$}]\begingroup MPC soft contraint\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rs_x$s_x$@[{$s_x$}]\begingroup MPC cost gains\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rk_p$k_p$@[{$k_p$}]\begingroup PI proportional gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rk_i$k_i$@[{$k_i$}]\begingroup PI integral gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gtheta_e$\theta_e$@[{$\theta_e$}]\begingroup Rotor electrical position\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gtheta$\theta$@[{$\theta$}]\begingroup Rotor position\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gomega_e$\omega_e$@[{$\omega_e$}]\begingroup Rotor electrical velocity\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gomega$\omega$@[{$\omega$}]\begingroup Rotor velocity\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gomega$\omega_{wheels}$@[{$\omega_{wheels}$}]\begingroup Wheel rotational velocity\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gpsi$\psi_x$@[{$\psi_x$}]\begingroup Flux linkage\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{glambda$\lambda$@[{$\lambda$}]\begingroup Lagrange Multiplier\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{grho$\rho$@[{$\rho$}]\begingroup Air density\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{geta$\eta$@[{$\eta$}]\begingroup Efficiency\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gtau$\tau$@[{$\tau$}]\begingroup Time Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sp$a, b, c$@[{$a, b, c$}]\begingroup Phase values\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sl$A, B, C$@[{$A, B, C$}]\begingroup Line values\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sdq0$d, q, 0$@[{$d, q, 0$}]\begingroup Direct axis, quadrature axis, and zero-sequence components\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{spm$PM$@[{$PM$}]\begingroup Permanent Magnet component\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sf$f,r$@[{$f,r$}]\begingroup Front and Rear axle\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{tTT@[{T}]\begingroup Transpose\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{t$\dot{}$@[{$\dot{}$}]\begingroup Time derivative\nomeqref {0}|nompageref}{xiii}

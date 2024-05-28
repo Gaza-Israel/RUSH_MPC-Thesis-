@@ -1,0 +1,577 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Simulation.tex		                                       %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Simulation}
+\label{section:simulation}%chktex 24
+\vfill
+
+To accelerate the development time, a model was developed in \textit{Simulink}, allowing for faster prototyping and direct comparison of the methods in a controlled environment. An adaptation of the \textit{Simscape Specialized Power Systems} block \textit{Permanent Magnet Synchronous Machine} was made to convert it to a delta-wound machine and to accept variable inductances as in \Cref{eq:motor_backward_euler_matrix}. 
+This model was combined with six MOSFETs blocks in three legs to simulate the \gls{vsi}. To supply the MOSFETs, a model of the battery was made, where an ideal voltage source is connected through a series resistor to the DC link, where a capacitor stabilizes the voltage. In \Cref{fig:simulation_model} the resultant system is presented, where $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$, are the gate control signals that come from the control strategy.
+
+\begin{figure}[!htb]
+	\centering
+	% \fbox{
+		\includegraphics[clip, trim=0.3cm 5cm 0.5cm 5cm, width=1.00\textwidth]{Figures/motor_and_inverter_simulink1.pdf}
+		% }
+	\caption[Simulink Models, Motor and Inverter.]{Simulink Models, Motor and Inverter.}
+	\label{fig:simulation_model} %chktex 24
+\end{figure}
+
+The parameterization of the MOSFETs used in the simulation is derived from the model used in~\cite{Costa:MSc}, the  Wolfspeed C2M0040120D. The motor model is the one derived on \Cref{section:PMSM model}, with the parameters from \Cref{section:motor_characterization}. The rotor position is based on Heidenhain ECI1118 properties as this is the encoder that the manufacturer uses. 
+The DC link capacitor is set to $40\mu F$, while the battery series resistance is $0.03 \Omega$, both based on the existing hardware. The ground connections are $420k\Omega$ each, to simulate the isolation between high voltage and low voltage in the car, while the inertia and torque source blocks inside the motor area are to simulate the testbench environment, with the standard value of $0.0848 kg m^2$ to the inertia, and the torque source being controlled to maintain a constant speed. All those parameters are shown in \Cref{table:simulation_parameters} alongside the car parameters used in the load simulation on \Cref{section:acceleration}.
+
+\begin{table}[h]
+	\caption{Simulation Parameters}
+	\label{table:simulation_parameters}%chktex 24
+	\renewcommand{\arraystretch}{1.2} % more space between rows
+	% \centering
+	\begin{minipage}{0.49\textwidth}
+		\centering
+		\begin{tabular}{ll}
+			\toprule
+			\textbf{Simulation timestep} & $0.2\mu s$ \\\toprule
+			\textbf{DC Link Capacitor} & $40\mu F$ \\\toprule
+			\textbf{Battery Series Resistance} & $0.03 \Omega$ \\\toprule
+			\textbf{Ground Connection} & $420k\Omega$ \\\toprule
+			\textbf{Testbench Inertia} & $185 g cm^2$ \\\toprule
+			\textbf{MOSFETs} & \begin{tabular}[c]{@{}l@{}}Wolfspeed \\ C2M0040120D\end{tabular} \\\toprule
+			\textbf{Switching Frequency} & $50kHz$ \\\toprule
+			\textbf{Encoder Resolution} & 18 bits \\\toprule
+			\textbf{Encoder Frequency} & $12.5kHz$ \\\toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Current and Voltage \\ Sensor Resolution\end{tabular}} & 14 bits \\\toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Current and Voltage \\ Sensor Frequency\end{tabular}} & $50kHz$ \\\toprule
+		\end{tabular}
+	\end{minipage}
+	% \hfill
+	% \hspace{0.1cm}
+	\begin{minipage}{0.49\textwidth}
+		\centering
+		\begin{tabular}{ll}
+			\toprule
+			\textbf{Car mass}                       & $230 kg$                      \\\toprule
+			\textbf{Pilot mass}                     & $60 kg$                       \\\toprule
+			\textbf{Tire radius}                    & $0.23 m$                      \\\toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Wheel assembly \\ moment of inertia\end{tabular}} & $0.2 kg m^2$ \\\toprule
+			\textbf{Gear ratio}                     & $15.21$                       \\\toprule
+			\textbf{Air density}                    & $1.2 kg/m^3$ \\\toprule
+			\textbf{Reference car area}             & $1 m^2$      \\\toprule
+			\textbf{Drag coefficient}               & $1.59$                        \\\toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Rolling resistance \\ coefficient\end{tabular}} & $0.09$                     \\\toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Speed Controller \\ proportional gain ($k_p$)\end{tabular}} & $0.035 Nm/rpm$ \\ \toprule
+			\textbf{\begin{tabular}[c]{@{}l@{}}Speed Controller \\ integral gain ($k_i$)\end{tabular}}   & $10^{-9} Nm/rpm$ \\ \toprule
+		\end{tabular}
+	\end{minipage}
+\end{table}
+
+\subsection{Baseline Step}
+With the model implemented on \textit{Simulink}, a baseline was made using the manufacturer control scheme, \gls{foc} with the standard $8kHz$ switching frequency, and compared with the proposed methods at $50kHz$. The difference in frequency is to account for the complete system, where the use of wide bandgap semiconductors allowed for a faster switching frequency. The baseline profile is a positive torque step with the machine fixed at the nominal speed of $12kRPM$. The rising time of each method is shown in \Cref{fig:rising_time_4_models}.
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigmatrix}{1}
+		\subfigure[MPCs comparison. In orange the Finite set MPC, in yellow the finite set MPC with null vector, in green the continuous set implicit MPC, and in purple the proposed continuous set explicit MPC.]{\includegraphics[clip, trim=0cm 4.8cm 0cm 0.75cm,width=1\textwidth]{Figures/Step_@12000RPM.eps}}
+	\end{subfigmatrix}	
+	\begin{subfigmatrix}{1}
+		\subfigure[Proposed method (in purple) vs Currently used method (in blue).]{\includegraphics[clip, trim=0cm 0cm 0cm 5.5cm,width=1\textwidth]{Figures/Step_@12000RPM.eps}}
+	\end{subfigmatrix}
+	\caption[Control methods comparison in a torque step.]{Control methods comparison in a torque step.}
+	\label{fig:rising_time_4_models} %chktex 24
+\end{figure}
+
+Note that the predictive controllers all perform similarly, having a great dynamic response, with an average rising time (0 to 100\%) of $200\mu s$, while the \gls{foc} method performed much slower, at approximately $180ms$. While the rising time in the \gls{foc} can be improved by better tunning the PID (these results are with the values recommended by the manufacturer), it would result in more pronounced overshoots and settling time, and would not reach the performance of a predictive controller, where the torque rising is only limited by the machine inductances, which shows the great dynamic performance of predictive controllers. It is important to also notice a small delay in the implicit NL-MPC response, this delay is due to the solver failing to converge. Although this may not always occur at each reference torque step, it was intentionally left on this graph to remind us of the possibility of this event. 
+
+Divergence among the proposed methods becomes apparent during the analysis of steady-state conditions. The basic \gls{fsmpc} stands out with the highest torque and current ripple, significantly worse than the baseline, rendering it impractical. This ripple is due to the absence of a modulator, thus the chosen vector will stay applied for the full sampling time. Although an increase in switching frequency would improve the absolute performance of this method, in comparison it would never be as smooth as a modulated control, as it uses discrete vector options, while a simple \gls{svm} would switch multiple times in a single period. The increased switching reduces the ripple at the cost of lowered efficiency due to switching losses.
+
+The addition of the null vector on the second method reduces the ripple at low angular speeds but still fails to do so when the machine accelerates, with curves very similar to the \gls{fsmpc}. The use of complete modulators can reduce this torque ripple problem, as the \gls{svm} allows for a third vector to be applied during the same time step, allowing the control to accurately point the voltage vector to the desired angle and amplitude, where the null vector only lets the controller change the amplitude of the existent active vectors.
+\subsection{Current THD}
+
+The distortion of currents was evaluated by setting the motor at a constant speed, waiting a few periods for it to reach a steady state and then calculating the average THD of all line currents through 5 electrical periods. This was repeated in a grid pattern with some of the results shown in \Cref{table:thd_comparison}.
+
+\begin{table}[h]
+	\caption{Control Method Current THD comparison. THD is calculated until the Nyquist frequency, that is $250kHz$ and $40kHz$ for the controllers running at $50kHz$ and $8kHz$ respectively.}
+	\label{table:thd_comparison}%chktex 24
+	\renewcommand{\arraystretch}{1.2} % more space between rows
+		\centering
+		% \resizebox{1\textwidth}{!}{%
+		\begin{tabular}{lrcccc}
+			\textbf{} &
+			  \multicolumn{1}{l}{\textbf{}} &
+			  \textbf{1000 RPM} &
+			  \textbf{7333 RPM} &
+			  \textbf{13666 RPM} &
+			  \textbf{20000 RPM} \\ \toprule
+			 &
+			  \textbf{1Nm} &
+			  57.62\% &
+			  43.44\% &
+			  207.54\% &
+			  29.62\% \\
+			 &
+			  \textbf{11Nm} &
+			  3.22\% &
+			  10.62\% &
+			  12.14\% &
+			  58.53\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}FOC \\ @8kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  5.15\% &
+			  6.50\% &
+			  10.18\% &
+			  37.08\% \\ \toprule
+			 &
+			  \textbf{1Nm} &
+			  56.95\% &
+			  11.08\% &
+			  14.12\% &
+			  4.71\% \\
+			 &
+			  \textbf{11Nm} &
+			  2.18\% &
+			  2.19\% &
+			  1.93\% &
+			  4.85\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}FOC \\ @50kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  1.41\% &
+			  1.41\% &
+			  2.28\% &
+			  3.86\% \\ \toprule
+			 &
+			  \textbf{1Nm} &
+			  696.41\% &
+			  566.94\% &
+			  247.13\% &
+			  72.31\% \\
+			 &
+			  \textbf{11Nm} &
+			  39.42\% &
+			  30.17\% &
+			  28.04\% &
+			  11.82\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}FS-MPC \\ @50kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  22.10\% &
+			  16.88\% &
+			  8.52\% &
+			  11.82\% \\ \toprule
+			 &
+			  \textbf{1Nm} &
+			  30.67\% &
+			  120.31\% &
+			  159.20\% &
+			  221.12\% \\
+			 &
+			  \textbf{11Nm} &
+			  1.59\% &
+			  10.65\% &
+			  12.40\% &
+			  11.51\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}FS-MPC \\ Null Vector \\ @50kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  1.76\% &
+			  6.43\% &
+			  7.10\% &
+			  8.54\% \\ \toprule
+			 &
+			  \textbf{1Nm} &
+			  6.59\% &
+			  9.98\% &
+			  12.60\% &
+			  14.50\% \\
+			 &
+			  \textbf{11Nm} &
+			  0.81\% &
+			  1.48\% &
+			  1.89\% &
+			  2.17\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}NL-MPC \\ @50kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  0.81\% &
+			  0.96\% &
+			  1.18\% &
+			  1.12\% \\ \bottomrule
+			 &
+			  \textbf{1Nm} &
+			  7.20\% &
+			  11.91\% &
+			  16.82\% &
+			  21.95\% \\
+			 &
+			  \textbf{11Nm} &
+			  0.76\% &
+			  1.47\% &
+			  1.92\% &
+			  2.16\% \\
+			\multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}RUSH MPC \\ @50kHz\end{tabular}}} &
+			  \textbf{20Nm} &
+			  0.81\% &
+			  0.98\% &
+			  1.19\% &
+			  1.12\% \\ \toprule
+			\end{tabular}
+		% }
+\end{table}
+
+Table \ref{table:thd_comparison} exposes the advantage of continuous \gls{mpc} over the other alternatives, with distortions expressively smaller than the baseline and the finite set \gls{mpc}s, backing up the ripple analysis previously made. As expected the addition of a null vector reduced expressively the \gls{thd} in operation points of low modulation index, but made no difference when the modulation index increased. When comparing the methods that use \gls{svm}, the distortion is very similar when operated at the same frequency, meaning that the main factor is the modulation frequency, not the control algorithm.
+
+Another advantage of the proposed methods is they actively use the direct axis current to generate torque throughout the full operation map of the motor,  not only in field weakening as the method currently implemented on the car. This is a result of the use of \gls{mtpa} references which improves efficiency, as it produces a reduction in the current vector modulus necessary to generate the same torque.
+\subsection{Robustness}
+
+To test the controller's robustness, a Monte Carlo analysis is proposed. A normal distribution is assigned to the motor parameters with a mean equal to the characterized value, and a standard deviation equal to 5\% of the mean. The step of \Cref{fig:rising_time_4_models} was simulated for 1000 samples with the modified parameters applied to the motor without updating the controller (\Cref{fig:montecarlo}).
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/MonteCarlo.eps}
+	\caption[Monte Carlo Robustness Analysis.]{Monte Carlo Robustness Analysis. The motor parameters are shown in percentual change from the controller's expected value.}
+	\label{fig:montecarlo} %chktex 24
+\end{figure}
+
+To evaluate the performance with degraded parameters three metrics were used, the steady-state mean torque, the steady-state current \gls{thd}, and the torque rising time. Based on these metrics the most influential parameter is the flux linkage, with a correlation of almost 100\% with the steady-state torque as shown in \Cref{fig:corr_plot}. This is explained by the type of motor used, where the inductances between the direct and quadrature axes are very similar, resulting in most of the torque derived from the permanent magnet's flux linkage. Note that this dependency is also present in the method currently used by the team, where the quadrature current reference is based on the machine torque constant ($k_t$). 
+While relatively easy to characterize, the flux linkage is also the parameter most prone to change with the life of the motors, where the magnets can overheat or be demagnetized by a high direct axis current, thus a good approach is to develop a characterization routine that can be automatically executed whenever the user deems necessary.
+
+\begin{figure}[!htb]
+	\begin{subfigmatrix}{2}
+		\subfigure[Steady State Torque]{\includegraphics[width=0.49\linewidth]{Figures/corr_tq.eps}\label{fig:corr_tq}}
+		\subfigure[Current THD]{\includegraphics[width=0.49\linewidth]{Figures/corr_thd.eps}\label{fig:corr_thd}}
+	\end{subfigmatrix}
+	\begin{subfigmatrix}{1}
+		\subfigure[Torque Rise Time]{\includegraphics[width=0.49\linewidth]{Figures/corr_risetime.eps}\label{fig:corr_risetime}}
+	\end{subfigmatrix}
+	\caption{Parameter correlation coefficient with performance metrics.}
+	\label{fig:corr_plot}%chktex 24
+\end{figure}
+
+The quadrature inductance has a higher correlation with the torque rise time, as expected. Since almost all of the torque is derived from the permanent magnet's flux linkage the torque will rise as fast as the controller manages to create quadrature currents. While this correlation is not definitive proof, it reinforces the statement that the proposed controller dynamic response is limited by the machine inductances. The high flux linkage correlation with the rise time is due to the increase in steady-state torque since with higher flux the steady-state torque is higher and the rise is approximately linear, with an increase in steady-state torque the rise time also increases.
+
+Regarding the current \gls{thd}, the parameter influences are well balanced, with the direct axis inductance being a little more correlated. When combining this with the small absolute variance of the \gls{thd}, it is clear that the control strategy is very robust against model mismatches, maintaining a low distortion even with the wrong parameters.
+
+\subsection{Acceleration Event}
+\label{section:acceleration}%chktex 24
+
+The load profile defined in \Cref{section:03load_profile} was used to simulate a typical acceleration event. The car load parameters are as shown in \Cref{table:simulation_parameters}, and the torque reference was set to reach $21.3kW$ of delivered power (after inverter and motor efficiency losses). The power value was chosen assuming an $80\%$ powertrain efficiency and the previous approximation of one-third of the car load on the rear motors. As shown in \Cref{fig:acceleration_comparison}, the EMPC improved the time from $3.943s$ to $3.883s$ (\textit{1.6}\%), reaching also a higher top speed than the currently implemented control method and presenting a lower torque ripple.
+
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigmatrix}{2}
+		\subfigure[Torque profile in the acceleration event using the currently implemented FOC.]{\includegraphics[clip,trim = 1cm 0 1.55cm 0,width=0.49\linewidth]{Figures/acc_empc.eps}\label{fig:acc_foc}}
+		\subfigure[Torque profile in the acceleration event using the proposed EMPC]{\includegraphics[clip,trim = 1cm 0 1.55cm 0,width=0.49\linewidth]{Figures/acc_foc.eps}\label{fig:acc_empc}}
+	\end{subfigmatrix}
+	\begin{subfigmatrix}{2}
+		\subfigure[Motor speed profile in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.]{\includegraphics[width=0.49\linewidth]{Figures/acc_rpm.eps}\label{fig:acc_rpm}}
+		\subfigure[Distance traveled in the acceleration event. The blue line is the currently implemented FOC while the orange line is the proposed EMPC.]{\includegraphics[width=0.475\linewidth]{Figures/acc_dist.eps}\label{fig:acc_dist}}
+	\end{subfigmatrix}
+	\caption[Control methods comparison on an Acceleration event.]{Control methods comparison on an Acceleration event.}
+	\label{fig:acceleration_comparison} %chktex 24
+\end{figure}
+
+% Insert your chapter material here\ldots
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Problem Description}
+% \label{section:problem}%chktex 24
+
+% Description of the baseline problem\ldots
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Baseline Solution}
+% \label{section:baseline}%chktex 24
+
+% Analysis of the baseline solution\ldots
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Enhanced Solution}
+% \label{section:enhanced}%chktex 24
+
+% Quest for the optimal solution\ldots
+
+
+% % ----------------------------------------------------------------------
+% \subsection{Figures}
+% \label{subsection:figures}%chktex 24
+
+% Insert your section material and possibly a few figures\ldots
+
+% Make sure all figures presented are referenced in the text!
+
+% The caption should appear below the figure.
+
+
+% % ----------------------------------------------------------------------
+% \subsubsection{Images}
+% \label{subsection:images}%chktex 24
+
+% \begin{figure}[!htb]
+%   \centering
+%   \includegraphics[width=0.25\textwidth]{Figures/Airbus_A350.jpg}
+%   \caption[Caption for figure in TOC.]{Caption for figure.}
+%   \label{fig:airbus1}%chktex 24
+% \end{figure}
+
+% \begin{figure}[!htb]
+%   \begin{subfigmatrix}{2}
+%     \subfigure[Airbus A320]{\includegraphics[width=0.49\linewidth]{Figures/Airbus_A320_sharklets.png}}
+%     \subfigure[Bombardier CRJ200]{\includegraphics[width=0.49\linewidth]{Figures/Bombardier_CRJ200.png}}
+%   \end{subfigmatrix}
+%   \caption{Some aircrafts.}
+%   \label{fig:aircrafts}%chktex 24
+% \end{figure}
+
+% Make reference to Figures~\ref{fig:airbus1} and~\ref{fig:aircrafts}.
+
+% By default, the supported file types are {\it .png,.pdf,.jpg,.mps,.jpeg,.PNG,.PDF,.JPG,.JPEG}. %chktex 26
+
+% See \url{http://mactex-wiki.tug.org/wiki/index.php/Graphics_inclusion} for adding support to other extentions.
+
+
+% % ----------------------------------------------------------------------
+% \subsubsection{Drawings}
+% \label{subsection:drawings}%chktex 24
+
+% Insert your subsection material and for instance a few drawings\ldots
+
+% The schematic illustrated in Fig.\ref{fig:algorithm} can represent some sort of algorithm.
+
+% \begin{figure}[!htb]
+%   \centering
+%   \scriptsize
+% %  \footnotesize 
+% %  \small
+%   \setlength{\unitlength}{0.9cm}
+%   \begin{picture}(8.5,6)
+%     \linethickness{0.3mm}
+
+%     \put(3,6){\vector(0,-1){1}}
+%     \put(3.5,5.4){$\bf \alpha$}
+%     \put(3,4.5){\oval(6,1){}}
+%     %\put(0,4){\framebox(6,1){}}
+%     \put(0.3,4.4){Grid Generation: \quad ${\bf x} = {\bf x}\left({\bf \alpha}\right)$}
+
+%     \put(3,4){\vector(0,-1){1}}
+%     \put(3.5,3.4){$\bf x$}
+%     \put(3,2.5){\oval(6,1){}}
+%     %\put(0,2){\framebox(6,1){}}
+%     \put(0.3,2.4){Flow Solver: \quad ${\cal R}\left({\bf x},{\bf q}\left({\bf x}\right)\right) = 0$}
+
+%     \put(6.0,2.5){\vector(1,0){1}}
+%     \put(6.4,3){$Y_1$}
+
+%     \put(3,2){\vector(0,-1){1}}
+%     \put(3.5,1.4){$\bf q$}
+%     \put(3,0.5){\oval(6,1){}}
+%     %\put(0,0){\framebox(6,1){}}
+%     \put(0.3,0.4){Structural Solver: \quad ${\cal M}\left({\bf x},{\bf q}\left({\bf x}\right)\right) = 0$}
+
+%     \put(6.0,0.5){\vector(1,0){1}}
+%     \put(6.4,1){$Y_2$}
+
+%     %\put(7.8,2.5){\oval(1.6,5){}}
+%     \put(7.0,0){\framebox(1.6,5){}}
+%     \put(7.1,2.5){Optimizer}
+%     \put(7.8,5){\line(0,1){1}}
+%     \put(7.8,6){\line(-1,0){4.8}}
+%   \end{picture}
+%   \caption{Schematic of some algorithm.}
+%   \label{fig:algorithm}%chktex 24
+% \end{figure}
+
+
+% % ----------------------------------------------------------------------
+% \subsection{Equations}
+% \label{subsection:equations}%chktex 24
+
+% Equations can be inserted in different ways.
+
+% The simplest way is in a separate line like this
+
+% \begin{equation}
+%   \frac{{\rm d} q_{ijk}}{{\rm d} t} + {\cal R}_{ijk}({\bf q}) = 0 \,.
+% \label{eq:ode}%chktex 24
+% \end{equation}
+
+% If the equation is to be embedded in the text. One can do it like this ${\partial {\cal R}}/{\partial {\bf q}}=0$.
+
+% It may also be split into different lines like this
+
+% \begin{eqnarray}
+%   {\rm Minimize}   && Y({\bf \alpha},{\bf q}({\bf \alpha}))            \nonumber           \\
+%   {\rm w.r.t.}     && {\bf \alpha} \,,                                 \label{eq:minimize} \\
+%   {\rm subject~to} && {\cal R}({\bf \alpha},{\bf q}({\bf \alpha})) = 0 \nonumber           \\
+%                    &&       C ({\bf \alpha},{\bf q}({\bf \alpha})) = 0 \,. \nonumber
+% \end{eqnarray}
+
+% It is also possible to use subequations. Equations~(\ref{eq:continuity}), (\ref{eq:momentum}) and (\ref{eq:energy}) form the Naver--Stokes equations~(\ref{eq:NavierStokes}).%chktex 8
+
+% \begin{subequations}
+%     \begin{equation}
+%     \frac{\partial \rho}{\partial t} + \frac{\partial}{\partial x_j}\left( \rho u_j \right) = 0 \,,
+%     \label{eq:continuity}
+%     \end{equation}
+%     \begin{equation}
+%     \frac{\partial}{\partial t}\left( \rho u_i \right) + \frac{\partial}{\partial x_j} \left( \rho u_i u_j + p \delta_{ij} - \tau_{ji} \right) = 0, \quad i=1,2,3 \,,
+%     \label{eq:momentum}
+%     \end{equation}
+%     \begin{equation}
+%         \frac{\partial}{\partial t}\left( \rho E \right) + \frac{\partial}{\partial x_j} \left( \rho E u_j + p u_j - u_i \tau_{ij} + q_j \right) = 0 \,.
+%     \label{eq:energy}
+%     \end{equation}
+% \label{eq:NavierStokes}%chktex 24
+% \end{subequations}
+
+
+% % ----------------------------------------------------------------------
+% \subsection{Tables}
+% \label{section:tables}%chktex 24
+
+% Insert your subsection material and for instance a few tables\ldots
+
+% Make sure all tables presented are referenced in the text!
+
+% The caption should appear above the table.
+
+% Follow some guidelines when making tables:
+
+% \begin{itemize}
+%   \item Avoid vertical lines
+%   \item Avoid “boxing up” cells, usually 3 horizontal lines are enough: above, below, and after the heading
+%   \item Avoid double horizontal lines
+%   \item Add enough space between rows
+% \end{itemize}
+
+% \begin{table}[!htb]
+%   \caption[Table caption shown in TOC.]{Table caption.}
+%   \label{tab:aeroCoeff}%chktex 24
+%   \renewcommand{\arraystretch}{1.2} % more space between rows
+%   \centering
+%   \begin{tabular}{lccc}
+%     \toprule
+%     Model           & $C_L$ & $C_D$ & $C_{M y}$ \\
+%     \midrule
+%     Euler           & 0.083 & 0.021 & -0.110    \\
+%     Navier--Stokes  & 0.078 & 0.023 & -0.101    \\%chktex 8
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% Make reference to Tab.\ref{tab:aeroCoeff}.
+
+% Tables~\ref{tab:memory} and~\ref{tab:multipleColumns} are examples of tables with merging columns:
+
+% \begin{table}[!htb]
+%   \caption{Memory usage comparison (in MB).}
+%   \label{tab:memory}%chktex 24
+%   \renewcommand{\arraystretch}{1.2} % more space between rows
+%   \centering
+%   \begin{tabular}[]{lrr}
+%     \toprule
+%                 & \multicolumn{2}{c}{\underline{Virtual memory [MB]}} \\
+%                 & Euler       & Navier--Stokes \\%chktex 8
+%     \midrule
+%       Wing only &  1,000      &    2,000       \\
+%       Aircraft  &  5,000      &   10,000       \\
+%       (ratio)   & $5.0\times$ & $5.0\times$    \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% \begin{table}[!htb]
+%   \caption{Another table caption.}
+%   \label{tab:multipleColumns}%chktex 24
+%   \centering
+%   \renewcommand{\arraystretch}{1.2} % more space between rows
+%   \begin{tabular}{@{}rrrrcrrr@{}} % remove space to the vertical edges @{}...@{}
+%     \toprule
+%       & \multicolumn{3}{c}{$w = 2$} & \phantom{abc} & \multicolumn{3}{c}{$w = 4$} \\
+%     \cmidrule{2-4}
+%     \cmidrule{6-8}
+%       & $t=0$ & $t=1$ & $t=2$ && $t=0$ & $t=1$ & $t=2$ \\
+%     \midrule
+%       $dir=1$
+%       \\
+%       $c$ &  0.07 &  0.16 &  0.29 &&  0.36 &  0.71 &   3.18 \\
+%       $c$ & -0.86 & 50.04 &  5.93 && -9.07 & 29.09 &  46.21 \\
+%       $c$ & 14.27 &-50.96 &-14.27 && 12.22 &-63.54 &-381.09 \\
+%       $dir=0$
+%       \\
+%       $c$ &  0.03 &  1.24 &  0.21 &&  0.35 & -0.27 &  2.14 \\
+%       $c$ &-17.90 &-37.11 &  8.85 &&-30.73 & -9.59 & -3.00 \\
+%       $c$ &105.55 & 23.11 &-94.73 &&100.24 & 41.27 &-25.73 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% An example with merging rows can be seen in Tab.\ref{tab:multipleRows}.
+
+% \begin{table}[!htb]
+%   \caption{Yet another table caption.}
+%   \label{tab:multipleRows}%chktex 24
+%   \renewcommand{\arraystretch}{1.2} % more space between rows
+%   \centering
+%   \begin{tabular}{ccccc}
+%     \toprule
+%       \multirow{2}{*}{ABC} & \multicolumn{4}{c}{header} \\
+%       \cmidrule{2-5} & 1.1 & 2.2 & 3.3 & 4.4 \\
+%     \midrule
+%       \multirow{2}{*}{IJK} & \multicolumn{2}{c}{\multirow{2}{*}{group}} & 0.5 & 0.6 \\
+%       \cmidrule{4-5}       & \multicolumn{2}{c}{}                       & 0.7 & 1.2 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% If the table has too many columns, it can be scaled to fit the text width, as in Tab.\ref{tab:scale}.
+% \begin{table}[!htb]
+%   \caption{Very wide table.}
+%   \label{tab:scale}%%chktex 24
+%   \renewcommand{\arraystretch}{1.2} % more space between rows
+%   \centering
+%   \resizebox*{\textwidth}{!}{%
+%     \begin{tabular}[]{lcccccccccc}
+%       \toprule
+%         Variable &  a  &  b  &  c  &  d  &  e  &  f  &  g  &  h  &  i  &  j  \\
+%       \midrule
+%         Test 1   &  10,000 &  20,000 &  30,000 &  40,000 &  50,000 &  60,000 &  70,000 &  80,000 &  90,000 & 100,000 \\
+%         Test 2   &  20,000 &  40,000 &  60,000 &  80,000 & 100,000 & 120,000 & 140,000 & 160,000 & 180,000 & 200,000 \\
+%       \bottomrule
+%     \end{tabular}
+%   }%
+% \end{table}
+
+
+% % ----------------------------------------------------------------------
+% \subsection{Mixing}
+% \label{section:mixing}%chktex 24
+
+% If necessary, a figure and a table can be put side-by-side as in Fig.\ref{fig:side_by_side}
+
+% \begin{figure}[!htb]
+%   \begin{minipage}[b]{0.60\linewidth}
+%     \centering
+%     \includegraphics[width=\linewidth]{Figures/Bombardier_CRJ200}
+%   \end{minipage}%
+%   \begin{minipage}[b]{0.30\linewidth}
+%     \centering
+%     \begin{tabular}[b]{lll}
+%       \toprule
+%         \multicolumn{3}{c}{Legend} \\
+%       \midrule
+%         A & B & C \\
+%         0 & 0 & 0 \\
+%         0 & 1 & 0 \\
+%         1 & 0 & 0 \\
+%         1 & 1 & 1 \\
+%       \bottomrule
+%     \end{tabular}
+%     \vspace{5em}
+%   \end{minipage}
+% \caption{Figure and table side-by-side.}
+% \label{fig:side_by_side}%chktex 24
+% \end{figure}
+

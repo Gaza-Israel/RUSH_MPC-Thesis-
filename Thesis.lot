@@ -1,0 +1,28 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Theoretical Background and PMSM Model}{5}{chapter.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces FST13 Powertrain Specifications}}{7}{table.caption.14}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Switching combinations and space vectors for a 2-level three-phase inverter}}{8}{table.caption.16}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Machine Characterization and Control Methodology}{22}{chapter.3}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Simulation and Experimental Results }{45}{chapter.4}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Simulation Parameters}}{46}{table.caption.46}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Control Method Current THD comparison. THD is calculated until the Nyquist frequency, that is $250kHz$ and $40kHz$ for the controllers running at $50kHz$ and $8kHz$ respectively.}}{48}{table.caption.48}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusions}{59}{chapter.5}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{dq0 model with amplitude invariant transformation}{67}{appendix.A}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Technical Datasheets}{69}{appendix.B}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Current Reference using characterized inductances}{74}{appendix.C}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Inverter Design}{76}{appendix.D}%
+\contentsline {table}{\numberline {D.1}{\ignorespaces List of possible diodes for the new inverter design compared to the solution used on the current design.}}{80}{table.caption.67}%
+\contentsline {table}{\numberline {D.2}{\ignorespaces List of possible MOSFET modules for the new inverter design compared to the discrete solution used on the current design.}}{81}{table.caption.68}%
+\contentsline {subtable}{\numberline {(a)}{\ignorespaces {Motor power factor.}}}{81}{table.caption.68}%
+\contentsline {subtable}{\numberline {(b)}{\ignorespaces {Current THD.}}}{81}{table.caption.68}%
+\contentsline {table}{\numberline {D.3}{\ignorespaces Efficiency comparison of the possible MOSFETs modules for the new inverter design.}}{81}{table.caption.69}%

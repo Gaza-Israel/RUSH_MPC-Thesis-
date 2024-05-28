@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Load_Profile.tex	                                       %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Israel Sother                                            %
+%     Last modified: 27 May 2024                                       %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Load profile}
+\label{section:03load_profile}
+\vfill
+
+To properly simulate the use case of the motor, a representative load profile must be defined. This profile will be used in the motor torque balance equations inside the simulations. To derive a representative load profile for the motor a car model is necessary. In this case, a simple one-dimensional point mass model is used in \Cref{eq:load_prof_initial}.
+\begin{equation}
+	\left(m_{car}+m_{wheel\,equivalent}\right)a_x = F_{motor}\eta_{transm}-F_{rolling\,resistance}-F_{drag}
+	\label{eq:load_prof_initial}
+\end{equation}
+Where the rolling resistance is a constant force that depends on the rolling resistance coefficient and the weight of the car (\Cref{eq:rolling_resistance}), the losses are neglected, and the aerodynamic drag is calculated as in \Cref{eq:drag_force}.
+\begin{equation}
+	F_{drag} = 0.5\rho C_{d} A_{r} v^2
+	\label{eq:drag_force}
+\end{equation}
+\begin{equation}
+	F_{rolling\,resistance} = C_{r} m_{car} g
+	\label{eq:rolling_resistance}
+\end{equation}
+
+To calculate the inertia seen by the motor, an equivalent rotational inertia must be computed. To do that, the energy stored in the rotating parts and on the car is equated with the equivalent inertia as shown in \Cref{eq:iner_equivalent0}. This equation was rearranged as shown in \Cref{eq:iner_equivalent1,eq:iner_equivalent2,eq:iner_equivalent3}, which results in \Cref{eq:iner_equivalent}.
+\begin{equation}
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}v^2 + \frac{1}{2}J_{wheels}\omega^2
+	\label{eq:iner_equivalent0}
+\end{equation}
+\begin{equation}
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}(\omega_{wheels}r_{tire})^2 + \frac{1}{2}J_{wheels}\omega_{wheels}^2
+	\label{eq:iner_equivalent1}
+\end{equation}
+\begin{equation}
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}\left(\frac{\omega}{Gr}r_{tire}\right)^2 + \frac{1}{2}J_{wheels}\left(\frac{\omega}{Gr}\right)^2
+	\label{eq:iner_equivalent2}
+\end{equation}
+\begin{equation}
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}\left(\frac{m_{car}r_{tire}^2}{{Gr^2}} + \frac{J_{wheels}}{Gr^2}\right) \omega^2
+	\label{eq:iner_equivalent3}
+\end{equation}
+\begin{equation}
+	J_{eq} = \frac{m_{car}r_{tire}^2 + J_{wheels}}{Gr^2}
+	\label{eq:iner_equivalent}
+\end{equation}
+
+From experimental tests with previous prototypes, a good rule of thumb is that when accelerating, only one-third of the power can be applied at the front axle, while the rear axle receives two-thirds. Ideally, a weight transfer function would be used, but to simplify the equations the constant distribution will be used. Thus the equivalent rotational inertia at each motor is on \Cref{eq:motor_iner_equivalent}.
+
+\vspace{0.5cm}
+\begin{subequations}
+	\centering
+	\begin{minipage}{.47\linewidth}
+		\begin{equation}
+			J_{f_{eq}} = \frac{m_{car}r_{tire}^2 + 6\;J_{wheel}}{6\;Gr^2}
+		\end{equation}
+	\end{minipage}
+	\begin{minipage}{.47\linewidth}
+		\begin{equation}
+			J_{r_{eq}} = \frac{m_{car}r_{tire}^2 + 3\;J_{wheel}}{3\;Gr^2}
+		\end{equation}
+	\end{minipage}
+	\label{eq:motor_iner_equivalent}
+\end{subequations}
+\vspace{0.5cm}
+
+Combining the equations, a torque profile is defined in \Cref{eq:load_profile}.
+
+\begin{subequations}
+	\begin{equation}
+		J_{f_{eq}}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{6\;Gr}
+	\end{equation}
+	\begin{equation}
+		J_{r_{eq}}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{3\;Gr}
+	\end{equation}
+	\label{eq:load_profile}
+\end{subequations}

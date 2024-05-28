@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%     File: Thesis_Resumo.tex                                          %
+%     Tex Master: Thesis.tex                                           %
+%                                                                      %
+%     Author: Andre C. Marta                                           %
+%     Last modified :  2 Jul 2015                                      %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Resumo}
+
+% Add entry in the table of contents as section
+\addcontentsline{toc}{section}{Resumo}
+
+Este trabalho apresenta o desenvolvimento de uma estratégia de controlo para os motores da Equipe de Fórmula Estudantil do Instituto Superior Técnico. A estratégia de controlo foi desenvolvida para melhorar a resposta dinâmica do torque do motor e a eficiência do sistema. O motor foi caracterizado experimentalmente e um ambiente de simulação foi criado para testar diferentes estratégias de controlo. O \gls{mpc} explícito foi selecionado como a estratégia mais adequada devido à sua resposta rápida e baixa variação de corrente. Uma nova técnica de extensão de horizonte foi proposta para reduzir os erros na previsão, o que deu nome ao controlador: \acrfull{rush}. A estratégia de controlo foi implementada numa \gls{fpga} e foi desenvolvida uma bancada de testes. Os resultados experimentais mostraram uma correspondência próxima com os resultados da simulação, validando a estimativa de torque, as medições de corrente e a estratégia de controlo. A eficiência do sistema foi melhorada devido à redução na \gls{thd} de corrente e a resposta de torque foi melhorada em ordens de magnitude em comparação com a solução atual.
+
+\vfill
+
+\textbf{\Large Palavras-chave:} MPC Explícito, Controlo de Motores, Veículos Elétricos, Fórmula Estudantil, Extensão de Horizonte
+
