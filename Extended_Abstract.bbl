@@ -1,0 +1,114 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wang et~al.(2020)Wang, Lucia, Zhang, Gao, Guan, and Xu]{Wang:power_converter_review:2020}
+Y.~Wang et~al.
+\newblock A review of high frequency power converters and related technologies.
+\newblock \emph{IEEE Open Journal of the Industrial Electronics Society}, 1:\penalty0 247--260, 2020.
+\newblock ISSN 2644-1284.
+\newblock \doi{10.1109/OJIES.2020.3023691}.
+
+\bibitem[Karamanakos et~al.(2020)Karamanakos, Liegmann, Geyer, and Kennel]{Karamanakos:MPC_in_power_electronics:2020}
+P.~Karamanakos et~al.
+\newblock Model predictive control of power electronic systems: Methods, results, and challenges.
+\newblock \emph{IEEE Open Journal of Industry Applications}, 1:\penalty0 95--114, 2020.
+\newblock ISSN 2644-1241.
+\newblock \doi{10.1109/OJIA.2020.3020184}.
+
+\bibitem[Palmour(2006)]{Palmour:wide_bandgap_efficiency:2006}
+J.~W. Palmour.
+\newblock Energy efficient wide bandgap devices.
+\newblock In \emph{2006 IEEE Compound Semiconductor Integrated Circuit Symposium}, pages 4--7, Nov 2006.
+\newblock \doi{10.1109/CSICS.2006.319904}.
+
+\bibitem[Sarrico(2017)]{Sarrico:MSc}
+J.~G. V.~V. Sarrico.
+\newblock Design and implementation of a 20kw, 12000rpm permanent magnet synchronous motor ({PMSM}) for the {IST} formula student powertrain.
+\newblock {MSc} {T}hesis in {E}lectrical and {C}omputer {E}ngineering, Instituto Superior T\'ecnico, Lisboa, Portugal, June 2017.
+
+\bibitem[de~Sousa Correia~da Costa(2018)]{Costa:MSc}
+P.~M.~B. de~Sousa Correia~da Costa.
+\newblock Compact three-phase sic inverter for the {IST} formula student prototype.
+\newblock {MSc} {T}hesis in {E}lectrical and {C}omputer {E}ngineering, Instituto Superior T\'ecnico, Lisboa, Portugal, October 2018.
+
+\bibitem[Bianchi et~al.(2022)Bianchi, Carlet, Cinti, and Ortombina]{Bianchi:control_review}
+N.~Bianchi et~al.
+\newblock A review about flux-weakening operating limits and control techniques for synchronous motor drives.
+\newblock \emph{Energies}, 15\penalty0 (5), 2022.
+\newblock ISSN 1996-1073.
+\newblock \doi{10.3390/en15051930}.
+
+\bibitem[Neacsu(2001)]{Neacsu:SVM_intro:2001:IECON}
+D.~Neacsu.
+\newblock Space vector modulation - an introduction.
+\newblock \emph{IECON}, 01 2001.
+
+\bibitem[Vazquez et~al.(2017)Vazquez, Rodriguez, Rivera, Franquelo, and Norambuena]{Vazquez:MPC_in_power_systems_review:2017:IEEE}
+S.~Vazquez et~al.
+\newblock Model predictive control for power converters and drives: Advances and trends.
+\newblock \emph{IEEE Transactions on Industrial Electronics}, 64\penalty0 (2):\penalty0 935--947, Feb 2017.
+\newblock ISSN 1557-9948.
+\newblock \doi{10.1109/TIE.2016.2625238}.
+
+\bibitem[Merzoug et~al.(2008)Merzoug and Naceri]{Merzoug:FOCvsDTC:2008}
+M.~Merzoug.
+\newblock Comparison of field-oriented control and direct torque control for permanent magnet synchronous motor ({PMSM}).
+\newblock \emph{International Journal of Electrical and Computer Engineering}, 2\penalty0 (9):\penalty0 1797--1802, 2008.
+
+\bibitem[Korkmaz et~al.(2013)Korkmaz, Topalo\u{g}lu, \c{C}akir, and Gürbüz]{Korkmaz:FOCvsDTC:2013}
+F.~Korkmaz et~al.
+\newblock Comparative performance evaluation of {FOC} and {DTC} controlled {PMSM} drives.
+\newblock In \emph{4th International Conference on Power Engineering, Energy and Electrical Drives}, pages 705--708, May 2013.
+\newblock \doi{10.1109/PowerEng.2013.6635696}.
+
+\bibitem[Souad et~al.(2008)Souad and Zeroug]{Souad:FOCvsDTC:2008}
+R.~Souad.
+\newblock Comparison between direct torque control and vector control of a permanent magnet synchronous motor drive.
+\newblock In \emph{2008 13th International Power Electronics and Motion Control Conference}, pages 1209--1214, Sep. 2008.
+\newblock \doi{10.1109/EPEPEMC.2008.4635433}.
+
+\bibitem[Wang et~al.(2017)Wang, Mei, Rodríguez, and Kennel]{Wang:MPC_in_Electrical_Machines_review:2017:IEEE}
+F.~Wang et~al.
+\newblock Model predictive control for electrical drive systems-an overview.
+\newblock \emph{CES TRANSACTIONS ON ELECTRICAL MACHINES AND SYSTEMS}, 1\penalty0 (3):\penalty0 219--230, Sep 2017.
+
+\bibitem[Ma et~al.(2014)Ma, Saeidi, and Kennel]{Ma:MPC_Syntetic_vector:2014:IEEE}
+Z.~Ma et~al.
+\newblock Fpga implementation of model predictive control with constant switching frequency for {PMSM} drives.
+\newblock \emph{IEEE Transactions on Industrial Informatics}, 10\penalty0 (4):\penalty0 2055--2063, Nov 2014.
+
+\bibitem[Asadzadeh et~al.(2019)Asadzadeh, Dastfan, and Darabi]{Asadzadeh:selective_harmonic_elimination:2019}
+V.~Asadzadeh et~al.
+\newblock Selective harmonic elimination in direct torque controlled permanent magnet synchronous motor drive.
+\newblock \emph{COMPEL-The international journal for computation and mathematics in electrical and electronic engineering}, 38\penalty0 (1):\penalty0 153--166, 2019.
+
+\bibitem[Wijenayake et~al.(1997)Wijenayake and Schmidt]{Wijenayake:saturation_model:1997}
+A.~Wijenayake.
+\newblock Modeling and analysis of permanent magnet synchronous motor by taking saturation and core loss into account.
+\newblock In \emph{Proceedings of Second International Conference on Power Electronics and Drive Systems}, volume~2, pages 530--534 vol.2, May 1997.
+\newblock \doi{10.1109/PEDS.1997.627416}.
+
+\bibitem[Stumberger et~al.(2003)Stumberger, Stumberger, Dolinar, Hamler, and Trlep]{Stumberger:saturation_model:2003}
+B.~Stumberger et~al.
+\newblock Evaluation of saturation and cross-magnetization effects in interior permanent-magnet synchronous motor.
+\newblock \emph{IEEE Transactions on Industry Applications}, 39\penalty0 (5):\penalty0 1264--1271, Sep. 2003.
+\newblock ISSN 1939-9367.
+\newblock \doi{10.1109/TIA.2003.816538}.
+
+\bibitem[Barros et~al.(2013)Barros, Silva, and Jesus]{Fernando:fast_predictive:2013}
+J.~D. Barros et~al.
+\newblock Fast-predictive optimal control of {NPC} multilevel converters.
+\newblock \emph{IEEE Transactions on Industrial Electronics}, 60\penalty0 (2):\penalty0 619--627, 2013.
+\newblock \doi{10.1109/TIE.2012.2206352}.
+
+\bibitem[Vazquez et~al.(2014)Vazquez, Leon, Franquelo, Rodriguez, Young, Marquez, and Zanchetta]{Vazquez:MPC_uses:2014}
+S.~Vazquez et~al.
+\newblock Model predictive control: A review of its applications in power electronics.
+\newblock \emph{IEEE Industrial Electronics Magazine}, 8\penalty0 (1):\penalty0 16--31, 2014.
+\newblock \doi{10.1109/MIE.2013.2290138}.
+
+\end{thebibliography}

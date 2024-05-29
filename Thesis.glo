@@ -8,7 +8,10 @@
 \glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{vi}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{vi}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{vi}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{x}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{x}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{xiv}
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{2}
@@ -34,6 +37,7 @@
 \glossaryentry{FS-MPC?\glossentry{fsmpc}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{OEM?\glossentry{oem}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{EMI?\glossentry{emi}|setentrycounter[]{page}"\glsnumberformat}{3}
@@ -48,6 +52,8 @@
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{IGBT?\glossentry{igbt}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{SPWM?\glossentry{spwm}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{SHE?\glossentry{she}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{9}
@@ -56,14 +62,17 @@
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{10}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{10}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{back EMF?\glossentry{emf}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{12}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{DTC?\glossentry{dtc}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{18}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{19}
@@ -79,9 +88,13 @@
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{20}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{20}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{20}
+\glossaryentry{back EMF?\glossentry{emf}|setentrycounter[]{page}"\glsnumberformat}{22}
 \glossaryentry{VSI?\glossentry{vsi}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{27}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{30}
 \glossaryentry{MTPA?\glossentry{mtpa}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{back EMF?\glossentry{emf}|setentrycounter[]{page}"\glsnumberformat}{33}
 \glossaryentry{MTPA?\glossentry{mtpa}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{MTPA?\glossentry{mtpa}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{36}
@@ -93,24 +106,33 @@
 \glossaryentry{FS-MPC?\glossentry{fsmpc}|setentrycounter[]{page}"\glsnumberformat}{37}
 \glossaryentry{MTPA?\glossentry{mtpa}|setentrycounter[]{page}"\glsnumberformat}{37}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{PWM?\glossentry{pwm}|setentrycounter[]{page}"\glsnumberformat}{37}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{PWM?\glossentry{pwm}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{41}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{VSI?\glossentry{vsi}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{46}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{NL-MPC?\glossentry{nlmpc}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{FS-MPC?\glossentry{fsmpc}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{FS-MPC?\glossentry{fsmpc}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{SVM?\glossentry{svm}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{48}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{48}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{48}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{48}
@@ -119,32 +141,73 @@
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{50}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{50}
+\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{50}
+\glossaryentry{FSG?\glossentry{fsg}|setentrycounter[]{page}"\glsnumberformat}{50}
+\glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{50}
 \glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{51}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{52}
 \glossaryentry{EMI?\glossentry{emi}|setentrycounter[]{page}"\glsnumberformat}{52}
 \glossaryentry{MAD?\glossentry{mad}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{53}
-\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{53}
-\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{53}
+\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{54}
 \glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{55}
-\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{55}
+\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{56}
 \glossaryentry{FST Lisboa?\glossentry{fst}|setentrycounter[]{page}"\glsnumberformat}{59}
 \glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{59}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{59}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{59}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{60}
 \glossaryentry{FOC?\glossentry{foc}|setentrycounter[]{page}"\glsnumberformat}{60}
-\glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{60}
+\glossaryentry{RUSH MPC?\glossentry{rush}|setentrycounter[]{page}"\glsnumberformat}{60}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{60}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{60}
 \glossaryentry{EMI?\glossentry{emi}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{61}
+\glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{61}
+\glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{61}
+\glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{PMSM?\glossentry{pmsm}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{FSG?\glossentry{fsg}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{SiC?\glossentry{sic}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{78}
 \glossaryentry{FSG?\glossentry{fsg}|setentrycounter[]{page}"\glsnumberformat}{78}
 \glossaryentry{THD?\glossentry{thd}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{ASR?\glossentry{asr}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{MPC?\glossentry{mpc}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{80}
 \glossaryentry{EMI?\glossentry{emi}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{SAR ADC?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{MOSFET?\glossentry{mosfet}|setentrycounter[]{page}"\glsnumberformat}{81}

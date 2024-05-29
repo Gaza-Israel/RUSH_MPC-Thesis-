@@ -13,7 +13,7 @@
 \vfill
 
 To accelerate the development time, a model was developed in \textit{Simulink}, allowing for faster prototyping and direct comparison of the methods in a controlled environment. An adaptation of the \textit{Simscape Specialized Power Systems} block \textit{Permanent Magnet Synchronous Machine} was made to convert it to a delta-wound machine and to accept variable inductances as in \Cref{eq:motor_backward_euler_matrix}. 
-This model was combined with six MOSFETs blocks in three legs to simulate the \gls{vsi}. To supply the MOSFETs, a model of the battery was made, where an ideal voltage source is connected through a series resistor to the DC link, where a capacitor stabilizes the voltage. In \Cref{fig:simulation_model} the resultant system is presented, where $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$, are the gate control signals that come from the control strategy.
+This model was combined with six \glspl{mosfet} blocks in three legs to simulate the \gls{vsi}. To supply the \glspl{mosfet}, a model of the battery was made, where an ideal voltage source is connected through a series resistor to the DC link, where a capacitor stabilizes the voltage. In \Cref{fig:simulation_model} the resultant system is presented, where $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$, are the gate control signals that come from the control strategy.
 
 \begin{figure}[!htb]
 	\centering
@@ -24,7 +24,7 @@ This model was combined with six MOSFETs blocks in three legs to simulate the \g
 	\label{fig:simulation_model} %chktex 24
 \end{figure}
 
-The parameterization of the MOSFETs used in the simulation is derived from the model used in~\cite{Costa:MSc}, the  Wolfspeed C2M0040120D. The motor model is the one derived on \Cref{section:PMSM model}, with the parameters from \Cref{section:motor_characterization}. The rotor position is based on Heidenhain ECI1118 properties as this is the encoder that the manufacturer uses. 
+The parameterization of the \glspl{mosfet} used in the simulation is derived from the model used in~\cite{Costa:MSc}, the  Wolfspeed C2M0040120D. The motor model is the one derived on \Cref{section:PMSM model}, with the parameters from \Cref{section:motor_characterization}. The rotor position is based on Heidenhain ECI1118 properties as this is the encoder that the manufacturer uses. 
 The DC link capacitor is set to $40\mu F$, while the battery series resistance is $0.03 \Omega$, both based on the existing hardware. The ground connections are $420k\Omega$ each, to simulate the isolation between high voltage and low voltage in the car, while the inertia and torque source blocks inside the motor area are to simulate the testbench environment, with the standard value of $0.0848 kg m^2$ to the inertia, and the torque source being controlled to maintain a constant speed. All those parameters are shown in \Cref{table:simulation_parameters} alongside the car parameters used in the load simulation on \Cref{section:acceleration}.
 
 \begin{table}[h]
@@ -63,7 +63,7 @@ The DC link capacitor is set to $40\mu F$, while the battery series resistance i
 			\textbf{Air density}                    & $1.2 kg/m^3$ \\\toprule
 			\textbf{Reference car area}             & $1 m^2$      \\\toprule
 			\textbf{Drag coefficient}               & $1.59$                        \\\toprule
-			\textbf{\begin{tabular}[c]{@{}l@{}}Rolling resistance \\ coefficient\end{tabular}} & $0.09$                     \\\toprule
+			\textbf{Rolling resistance coefficient} & $0.09$                     \\\toprule
 			\textbf{\begin{tabular}[c]{@{}l@{}}Speed Controller \\ proportional gain ($k_p$)\end{tabular}} & $0.035 Nm/rpm$ \\ \toprule
 			\textbf{\begin{tabular}[c]{@{}l@{}}Speed Controller \\ integral gain ($k_i$)\end{tabular}}   & $10^{-9} Nm/rpm$ \\ \toprule
 		\end{tabular}
@@ -84,14 +84,14 @@ With the model implemented on \textit{Simulink}, a baseline was made using the m
 	\label{fig:rising_time_4_models} %chktex 24
 \end{figure}
 
-Note that the predictive controllers all perform similarly, having a great dynamic response, with an average rising time (0 to 100\%) of $200\mu s$, while the \gls{foc} method performed much slower, at approximately $180ms$. While the rising time in the \gls{foc} can be improved by better tunning the PID (these results are with the values recommended by the manufacturer), it would result in more pronounced overshoots and settling time, and would not reach the performance of a predictive controller, where the torque rising is only limited by the machine inductances, which shows the great dynamic performance of predictive controllers. It is important to also notice a small delay in the implicit NL-MPC response, this delay is due to the solver failing to converge. Although this may not always occur at each reference torque step, it was intentionally left on this graph to remind us of the possibility of this event. 
+Note that the predictive controllers all perform similarly, having a good dynamic response, with an average rising time (0 to 100\%) of $200\mu s$, while the \gls{foc} method performed much slower, at approximately $180ms$. While the rising time in the \gls{foc} can be improved by better tunning the PID (these results are with the values recommended by the manufacturer), it would result in more pronounced overshoots and settling time, and would not reach the performance of a predictive controller, where the torque rising is only limited by the machine inductances, which shows the great dynamic performance of predictive controllers. It is important to also notice a small delay in the implicit \gls{nlmpc} response, this delay is due to the solver failing to converge. Although this may not always occur at each reference torque step, it was intentionally left on this graph to remind us of the possibility of this event. 
 
 Divergence among the proposed methods becomes apparent during the analysis of steady-state conditions. The basic \gls{fsmpc} stands out with the highest torque and current ripple, significantly worse than the baseline, rendering it impractical. This ripple is due to the absence of a modulator, thus the chosen vector will stay applied for the full sampling time. Although an increase in switching frequency would improve the absolute performance of this method, in comparison it would never be as smooth as a modulated control, as it uses discrete vector options, while a simple \gls{svm} would switch multiple times in a single period. The increased switching reduces the ripple at the cost of lowered efficiency due to switching losses.
 
 The addition of the null vector on the second method reduces the ripple at low angular speeds but still fails to do so when the machine accelerates, with curves very similar to the \gls{fsmpc}. The use of complete modulators can reduce this torque ripple problem, as the \gls{svm} allows for a third vector to be applied during the same time step, allowing the control to accurately point the voltage vector to the desired angle and amplitude, where the null vector only lets the controller change the amplitude of the existent active vectors.
 \subsection{Current THD}
 
-The distortion of currents was evaluated by setting the motor at a constant speed, waiting a few periods for it to reach a steady state and then calculating the average THD of all line currents through 5 electrical periods. This was repeated in a grid pattern with some of the results shown in \Cref{table:thd_comparison}.
+The distortion of currents was evaluated by setting the motor at a constant speed, waiting a few periods for it to reach a steady state and then calculating the average \gls{thd} of all line currents through 5 electrical periods. This was repeated in a grid pattern with some of the results shown in \Cref{table:thd_comparison}.
 
 \begin{table}[h]
 	\caption{Control Method Current THD comparison. THD is calculated until the Nyquist frequency, that is $250kHz$ and $40kHz$ for the controllers running at $50kHz$ and $8kHz$ respectively.}
@@ -218,7 +218,7 @@ The distortion of currents was evaluated by setting the motor at a constant spee
 		% }
 \end{table}
 
-Table \ref{table:thd_comparison} exposes the advantage of continuous \gls{mpc} over the other alternatives, with distortions expressively smaller than the baseline and the finite set \gls{mpc}s, backing up the ripple analysis previously made. As expected the addition of a null vector reduced expressively the \gls{thd} in operation points of low modulation index, but made no difference when the modulation index increased. When comparing the methods that use \gls{svm}, the distortion is very similar when operated at the same frequency, meaning that the main factor is the modulation frequency, not the control algorithm.
+Table \ref{table:thd_comparison} exposes the advantage of continuous \gls{mpc} over the other alternatives, with distortions expressively smaller than the baseline and the finite set \glspl{mpc}, backing up the ripple analysis previously made. As expected the addition of a null vector reduced expressively the \gls{thd} in operation points of low modulation index, but made no difference when the modulation index increased. When comparing the methods that use \gls{svm}, the distortion is very similar when operated at the same frequency, meaning that the main factor is the modulation frequency, not the control algorithm.
 
 Another advantage of the proposed methods is they actively use the direct axis current to generate torque throughout the full operation map of the motor,  not only in field weakening as the method currently implemented on the car. This is a result of the use of \gls{mtpa} references which improves efficiency, as it produces a reduction in the current vector modulus necessary to generate the same torque.
 \subsection{Robustness}
@@ -254,7 +254,7 @@ Regarding the current \gls{thd}, the parameter influences are well balanced, wit
 \subsection{Acceleration Event}
 \label{section:acceleration}%chktex 24
 
-The load profile defined in \Cref{section:03load_profile} was used to simulate a typical acceleration event. The car load parameters are as shown in \Cref{table:simulation_parameters}, and the torque reference was set to reach $21.3kW$ of delivered power (after inverter and motor efficiency losses). The power value was chosen assuming an $80\%$ powertrain efficiency and the previous approximation of one-third of the car load on the rear motors. As shown in \Cref{fig:acceleration_comparison}, the EMPC improved the time from $3.943s$ to $3.883s$ (\textit{1.6}\%), reaching also a higher top speed than the currently implemented control method and presenting a lower torque ripple.
+The load profile defined in \Cref{section:03load_profile} was used to simulate a typical acceleration event. The car load parameters are as shown in \Cref{table:simulation_parameters}, and the torque reference was set to reach $21.3kW$ of delivered power (after inverter and motor efficiency losses). The power value was chosen assuming an $80\%$ powertrain efficiency and the previous approximation of one-third of the car load on the rear motors. As shown in \Cref{fig:acceleration_comparison}, the \gls{rush} improved the time from $3.943s$ to $3.883s$ ($1.6\%$), reaching also a higher top speed than the currently implemented control method and presenting a lower torque ripple. While the $0.06s$ seems like a small gain, comparing with the results from \gls{fsg} 2023 it would put \gls{fst} three positions higher in the event ranking. If the proposed control method is combined with the efficiency improvement from the use of new inverter hardware, the time is further reduced, to $3.759s$ ($4.7\%$), translating to a 6 position gain in the event ranking.
 
 \begin{figure}[!htb]
 	\centering

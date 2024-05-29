@@ -1,10 +1,10 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Motor characterization}{\reset@font\mtcSfont 21}{section.3.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Phase resistance}{\reset@font\mtcSSfont 22}{subsection.3.1.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Flux Linkage}{\reset@font\mtcSSfont 22}{subsection.3.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Machine direct and quadrature inductances}{\reset@font\mtcSSfont 23}{subsection.3.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Windings direct and quadrature inductances}{\reset@font\mtcSSfont 23}{subsection.3.1.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.1}Method 1}{\reset@font\mtcSSSfont 23}{subsubsection.3.1.3.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Direct Axis}{\reset@font\mtcPfont 24}{section*.24}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Quadrature Axis}{\reset@font\mtcPfont 25}{section*.27}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Direct Axis}{\reset@font\mtcPfont 24}{section*.26}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Quadrature Axis}{\reset@font\mtcPfont 25}{section*.29}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.3.2}Method 2}{\reset@font\mtcSSSfont 26}{subsubsection.3.1.3.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Current References}{\reset@font\mtcSfont 30}{section.3.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Contraints with limited input voltage}{\reset@font\mtcSSfont 31}{subsection.3.2.1}}
@@ -14,6 +14,6 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Finite Set MPC}{\reset@font\mtcSSfont 37}{subsection.3.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Finite Set with Null Vector MPC}{\reset@font\mtcSSfont 37}{subsection.3.4.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Non-Linear Continuous Set MPC}{\reset@font\mtcSSfont 38}{subsection.3.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}RUSH MPC}{\reset@font\mtcSSfont 38}{subsection.3.4.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.1}Horizon Extesion}{\reset@font\mtcSSSfont 40}{subsubsection.3.4.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}RUSH MPC}{\reset@font\mtcSSfont 39}{subsection.3.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.1}Horizon Extension}{\reset@font\mtcSSSfont 40}{subsubsection.3.4.4.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.2}Speed Control}{\reset@font\mtcSSSfont 41}{subsubsection.3.4.4.2}}

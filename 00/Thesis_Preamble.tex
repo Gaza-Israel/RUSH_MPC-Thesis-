@@ -485,24 +485,6 @@
               \item[\textbf{Sobrescritos}]}{}}}}}%
     }}%
 
-
-% 'glossary' package
-%
-% Create a glossary.
-% http://www.ctan.org/tex-archive/macros/latex/contrib/glossary/
-%
-% Glossary (produces *.glo *.ist files)
-\usepackage{silence}
-%Disable all warnings issued by latex starting with "You have..."
-% \WarningFilter{latex}{You have requested package}
-\usepackage[nonumberlist]{glossaries}
-% (remove blank line between groups)
-% \setglossary{gloskip={}}
-% (redefine glossary style file)
-% \renewcommand{\istfilename}{myGlossaryStyle.ist}
-\makeglossaries{}
-
-
 % 'rotating' package
 %
 % Rotation tools, including rotated full-page floats.
@@ -563,6 +545,24 @@
 %   below the caption and not at the beginning of the float.
 %
 \usepackage[figure,table]{hypcap}
+
+
+% 'glossary' package
+%
+% Create a glossary.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/glossary/
+%
+% Glossary (produces *.glo *.ist files)
+% \usepackage{silence}
+%Disable all warnings issued by latex starting with "You have..."
+% \WarningFilter{latex}{You have requested package}
+\usepackage[nonumberlist]{glossaries}
+% (remove blank line between groups)
+% \setglossary{gloskip={}}
+% (redefine glossary style file)
+% \renewcommand{\istfilename}{myGlossaryStyle.ist}
+\makeglossaries{}
+
 
 
 % 'multirow' package
@@ -706,19 +706,19 @@
 		},
 	},
 }
-\pgfplotsset{
-	contour/every contour label/.style={
-		sloped,
-		transform shape,
-		font=\footnotesize,
-		inner sep=1pt,
-		every node/.style={mapped color!50!black,fill=white},
-		/pgf/number format/relative={\pgfplotspointmetarangeexponent},
-		/pgf/number format/precision=6,
-		/pgf/number format/relative*=1,
-    % \pgfmathsetmacro\labelpos{#1/200}
-	}
-}
+% \pgfplotsset{
+% 	contour/every contour label/.style={
+% 		sloped,
+% 		transform shape,
+% 		font=\footnotesize,
+% 		inner sep=1pt,
+% 		every node/.style={mapped color!50!black,fill=white},
+% 		/pgf/number format/relative={\pgfplotspointmetarangeexponent},
+% 		/pgf/number format/precision=6,
+% 		/pgf/number format/relative*=1,
+%     % \pgfmathsetmacro\labelpos{#1/200}
+% 	}
+% }
 
 \newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}%
     {-3.25ex \@plus -1ex \@minus -0.2ex}%

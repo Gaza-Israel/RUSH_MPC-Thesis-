@@ -222,6 +222,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{nlmpc}%
+{%
+name={\acronymfont {\glsentryshort {nlmpc}}},%
+sort={NL-MPC},%
+type={main},%
+first={NL-MPC},%
+firstplural={NL-MPCs},%
+text={NL-MPC},%
+plural={NL-MPCs},%
+description={Non-Linear Continuous Set MPC Model Predictive Control},%
+descriptionplural={Non-Linear Continuous Set MPC Model Predictive Control},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Non-Linear Continuous Set MPC Model Predictive Control},%
+longplural={Non-Linear Continuous Set MPC Model Predictive Controls},%
+short={NL-MPC},%
+shortplural={NL-MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{mtpa}%
 {%
 name={\acronymfont {\glsentryshort {mtpa}}},%
@@ -637,6 +665,118 @@ long={Real-time Ultra Short Horizon extension MPC},%
 longplural={Real-time Ultra Short Horizon extension MPCs},%
 short={RUSH MPC},%
 shortplural={RUSH MPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mosfet}%
+{%
+name={\acronymfont {\glsentryshort {mosfet}}},%
+sort={MOSFET},%
+type={main},%
+first={MOSFET},%
+firstplural={MOSFETs},%
+text={MOSFET},%
+plural={MOSFETs},%
+description={Metal Oxide Semiconductor Field Effect Transistor},%
+descriptionplural={Metal Oxide Semiconductor Field Effect Transistor},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Metal Oxide Semiconductor Field Effect Transistor},%
+longplural={Metal Oxide Semiconductor Field Effect Transistors},%
+short={MOSFET},%
+shortplural={MOSFETs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{emf}%
+{%
+name={\acronymfont {\glsentryshort {emf}}},%
+sort={back EMF},%
+type={main},%
+first={back EMF},%
+firstplural={back EMFs},%
+text={back EMF},%
+plural={back EMFs},%
+description={Back Electromotive Force},%
+descriptionplural={Back Electromotive Force},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Back Electromotive Force},%
+longplural={Back Electromotive Forces},%
+short={back EMF},%
+shortplural={back EMFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sar}%
+{%
+name={\acronymfont {\glsentryshort {sar}}},%
+sort={SAR ADC},%
+type={main},%
+first={SAR ADC},%
+firstplural={SAR ADCs},%
+text={SAR ADC},%
+plural={SAR ADCs},%
+description={Successive-approximation Analog to Digital Converter},%
+descriptionplural={Successive-approximation Analog to Digital Converter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Successive-approximation Analog to Digital Converter},%
+longplural={Successive-approximation Analog to Digital Converters},%
+short={SAR ADC},%
+shortplural={SAR ADCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adc}%
+{%
+name={\acronymfont {\glsentryshort {adc}}},%
+sort={ADC},%
+type={main},%
+first={ADC},%
+firstplural={ADCs},%
+text={ADC},%
+plural={ADCs},%
+description={Analog to Digital Converter},%
+descriptionplural={Analog to Digital Converter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Analog to Digital Converter},%
+longplural={Analog to Digital Converters},%
+short={ADC},%
+shortplural={ADCs},%
 counter={page},%
 parent={},%
 %

@@ -32,7 +32,7 @@ The major achievement of the present work was the development of a control strat
 Summing up the achievements of this thesis, the following points can be highlighted:
 \begin{itemize}
     \item The currently used motor is characterized and a simulation environment was created;
-    \item Several \gls{mpc} strategies were compared with the current \gls{foc} solution leading to the selection of the explicit \gls{mpc};
+    \item Several \gls{mpc} strategies were compared with the current \gls{foc} solution leading to the selection of the \gls{rush};
     \item The proposed control strategy was implemented in an \gls{fpga};
     \item The necessary hardware for a test bench setup was developed and tested to a high level of accuracy;
     \item Simulation data was validated with experimental results comparison;
@@ -63,4 +63,4 @@ The proposed speed controller although capable of controlling the motor speed, c
 
 Another known limitation is the encoder sampling rate, which is very reduced when compared to the control frequency. That, combined with the elevated level of complexity of the encoder protocol and its scarce documentation, suggests that the encoder should be replaced by a more modern and faster sensor.
 
-Lastly, the current implementation of the FPGA uses almost all the available resources, which limits the implementation of more complex algorithms. It also is currently controlling only one motor, but by pipelining the control, it could control two motors, limited by the number of available GPIOs in the Zybo board. One solution could be to switch the control algorithm from floating point to fixed point, which would require fewer resources and would allow for more complex algorithms to be implemented. Another solution would be to use a more powerful FPGA, which would also enable the control of the four motors in only one FPGA, reducing the cost and volume of the system.
+Lastly, the current implementation of the \gls{fpga} uses almost all the available resources, which limits the implementation of more complex algorithms. It also is currently controlling only one motor, but by pipelining the control, it could control two motors, limited by the number of available GPIOs in the Zybo board. One solution could be to switch the control algorithm from floating point to fixed point, which would require fewer resources and would allow for more complex algorithms to be implemented. Another solution would be to use a more powerful \gls{fpga}, which would also enable the control of the four motors in only one \gls{fpga}, reducing the cost and volume of the system.

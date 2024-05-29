@@ -27,21 +27,32 @@
 % ----------------------------------------------------------------------
 % Roman symbols [r]
 \nomenclature[ri_x]{$i_x$}{Current}
+\nomenclature[ri_x_ref]{$i_{x_{ref}}$}{Current $_x$ reference}
+\nomenclature[ri_linemax]{$i_{line max}$}{Motor maximum line current}
+\nomenclature[ri]{$i$}{dq Current norm}
 \nomenclature[rE_x]{$E_x$}{Back EMF}
 \nomenclature[ru_x]{$u_x$}{Voltage}
 \nomenclature[rr_x]{$r_x$}{Phase resistance}
+\nomenclature[rr]{$r$}{dq0 Stator resistance}
+\nomenclature[rr_shunt]{$r_{shunt}$}{Current Shunt resistance}
+\nomenclature[rr_wire]{$r_{wire}$}{Wire resistance}
 \nomenclature[rL_x]{$L_x$}{Phase self inductance}
 \nomenclature[rM_xy]{$M_{xy}$}{Phase mutual inductance}
+\nomenclature[rt_x]{$t_x$}{Period of time a Voltage vector $x$ is active}
 \nomenclature[rT_e]{$T_e$}{Electromagnetic torque}
 \nomenclature[rT_load]{$T_{load}$}{Load reaction torque}
+\nomenclature[rT_ref]{$T_{ref}$}{Reference Torque}
+\nomenclature[rT_ref]{$T_{ref}$}{Reference Torque}
 \nomenclature[rT_loss]{$T_{loss}$}{Losses equivalent torque}
 \nomenclature[rp]{$p$}{Number of pole pairs}
-\nomenclature[rh]{$h$}{Sampling time}
+\nomenclature[rh]{$h$}{Sampling time period}
 \nomenclature[rk]{$k$}{Discrete time index}
 \nomenclature[rm]{$m$}{Modulation index}
 \nomenclature[rVref]{$V_{ref}$}{Voltage reference vector}
-\nomenclature[rK_v]{$K_v$}{Voltage Constant}
-\nomenclature[rK_t]{$K_t$}{Torque Constant}
+\nomenclature[rVdc]{$V_{DC}$}{DC Link Voltage}
+\nomenclature[rVx]{$V_x$}{Voltage vector $x \in [0,8]$}
+\nomenclature[rk_v]{$k_v$}{Voltage Constant}
+\nomenclature[rk_t]{$k_t$}{Torque Constant}
 \nomenclature[rJ]{$J$}{Rotational Inertia}
 \nomenclature[rv]{$v$}{Car Velocity}
 \nomenclature[rAref]{$A_{r}$}{Car frontal reference area}
@@ -53,8 +64,59 @@
 \nomenclature[rJ]{$\mathcal{J}$}{MPC cost function}
 \nomenclature[rCs]{$\mathcal{C}_{soft}$}{MPC soft contraint}
 \nomenclature[rs_x]{$s_x$}{MPC cost gains}
+\nomenclature[rS_x]{$S_x$}{Inverter Switches states $x \in [0,8]$}
 \nomenclature[rk_p]{$k_p$}{PI proportional gain}
 \nomenclature[rk_i]{$k_i$}{PI integral gain}
+\nomenclature[rK_shift]{$K_{shift}$}{Neutral point shift gain}
+\nomenclature[rT_matrix]{$\mathbf{T}$}{abc->dq0 Transformation matrix} 
+\nomenclature[rT_matrix]{$\mathbf{T^*}$}{abc->dq0 Amplitude Invariant Transformation matrix} 
+\nomenclature[rCo_matrix]{$\mathbf{Co}$}{Concordia Transformation matrix} 
+\nomenclature[rBl_matrix]{$\mathbf{Bl}$}{Blondel-Park Transformation matrix} 
+\nomenclature[rR_matrix]{$\mathbf{R_{xyz}}$}{Resistance matrix ($abc$, $dq0$, or $s$)} 
+\nomenclature[rL_matrix]{$\mathbf{L_{xyz}}$}{Inductance matrix ($abc$, $dq0$, or $s$)} 
+\nomenclature[ru_vector]{$\mathbf{u_{xyz}}$}{Phase voltages vector ($abc$, $dq0$, or $s$)}  
+\nomenclature[ri_vector]{$\mathbf{i_{xyz}}$}{Phase currents vector ($abc$, $dq0$, or $s$)}  
+\nomenclature[rE_vector]{$\mathbf{E_{xyz}}$}{Phase back-EMF vector ($abc$, $dq0$, or $s$)}  
+\nomenclature[ra]{$a_x$}{Exponential fit linear gain $x \in [0,4]$}
+\nomenclature[rb]{$b_x$}{Exponential fit exponential gain $x \in [0,4]$}
+\nomenclature[rc_down]{$c_{down}$}{Exponential fit lower saturation gain}
+\nomenclature[rc_up]{$c_{up}$}{Exponential fit upper saturation gain}
+\nomenclature[rc]{$c$}{Exponential fit constant offset}
+\nomenclature[rF_motor]{$F_{motor}$}{Motor equivalent linear force at tire contact patch}
+\nomenclature[rF_rolling]{$F_{rolling resistance}$}{Rolling resistance force}
+\nomenclature[rF_drag]{$F_{drag}$}{Aerodinamic drag force}
+\nomenclature[rax]{$a_x$}{Car acceleration in the x axis}
+\nomenclature[rm_wheel]{$m_{wheel equivalent}$}{Wheel mass linear equivalent}
+\nomenclature[rg]{$g$}{Gravitational acceleration}
+\nomenclature[rJ_eq]{$J_{eq}$}{Equivalent Rotational Inertia}
+\nomenclature[rJ_eqf]{$J_{f_{eq}}$}{Front motor Equivalent Rotational Inertia}
+\nomenclature[rJ_eqr]{$J_{r_{eq}}$}{Rear motor Equivalent Rotational Inertia}
+\nomenclature[rJ_wheels]{$J_{wheels}$}{Wheels Rotational Inertia}
+\nomenclature[rd_x]{$d_{x}$}{Phase switch duty cycle}
+\nomenclature[rf_sq]{$f_{sw}$}{Switching Frequency}
+\nomenclature[rt_control]{$t_{coontrol}$}{Time taken to compute a control action}
+\nomenclature[ri_prev]{$\overline{\hat{i}_{dq}}$}{Norm of the predicted dq0 currents}
+\nomenclature[rv_prev]{$\overline{V^*_{dq}}$}{Norm of the dq0 voltage reference}
+\nomenclature[rP_ON]{$P_{ON}$}{Inverter Conduction Loss Power}
+\nomenclature[rP_SW]{$P_{SW}$}{Inverter Switching Loss Power}
+\nomenclature[rP_o]{$P_{o}$}{Inverter Output Power}
+\nomenclature[rR_0]{$R_{0}$}{Motor equivalent resistance}
+\nomenclature[rR_dson]{$R_{DS_{on}}$}{MOSFET on state resistance}
+\nomenclature[rTHD]{$THD$}{Total harmonic distortion of the inverter output
+current}
+\nomenclature[rZ_0]{$Z_{0}$}{Motor equivalent impedance}
+\nomenclature[rF_p]{$F_p$}{Motor power factor}
+\nomenclature[rT_on]{$T_{on}$}{MOSFET turn-on time}
+\nomenclature[rT_off]{$T_{off}$}{MOSFET turn-off time}
+\nomenclature[rT]{$T$}{Switching period}
+\nomenclature[rC_t]{$C_t$}{Total parasitic capacitance (MOSFET + Diode)}
+\nomenclature[rC_oss]{$C_{oss}$}{ \gls{mosfet} output parasitic capacitance}
+\nomenclature[rC_d]{$C_d$}{Diode parasitic capacitance}
+\nomenclature[rm_p]{$m_p$}{Efficiency formulation modulation index}
+\nomenclature[rV_rms]{$V_{ORMS}$}{Line to neutral inverter output RMS voltage}
+\nomenclature[rE_g]{$E_{g}$}{Average energy needed to switch the MOSFET gate at the switching frequency}
+\nomenclature[rQ_g]{$Q_{g}$}{MOSFET gate charge}
+\nomenclature[rV_ds]{$V_{ds}$}{MOSFET drain source voltage}
 % ----------------------------------------------------------------------
 % Greek symbols [g]
 \nomenclature[gtheta_e]{$\theta_e$}{Rotor electrical position}
@@ -66,16 +128,27 @@
 \nomenclature[glambda]{$\lambda$}{Lagrange Multiplier}
 \nomenclature[grho]{$\rho$}{Air density}
 \nomenclature[geta]{$\eta$}{Efficiency}
+\nomenclature[geta_transm]{$\eta_{transm}$}{Transmission Efficiency}
 \nomenclature[gtau]{$\tau$}{Time Constant}
-
+\nomenclature[rpsi_vector]{$\mathbf{\psi_{xyz}}$}{Flux linkages vector ($abc$, $dq0$, or $s$)}  
+\nomenclature[gl]{$\mathcal{L}$}{Lagrangian function}
+\nomenclature[gpsi*d]{$\psi^*_d $}{Combined Flux linkage in the direct axis (includes the permanent magnet component and the current induced component)}
+\nomenclature[ggama]{$\gamma$}{Desired voltage vector angle}
+\nomenclature[galpha]{$\alpha$}{Exponential average smoothing factor}
 
 % ----------------------------------------------------------------------
 % Subscripts [s]
 \nomenclature[sp]{$a, b, c$}{Phase values}
 \nomenclature[sl]{$A, B, C$}{Line values}
+\nomenclature[sN]{$N$}{Neutral point}
 \nomenclature[sdq0]{$d, q, 0$}{Direct axis, quadrature axis, and zero-sequence components}
+\nomenclature[salphabeta0]{$\alpha, \beta, 0$}{Alpha axis, Beta axis, and zero-sequence components}
 \nomenclature[spm]{$PM$}{Permanent Magnet component}
 \nomenclature[sf]{$f,r$}{Front and Rear axle}
+\nomenclature[sn]{$_{n}$}{Null voltage vectors (Vector 0 or 8)}
+\nomenclature[ss]{$_{s}$}{Stator value}
+\nomenclature[sr]{$_{r}$}{Rotor value}
+\nomenclature[sact]{$_{act}$}{Active vector}
 
 % ----------------------------------------------------------------------
 % Superscripts [t]

@@ -25,7 +25,7 @@ Assuming the machine is well balanced, the phase resistance will be equal to $\f
 
 The used device was a \textit{UNI-T UT620A Micro-ohmmeter}, that has a resolution of $10\mu \Omega$ with an accuracy of $\pm (0.25\% + 25\mu \Omega)$. The measurements were taken on the terminal wires at room temperature and with the kelvin probe, resulting in $142.89 \pm 0.06 m\Omega$. This value is close to the datasheet one of $135 m\Omega$, and the difference is probably due to the wire terminals. The resultant phase resistance ($r$) is $214.335 \pm 0.091 m\Omega$.
 \subsection{Flux Linkage}
-The magnet flux linkage can be measured by externally rotating the rotor and measuring the generated back EMF. From \Cref{eq:motor_with_inductances}, if the terminal wires are disconnected from everything, the current will be constantly zero, thus the measured voltage will be only a result of the flux linkage and the rotor velocity as shown in \Cref{eq:flux_measuring}.
+The magnet flux linkage can be measured by externally rotating the rotor and measuring the generated \gls{emf}. From \Cref{eq:motor_with_inductances}, if the terminal wires are disconnected from everything, the current will be constantly zero, thus the measured voltage will be only a result of the flux linkage and the rotor velocity as shown in \Cref{eq:flux_measuring}.
 
 \begin{subequations}
 	\begin{equation}
@@ -65,7 +65,7 @@ In the example image, the oscilloscope measured a peak voltage of $10.2$, while 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Machine direct and quadrature inductances}
+\subsection{Windings direct and quadrature inductances}
 \label{sec:inductance}
 
 To achieve better accuracy, two different methods will be proposed, one using the inverter, and the other only using a DC power supply.
@@ -98,7 +98,7 @@ The simpler method, which does not use the inverter, works by measuring the curr
 \end{figure}
 
 \subsubsubsection{Direct Axis}
-The direct axis measurement starts with the resistance measurement of the entire setup, motor, wires, switch, and shunt. Then, a quick voltage pulse is applied to align the rotor with the magnetic field, which in this setup is equivalent to the voltage vector $V_6$. In the aligned condition, the current through phase b ($i_b$) is zero, and $i_a = -i_c$. After the rotor is aligned, a new pulse is done, now for the actual measurement as exemplified in \Cref{fig:inductance_oscilloscope}. The time constant can be retrieved using the basic equation for an RL circuit applied to the shunt resistor (\Cref{eq:rl_circuit,eq:tau}).
+The direct axis measurement starts with the resistance measurement of the entire setup, motor, wires, switch, and shunt. Then, a quick voltage pulse is applied to align the rotor with the magnetic field, which in this setup is equivalent to the voltage vector $V_6$. In the aligned condition, the current through phase b ($i_b$) is zero, and $i_a = -i_c$. After the rotor is aligned, a new pulse is applied, now for the actual measurement as exemplified in \Cref{fig:inductance_oscilloscope}. The time constant can be retrieved using the basic equation for an RL circuit applied to the shunt resistor (\Cref{eq:rl_circuit,eq:tau}).
 
 \begin{subequations}
 	\begin{equation}
@@ -110,7 +110,8 @@ The direct axis measurement starts with the resistance measurement of the entire
 		\label{eq:tau}
 	\end{equation}
 \end{subequations}
-In \Cref{eq:rl_circuit} $u(t)$ represents the measured voltage on the shunt resistor, $V_{DC}$ is the power supply voltage, $\tau$ is the system time constant, $r_a$ is the variable resistance to adjust the current,$r_{shunt}$ is the shunt resistance, and $r_{wire}$ is the sum of the wire resistances with the switch resistance. To simplify the measurements, instead of calculating the first term $i_A r_{shunt}$, it was replaced by the voltage that which the oscilloscope settled.
+In \Cref{eq:rl_circuit} $u(t)$ represents the measured voltage on the shunt resistor, $V_{DC}$ is the power supply voltage, $\tau$ is the system time constant, $r_a$ is the variable resistance to adjust the current,$r_{shunt}$ is the shunt resistance, and $r_{wire}$ is the sum of the wire resistances with the switch resistance. 
+% To simplify the measurements, instead of calculating the first term $i_A r_{shunt}$, it was replaced by the voltage that which the oscilloscope settled.
 
 \begin{figure}[!htb]
 	\centering
@@ -181,7 +182,7 @@ The second method for inductance characterization is according to~\citet{Stumber
 
 This method defines the flux linkage based on the integration of \Cref{eq:inductance_voltage_step}, and to measure the flux linkage variation in the quadrature axis, it performs a series of stepwise voltage changes in $u_q$ while maintaining the current $i_d$ constant (\Cref{fig:stepwise}). The integration of those curves will result in the quadrature flux linkage variation with $i_q$. These steps are repeated for several values of $i_d$, and for each of them, a flux linkage curve is created as shown in \Cref{fig:flux_linkage_curve}. Note that this figure was generated as a concatenation of two separate voltage steps, one positive and one negative, to simplify the process. This concatenation is the reason for the small misalignment in the flux linkage lines near the origin.
 
-Instead of using the measured value for the phase resistance, its value is estimated by assuming the current is at a steady state at the end of the voltage pulse so that the flux linkage is stable and $u_x = ri_x$, this is done to reduce integration errors on the flux linkage and also to account for wires, connections, and MOSFET resistances.
+Instead of using the measured value for the phase resistance, its value is estimated by assuming the current is at a steady state at the end of the voltage pulse so that the flux linkage is stable and $u_x = ri_x$, this is done to reduce integration errors on the flux linkage and also to account for wires, connections, and \gls{mosfet} resistances.
 
 \begin{figure}[!htb]
 	\begin{subfigmatrix}{2}
@@ -198,7 +199,7 @@ Instead of using the measured value for the phase resistance, its value is estim
 	\label{fig:flux_linkage_curve} %chktex 24
 \end{figure}
 
-The same procedure is used for measuring $\psi_d$, but this time the quadrature current is fixed and the direct voltage is changed in stepwise form. Although the original method is proposed to characterize cross-magnetization effects, the results shown in \Cref{fig:all_pulses} present little variation with currents on the perpendicular axis, thus to simplify the study they are approximated as independent. This approximation is used to reduce the dimensionality of the current reference table and to reduce the used space on the FPGA. To improve the efficiency of the process the quadrature flux linkage was not characterized for positive and negative currents, as the direct axis was, but only for negative currents. Due to the symmetry of the motor, the quadrature axis results were mirrored to create the flux values for positive and negative currents, as shown in \Cref{fig:all_pulses}.
+The same procedure is used for measuring $\psi_d$, but this time the quadrature current is fixed and the direct voltage is changed in stepwise form. Although the original method is proposed to characterize cross-magnetization effects, the results shown in \Cref{fig:all_pulses} present little variation with currents on the perpendicular axis, thus to simplify the study they are approximated as independent. This approximation is used to reduce the dimensionality of the current reference table and to reduce the used space on the \gls{fpga}. To improve the efficiency of the process the quadrature flux linkage was not characterized for positive and negative currents, as the direct axis was, but only for negative currents. Due to the symmetry of the motor, the quadrature axis results were mirrored to create the flux values for positive and negative currents, as shown in \Cref{fig:all_pulses}.
 
 \begin{figure}[!htb]
 	\centering

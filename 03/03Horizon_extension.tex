@@ -7,8 +7,8 @@
 %     Last modified: 27 May 2024                                       %
 %                                                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Horizon Extesion}
-\label{section:Horizon Extesion}%chktex 24
+\subsubsection{Horizon Extension}
+\label{section:Horizon Extension}%chktex 24
 
 A previously overlooked problem is the compensation of the computational time, as the acquisition and control calculations cannot be done instantly their delay needs to be compensated. The strategy adopted here is to use the motor model equations \Cref{eq:motor_backward_euler_matrix} coupled with the previously calculated control action to predict the system state in the next time step, this is called horizon extension. Usually, this is done in a fixed timestep manner, where the predictive controllers instead of picking the control action for $k$ in the timestep $k$, pick the control action for $k+1$ in the timestep $k$, as shown in \Cref{eq:horizon_default} where $x$ represent the currents, $u$ is the voltage vector, $A$, $B$, $C$, and $D$ are the matrices and vectors of the model in \Cref{eq:motor_backward_euler_matrix} and are all dependent on the prediction duration $h = \frac{1}{f_{sw}}$.
 \begin{equation}
@@ -25,7 +25,8 @@ For this equation to work the system timeline needs to be as in \Cref{fig:horizo
 	\label{fig:horizon_default_timeline} %chktex 24
 \end{figure}
 
-This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced because the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$, while the system timeline is shifted as in \Cref{fig:horizon_extend_timeline}. The combination of explicitly solving the \gls{mpc} model equation with the hybrid horizon timestep approach, where the horizon extension has a shorter timestep than the controllable horizon is called \acrfull{rush}. It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extension technique.
+This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced because the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$, while the system timeline is shifted as in \Cref{fig:horizon_extend_timeline}. 
+
 
 \begin{figure}[!htb]
 	\centering
@@ -36,7 +37,7 @@ This can be improved by only extending the horizon by the necessary time to comp
 
 The final control cycle starts with sensor acquisition, followed by horizon extension, and lastly the future control action computation. Note that this delay is not a problem with simulation in \textit{Simulink}, as it can instantly do the calculations, but it is good practice to simulate it with the proper delays to increase the similarity between simulation and experimental results.
 
-
+A comparison of the different horizon extension methods is shown with example values in \Cref{fig:hor_comparison}. Here $\overline{\hat{i}_{dq}}$ represents the norm of the estimated dq current at the end of the horizon extension, $\overline{V_{dq}}$ is the norm of the dq voltage applied by the \gls{svm}, and $\overline{V^*_{dq}}$ is the norm of the computed dq voltage reference. The lines on the top represent the predicted and measured currents, while the lower lines are the voltages. Note that the markers in this figure are placed on the exact time the hardware finishes each computation, thus the delay between measurement, extension, and control calculation. The dashed voltage line represents the moment when the control action reference was computed, so in the regular horizon extension it is ahead of the applied control action as it needs to wait for the next \gls{svm} cycle to be applied. The ultra short horizon technique allows it to be applied as soon as it is computed, resulting in the computed reference and \gls{svm} applied voltages overlapping. Note that the use of a reduced horizon also improves the model mismatch, as the integration error is reduced shown by the reduced lag between the predicted and real currents in \Cref{fig:hor_comparison}.
 \begin{figure}[!htb]
 	\centering
 	\begin{subfigmatrix}{2}
@@ -53,4 +54,4 @@ The final control cycle starts with sensor acquisition, followed by horizon exte
 	\label{fig:hor_comparison}
 \end{figure}
 
-A comparison of the diferente horizon extension methods is shown in \Cref{fig:hor_comparison}. The lines on the top represent the predicted and measured currents, while the lower lines are the voltages. Note that the markers in this figure are placed on the exact time the hardware finishes each computation, thus the delay between measurement, extension, and control calculation. The dashed voltage line represents the control action at the computation time, so in the regular horizon extension it is ahead of the applied control action. The ultra short horizon technique allows it to be applied as soon as it is computed.
+The combination of explicitly solving the \gls{mpc} model equation with the hybrid horizon timestep approach, where the horizon extension has a shorter timestep than the controllable horizon is called \acrfull{rush}. It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extension technique.

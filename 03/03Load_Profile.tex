@@ -26,55 +26,60 @@ Where the rolling resistance is a constant force that depends on the rolling res
 	\label{eq:rolling_resistance}
 \end{equation}
 
-To calculate the inertia seen by the motor, an equivalent rotational inertia must be computed. To do that, the energy stored in the rotating parts and on the car is equated with the equivalent inertia as shown in \Cref{eq:iner_equivalent0}. This equation was rearranged as shown in \Cref{eq:iner_equivalent1,eq:iner_equivalent2,eq:iner_equivalent3}, which results in \Cref{eq:iner_equivalent}.
+To calculate the inertia seen by the motor, an equivalent rotational inertia must be computed. To do that, the energy stored in the rotating parts and on the car is equated with the equivalent inertia as shown in \Cref{eq:iner_equivalent0}.
 \begin{equation}
-	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}v^2 + \frac{1}{2}J_{wheels}\omega^2
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}v^2 + \frac{1}{2}J_{wheels}\omega^2_{wheels}
 	\label{eq:iner_equivalent0}
 \end{equation}
+Assuming a no slip condition, the car velocity can be replaced by $v = \omega_{wheels}r_{tire}$, which gives \Cref{eq:iner_equivalent1}.
 \begin{equation}
 	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}(\omega_{wheels}r_{tire})^2 + \frac{1}{2}J_{wheels}\omega_{wheels}^2
 	\label{eq:iner_equivalent1}
 \end{equation}
+Knwoing the transmission gear ratio the wheel velocity is replaced by its equivalent in the motor, as in $\omega_{wheels} = \frac{\omega}{G_r}r_{tire}$, yielding \Cref{eq:iner_equivalent2}.
 \begin{equation}
-	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}\left(\frac{\omega}{Gr}r_{tire}\right)^2 + \frac{1}{2}J_{wheels}\left(\frac{\omega}{Gr}\right)^2
+	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}m_{car}\left(\frac{\omega}{G_r}r_{tire}\right)^2 + \frac{1}{2}J_{wheels}\left(\frac{\omega}{G_r}\right)^2
 	\label{eq:iner_equivalent2}
 \end{equation}
+Rearranging to solve for $J_{eq}$ results in \Cref{eq:iner_equivalent}.
+% \begin{equation}
+% 	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}\left(\frac{m_{car}r_{tire}^2}{{Gr^2}} + \frac{J_{wheels}}{Gr^2}\right) \omega^2
+% 	\label{eq:iner_equivalent3}
+% \end{equation}
 \begin{equation}
-	\frac{1}{2}J_{eq}\omega^2 = \frac{1}{2}\left(\frac{m_{car}r_{tire}^2}{{Gr^2}} + \frac{J_{wheels}}{Gr^2}\right) \omega^2
-	\label{eq:iner_equivalent3}
-\end{equation}
-\begin{equation}
-	J_{eq} = \frac{m_{car}r_{tire}^2 + J_{wheels}}{Gr^2}
+	J_{eq} = \frac{m_{car}r_{tire}^2 + J_{wheels}}{G_r^2}
 	\label{eq:iner_equivalent}
 \end{equation}
 
-From experimental tests with previous prototypes, a good rule of thumb is that when accelerating, only one-third of the power can be applied at the front axle, while the rear axle receives two-thirds. Ideally, a weight transfer function would be used, but to simplify the equations the constant distribution will be used. Thus the equivalent rotational inertia at each motor is on \Cref{eq:motor_iner_equivalent}.
+From experimental tests with previous prototypes, a good rule of thumb is that when accelerating, only one-third of the power can be applied at the front axle, while the rear axle receives two-thirds. Ideally, a weight transfer function would be used, but to simplify the equations the constant distribution will be used. Thus the equivalent rotational inertia at each motor is on \Cref{eq:motor_iner_equivalent}, where \Cref{eq:motor_iner_equivalent_front} is for the front axle motors, and \Cref{eq:motor_iner_equivalent_rear} for the rear. This diference is to account the approximated load transfer when the vehicle is accelerating.
 
 \vspace{0.5cm}
 \begin{subequations}
 	\centering
 	\begin{minipage}{.47\linewidth}
 		\begin{equation}
-			J_{f_{eq}} = \frac{m_{car}r_{tire}^2 + 6\;J_{wheel}}{6\;Gr^2}
+			J_{f_{eq}} = 2\frac{m_{car}r_{tire}^2 + 6\;J_{wheels}}{12\;G_r^2}
+			\label{eq:motor_iner_equivalent_front}
 		\end{equation}
 	\end{minipage}
 	\begin{minipage}{.47\linewidth}
 		\begin{equation}
-			J_{r_{eq}} = \frac{m_{car}r_{tire}^2 + 3\;J_{wheel}}{3\;Gr^2}
+			J_{r_{eq}} = 2\frac{m_{car}r_{tire}^2 + 3\;J_{wheels}}{6\;G_r^2}
+			\label{eq:motor_iner_equivalent_rear}
 		\end{equation}
 	\end{minipage}
 	\label{eq:motor_iner_equivalent}
 \end{subequations}
 \vspace{0.5cm}
 
-Combining the equations, a torque profile is defined in \Cref{eq:load_profile}.
+Combining the equations, a torque profile for each axle is defined in \Cref{eq:load_profile}. Where the second term represents the load torque, at a given car state, and $\frac{J_{f_{eq}}}{2}$ is the equivalent inertia.
 
 \begin{subequations}
 	\begin{equation}
-		J_{f_{eq}}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{6\;Gr}
+		\frac{J_{f_{eq}}}{2}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{6\;G_r}
 	\end{equation}
 	\begin{equation}
-		J_{r_{eq}}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{3\;Gr}
+		\frac{J_{r_{eq}}}{2}\dot{\omega} = T_{motor}\eta_{transm}  - \frac{\left(F_{rolling\,resistance}+F_{drag}\right)r_{tire}}{3\;G_r}
 	\end{equation}
 	\label{eq:load_profile}
 \end{subequations}

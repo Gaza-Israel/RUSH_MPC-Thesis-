@@ -10,7 +10,7 @@
 \section{Control Methods Development}
 \label{section:Control Methods Development}%chktex 24
 
-In this section some of the main \gls{mpc}s used on the power converters field are developed. At the end of the section, the proposed control strategy is presented. The methods compared with the manufacturer's \gls{foc} are:
+In this section some of the main \glspl{mpc} used on the power converters field are developed. At the end of the section, the proposed control strategy is presented. The methods compared with the manufacturer's \gls{foc} are:
 \begin{itemize}
 	\item Finite Set \gls{mpc}
 	\item Finite Set with null vector \gls{mpc}
@@ -49,21 +49,21 @@ In a \gls{fsmpc} each of the basic vectors defined on \Cref{table:space_vector} 
 
 Although effective, the simple Finite Set \gls{mpc} can incur heavy torque ripple, due to its limited options on which vector can be applied. That behavior can be exacerbated by low power operation points, where the active vectors result in a bigger percentual change in currents. This problem can be mitigated by introducing the possibility of sharing the sample time between the chosen active vector and a null vector. Such an approach allows the control to apply vectors that point in the direction of the native ones but have smaller amplitude.
 
-This addition of a null vector comes with the problem of now having virtually infinite vector options (depending on the PWM resolution), but that can be solved with some approximations. This method begins as the previous one, where each of the 7 possible vectors is applied to the motor model, but before passing those results for the cost function the predicted torque is compared with the reference. If a crossing is detected, meaning the values $T_{ref} - T_{e(k)}$ and $T_{ref} - T_{e(k+1)}$ have different signals the algorithm assumes that the ideal vector has a smaller amplitude, thus computes a ratio of active vector time and null vector time. To calculate such a ratio an approximation was made that, given the short sample time, the complete system is assumed to behave linearly during that period. If the system behaves linearly, the currents and torque for a combination of null and active vectors will also be a linear combination of the individual values for each vector multiplied by its application time. This approximation is shown in \Cref{eq:linear_combination,eq:linear_combination_torque}, where $d$ is the duty cicle value for a given vector, and the subscripts $_a$ and $_n$ represents the active and null vectors respectively.
+This addition of a null vector comes with the problem of now having virtually infinite vector options (depending on the \gls{pwm} resolution), but that can be solved with some approximations. This method begins as the previous one, where each of the 7 possible vectors is applied to the motor model, but before passing those results for the cost function the predicted torque is compared with the reference. If a crossing is detected, meaning the values $T_{ref} - T_{e(k)}$ and $T_{ref} - T_{e(k+1)}$ have different signals the algorithm assumes that the ideal vector has a smaller amplitude, thus computes a ratio of active vector time and null vector time. To calculate such a ratio an approximation was made that, given the short sample time, the complete system is assumed to behave linearly during that period. If the system behaves linearly, the currents and torque for a combination of null and active vectors will also be a linear combination of the individual values for each vector multiplied by its application time. This approximation is shown in \Cref{eq:linear_combination,eq:linear_combination_torque}, where $d$ is the duty cicle value for a given vector, and the subscripts $_{act}$ and $_n$ represents the active and null vectors respectively.
 
 \begin{equation}
-	i_x = i_a d_a + i_n d_n
+	i_x = i_{act} d_{act} + i_n d_n
 	\label{eq:linear_combination}
 \end{equation}
 \begin{equation}
-	T_x = T_a d_a + T_n d_n = T_a d_a + T_n - T_n d_a
+	T_x = T_{act} d_{act} + T_n d_n = T_{act} d_{act} + T_n - T_n d_{act}
 	\label{eq:linear_combination_torque}
 \end{equation}
 
-With that property, and knowing that $d_a + d_n = 1$ the duty cycle for the active vector is calculated as shown in \Cref{eq:duty_cycle}.
+With that property, and knowing that $d_{act} + d_n = 1$ the duty cycle for the active vector is calculated as shown in \Cref{eq:duty_cycle}.
 
 \begin{equation}
-	d_a = \frac{T_{ref} - T_n}{T_a-T_n}
+	d_{act} = \frac{T_{ref} - T_n}{T_{act}-T_n}
 	\label{eq:duty_cycle}
 \end{equation}
 
@@ -79,7 +79,7 @@ Given the duty cycle, the predictions are updated and passed to the cost functio
 
 \subsection{Non-Linear Continuous Set MPC}
 
-In the continuous set \gls{mpc}s the control action is not limited to a finite set of vectors, but it is assumed that any vector attainable by a defined modulation technique is available. This increases the complexity of the control, as the control action locus becomes infinite.
+In the continuous set \glspl{mpc} the control action is not limited to a finite set of vectors, but it is assumed that any vector attainable by a defined modulation technique is available. This increases the complexity of the control, as the control action locus becomes infinite.
  This approach is very similar to the most common approach of \gls{mpc} used in other fields that are not power systems. It takes an implicit approach, where the motor model shown in \Cref{eq:motor_backward_euler_matrix} is combined with an optimization solver that numerically finds the best control action. This \gls{mpc} technique has the advantage of easy constraints implementation while having the benefits of a continuous set controller. This advantage comes at the cost of largely increased computational time, as it needs to evaluate the model equation several times to find the optimal voltage vector that fulfills the constraints. This additional complexity can often be prohibitive for power systems where a fast-acting control is needed. The diagram of this method is shown in \Cref{fig:implicit_csmpc_diagram}.
 
 \begin{figure}[!htb]
@@ -132,16 +132,16 @@ One of the advantages of the approximations made in the discretization process i
 	\label{eq:Vdq}
 \end{equation}
 
-This approach is commonly used in linear unconstrained \gls{mpc}s to improve computation times, where a control law is precomputed and stored in memory. But in the presented case there is an important constraint that is not accounted for in the previous equation. When very short time steps are used, and there is a big reference change, the necessary voltage to achieve the target on just one discrete time step can be very high. This would lead to problems, like distortions due to overmodulation or not being able to reach the desired voltages. The solution to this problem is to saturate the voltage vector. Some authors have suggested saturating based on the closest possible vector~\cite{Fernando:fast_predictive:2013}, in this work, the saturation only limits the vector amplitude to match the DC-link voltage, maintaining the desired vector angle as shown in \Cref{eq:Vdq_saturation}.
+This approach is commonly used in linear unconstrained \glspl{mpc} to improve computation times, where a control law is precomputed and stored in memory. But in the presented case there is an important constraint that is not accounted for in the previous equation. When very short time steps are used, and there is a big reference change, the necessary voltage to achieve the target on just one discrete time step can be very high. This would lead to problems, like distortions due to overmodulation or not being able to reach the desired voltages. The solution to this problem is to saturate the voltage vector. Some authors have suggested saturating based on the closest possible vector~\cite{Fernando:fast_predictive:2013}, in this work, the saturation only limits the vector amplitude to match the DC-link voltage, maintaining the desired vector angle as shown in \Cref{eq:Vdq_saturation}.
 \begin{subequations}
 	\begin{equation}
 			\gamma = arctg\left(\frac{u_{d(k+1)}}{u_{q(k+1)}}\right)
 	\end{equation}
 	\begin{equation}
-		u_{sat_{d(k+1)}} = \min\left(u_{d(k+1)}\;,\; V_{dc}\cos(\gamma)\right)
+		u_{sat_{d(k+1)}} = \min\left(u_{d(k+1)}\;,\; V_{DC}\cos(\gamma)\right)
 	\end{equation}
 	\begin{equation}
-		u_{sat_{q(k+1)}} = \min\left(u_{q(k+1)}\;,\; V_{dc}\sin(\gamma)\right)
+		u_{sat_{q(k+1)}} = \min\left(u_{q(k+1)}\;,\; V_{DC}\sin(\gamma)\right)
 	\end{equation}
 	\label{eq:Vdq_saturation}
 \end{subequations}
@@ -161,7 +161,7 @@ This method greatly reduces the time taken to compute the control action, as ins
 \subsubsection{Speed Control}
 \label{section:speed_control}%chktex 24
 
-In the current architecture, the car has a slip controller that is responsible for limiting the amount of slip on the wheels. This controller is based on limiting the maximum (or minimum in the case of braking) speed that a wheel can have. In order to implement this it is necessary to have a rotor speed control. While this could be implemented directly on the \gls{mpc}, the speed dynamics are much slower than the current dynamics, and as such, it is possible to use a simpler control method. The proposed method is a PI controller that receives the rotor speed error and outputs a torque reference. This torque reference is then passed through a saturation which has the limits defined by the throttle and brake pedals, and the resultant torque is used as the input for the \gls{mpc} controllers. The saturation of torque is considered in the integral part of the PI, clamping it if the output is saturated. This structure is shown in \Cref{fig:speed_control_diagram}.
+In the current architecture, the car has a slip controller that is responsible for limiting the wheels slip ratio. This controller is based on limiting the maximum (or minimum in the case of braking) speed that a wheel can have. In order to implement this it is necessary to have a rotor speed control. While this could be implemented directly on the \gls{mpc}, the speed dynamics are much slower than the current dynamics, and as such, it is possible to use a simpler control method. The proposed method is a PI controller that receives the rotor speed error and outputs a torque reference. This torque reference is then passed through a saturation which has the limits defined by the throttle and brake pedals, and the resultant torque is used as the input for the \gls{mpc} controllers. The saturation of torque is considered in the integral part of the PI, clamping it if the output is saturated. This structure is shown in \Cref{fig:speed_control_diagram}.
 
 \begin{figure}[!htb]
 	\centering

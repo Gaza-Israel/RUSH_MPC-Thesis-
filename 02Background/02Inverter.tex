@@ -64,7 +64,7 @@ Usually, each switch in an inverter leg is operated with the inverse logic of th
 
 Despite the number of discrete voltage states, using some modulation techniques it is possible to synthesize a resultant vector if it is inside the attainable region denoted by the hexagon in \Cref{fig:space_vector}.
 
-The current inverter used by \gls{fst} uses this structure, but the switches are silicon \gls{igbt}s, which when compared to SiC MOSFETs has a higher switching loss, leading to lower switching frequencies being used~\cite{Gurpinar:si_sic_gan_comparison:2016:IEEE}. The lower switching frequencies cause higher distortions in the current waveforms, decreasing motor efficiency. The lower switching frequency system also needs a higher capacitance on the DC Link, while the lower efficiency of silicon semiconductors requires a bigger heatsink, leading to a higher volume and mass inverter, decreasing the power density of the solution.
+The current inverter used by \gls{fst} uses this structure, but the switches are silicon \glspl{igbt}, which when compared to \gls{sic} \glspl{mosfet} has a higher switching loss, leading to lower switching frequencies being used~\cite{Gurpinar:si_sic_gan_comparison:2016:IEEE}. The lower switching frequencies cause higher distortions in the current waveforms, decreasing motor efficiency. The lower switching frequency system also needs a higher capacitance on the DC Link, while the lower efficiency of silicon semiconductors requires a bigger heatsink, leading to a higher volume and mass inverter, decreasing the power density of the solution.
 
 \subsection{Space Vector Modulation}
 \label{subsection:Space Vector Modulation}%chktex 24
@@ -96,10 +96,10 @@ To simplify the analysis of those vectors, a modulation index ($m$) is defined a
 
 To modulate a voltage vector that is not exactly one of the basic voltage vectors a modulation technique is needed. When using the \gls{svm} method to compose a given reference vector $V_{ref}$, the algorithm first detects the sector on which the reference vector lays. With the sector identified a ratio between the adjacent basic vectors and a null vector is selected so that the average vector is equal to the reference vector. This ratio is calculated as shown in \Cref{eq:svm_vref}.
 
-For example, let's consider the reference vector shown in \Cref{fig:space_vector}. According to \gls{svm}, this vector can be modulated by using $V_1$ for half of the active time and $V_3$ for the other half of the active time. The active time refers to the duration when the vector amplitude is non-zero, while the null time refers to the duration when a null vector is used to reduce the output amplitude. This modulation can be expressed by \Cref{eq:svm_vref}, where $T_1+T_3$ represents the active time and $T_{null}$ represents the null time.
+For example, let's consider the reference vector shown in \Cref{fig:space_vector}. According to \gls{svm}, this vector can be modulated by using $V_1$ for half of the active time and $V_3$ for the other half of the active time. The active time refers to the duration when the vector amplitude is non-zero, while the null time refers to the duration when a null vector is used to reduce the output amplitude. This modulation can be expressed by \Cref{eq:svm_vref}, where $t_1+t_3$ represents the active time and $t_{n}$ represents the null time.
 
 \begin{equation}
-	V_{ref} = \frac{T_{null} V_{null} + T_1 V_1  + T_3 V_3}{h}
+	V_{ref} = \frac{t_{n} V_{n} + t_1 V_1  + t_3 V_3}{h}
 	\label{eq:svm_vref}
 \end{equation}
 
@@ -110,7 +110,7 @@ In the hardware implementation, the voltage reference is generated in the rotor 
 
 Several approaches have been proposed to accomplish this shift and they all rely on injecting a variable offset voltage on the neutral point that has a strong third harmonic component. Although a pure third harmonic sine wave can be used it is computationally expensive when compared with other methods such as top, mid, or bottom clamp. This technique of mid-clamp aims to center the neutral point between the DC link terminals, while the top clamp shifts the neutral point to the maximum voltage and the bottom clamp to the minimum voltage. The main advantage of a top or bottom clamp is the reduced number of switching events when compared with a mid-clamp. 
 
-The chosen approach is defined by \Cref{eq:neutral_point_shift}, where $K_{shift}$ is the shift factor, and $V_{AN}$,$V_{BN}$, and $V_{CN}$ are the phase voltages referenced to a virtual neutral point that is the average of the phase voltages with respect to the DC link negative terminal. The value of $K_{shift}$ dictates the shift method used, when it is equal to 1 the top-clamp method is used, if it is 0.5 then the mid-clamp is used, and 0 results in the bottom-clamp method.~\citet{Microchip:ZSM_viewer:2023} has a visualization tool with the main methods shown. The calculated shift voltage is then summed to the desired phase voltages, and the modulation technique is applied as usual. In the implementation, this results in the MOSFETs dutty cycle being shifted to center at the value of $K_{shift}$.
+The chosen approach is defined by \Cref{eq:neutral_point_shift}, where $K_{shift}$ is the shift factor, and $V_{AN}$,$V_{BN}$, and $V_{CN}$ are the phase voltages referenced to a virtual neutral point that is the average of the phase voltages with respect to the DC link negative terminal. The value of $K_{shift}$ dictates the shift method used, when it is equal to 1 the top-clamp method is used, if it is 0.5 then the mid-clamp is used, and 0 results in the bottom-clamp method.~\citet{Microchip:ZSM_viewer:2023} has a visualization tool with the main methods shown. The calculated shift voltage is then summed to the desired phase voltages, and the modulation technique is applied as usual. In the implementation, this results in the \glspl{mosfet} dutty cycle being shifted to center at the value of $K_{shift}$.
 
 \begin{equation}
 	V_{shift} = K_{shift} - K_{shift} \max \left(V_{AN},V_{BN},V_{CN}\right) - (1-K_{shift}) \min \left(V_{AN},V_{BN},V_{CN}\right)

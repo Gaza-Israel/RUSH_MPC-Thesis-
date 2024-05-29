@@ -25,6 +25,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{microtype}
+\usepackage{float}
 
 \begin{document}
 
@@ -53,7 +54,7 @@ Formula Student is an engineering competition that challenges students to design
 
 A major advance in the power converter field was the use of wide bandgap semiconductors, which has allowed the development of more efficient converters with a higher power density. As a relatively new technology, there aren't many off-the-shelf solutions that fulfill the specifications required for a Formula Student prototype, thus some of the top teams started to develop their own motor drive solutions\@. FST started working on a fully self-developed powertrain in 2017 with motor development by~\citet{Sarrico:MSc}, and inverter development by Costa~\cite{Costa:MSc}. This development aligns with the fundamental objectives of Formula Student, which is empowering technical and practical knowledge to better prepare students. Additionally, the development of the entire powertrain system can result in a more efficient platform, creating a system optimized for each prototype. Unfortunately, the motor prototype is not ready to be used in the car, and the inverter is missing a system able to control the currently used motors. This work intends to fill a critical gap which is the absence of adequate control for a Permanent Magnet Synchronous Motor (PMSM). By developing and implementing a control strategy that enables the use of an in-house developed inverter with the commercial motor solution, this work not only addresses the identified bottleneck in the powertrain section but also shifts the performance envelope standards, improving the overall capabilities of the next prototypes.
 \subsection{Topic Overview}
-Through the years, several approaches have been proposed to control synchronous machines using a 2-level three-phase inverter. Regarding the control methods, several solutions have been presented in the literature with the most common being Field Oriented Control (FOC) and Direct Torque Control (DTC), with MDC~\cite{Bianchi:control_review} being introduced more recently, seeking a compromise between the advantages of FOC and DTC. Some approaches require a modulator such as Space Vector Modulation (SVM)~\cite{Neacsu:SVM_intro:2001:IECON}, while others can directly output the semiconductor trigger signals~\cite{Vazquez:MPC_in_power_systems_review:2017:IEEE}.
+Through the years, several approaches have been proposed to control synchronous machines using a 2-level three-phase inverter. Regarding the control methods, several solutions have been presented in the literature with the most common being Field Oriented Control (FOC) and Direct Torque Control (DTC), with Model Predictive Controller (MPC)~\cite{Bianchi:control_review} being introduced more recently, seeking a compromise between the advantages of FOC and DTC. Some approaches require a modulator such as Space Vector Modulation (SVM)~\cite{Neacsu:SVM_intro:2001:IECON}, while others can directly output the semiconductor trigger signals~\cite{Vazquez:MPC_in_power_systems_review:2017:IEEE}.
 
 The use of FOC and DTC have dominated the market for many years due to their simple implementation, but each of them has downsides\@. FOC combined with current control PID is known for having a slow dynamic response when compared to DTC, while in steady-state behavior and disturbance rejection, FOC shows better results with smaller torque ripple and current THD~\cite{Merzoug:FOCvsDTC:2008,Korkmaz:FOCvsDTC:2013,Souad:FOCvsDTC:2008}. MPC has been proposed as a combination of the two, exhibiting a good dynamic response while being able to maintain low current and torque ripple. 
 
@@ -127,10 +128,10 @@ Using SVM it is possible to modulate any vector inside the hexagon shown in \Cre
 
 To modulate a voltage vector that is not exactly one of the basic voltage vectors a modulation technique is needed. When using the SVM method to compose a given reference vector $V_{ref}$, the algorithm first detects the sector on which the reference vector lays. With the sector identified a ratio between the adjacent basic vectors and a null vector is selected so that the average vector is equal to the reference vector. This ratio is calculated as shown in \Cref{eq:svm_vref}.
 
-For example, let's consider the reference vector shown in \Cref{fig:space_vector}. According to SVM, this vector can be modulated by using $V_1$ for half of the active time and $V_3$ for the other half of the active time. The active time refers to the duration when the vector amplitude is non-zero, while the null time refers to the duration when a null vector is used to reduce the output amplitude. This modulation can be expressed by \Cref{eq:svm_vref}, where $T_1+T_3$ represents the active time and $T_{null}$ represents the null time.
+For example, let's consider the reference vector shown in \Cref{fig:space_vector}. According to SVM, this vector can be modulated by using $V_1$ for half of the active time and $V_3$ for the other half of the active time. The active time refers to the duration when the vector amplitude is non-zero, while the null time refers to the duration when a null vector is used to reduce the output amplitude. This modulation can be expressed by \Cref{eq:svm_vref}, where $T_1+T_3$ represents the active time and $T_{n}$ represents the null time.
 
 \begin{equation}
-	V_{ref} = \frac{T_{null} V_{null} + T_1 V_1  + T_3 V_3}{h}
+	V_{ref} = \frac{T_{n} V_{n} + T_1 V_1  + T_3 V_3}{h}
 	\label{eq:svm_vref}
 \end{equation}
 
@@ -278,7 +279,7 @@ In this graph, two other lines are shown, they represent the flux linkage estima
 \subsection{ Machine direct and quadrature inductances}
 The inductances were characterized according to~\citet{Stumberger:saturation_model:2003}. This method uses a Voltage Source Inverter coupled with a control algorithm to keep the current in one of the axes constant, and then do a voltage step in the other axis. The current is then integrated to obtain the current-induced flux linkage as shown in \Cref{eq:inductance_voltage_step}, and then the inductance is calculated as the derivative of the current-induced flux linkage.
 
-The flux-induced curve is then approximated as a fit of several exponential curves, as this allows the inductance to be calculated as the analytical current derivative of this exponential fit. The current induced flux linkage and its exponential fit are shown in \Cref{fig:inductances_method_2}, and the inductance presented in \Cref{fig:inductance_time_constant}. 
+The flux-induced curve is then approximated as a fit of several exponential curves, as this allows the inductance to be calculated as the analytical current derivative of this exponential fit. The current induced flux linkage and its exponential fit are shown in \Cref{fig:flux_linkage_fit}, and the inductance presented in \Cref{fig:inductances}. 
 
 \begin{subequations}
 	\begin{equation}
@@ -352,7 +353,7 @@ As the solution to this problem is not trivial, the optimization was solved usin
 \end{figure}
 
 \section{Proposed Control Strategy}
-The proposed control strategy is a Model Predictive Control (MPC) with a horizon of 1 timestep, that uses \Cref{eq:motor_with_inductances_discrete} to evaluate the best possible voltage vector to apply to the motor. One of the advantages of the approximations made in the discretization process is that even though the matrices change in time, for a given moment the system is linear, and as such an inverse dynamic can be derived. So, if in \Cref{eq:motor_backward_euler_matrix} the currents on the next step are replaced by a reference for the current vector, the necessary applied voltage can be calculated:
+The proposed control strategy is a Model Predictive Control (MPC) with a horizon of 1 timestep, that uses the model in \Cref{eq:motor_backward_euler_matrix} to evaluate the best possible voltage vector to apply to the motor. One of the advantages of the approximations made in the discretization process is that even though the matrices change in time, for a given moment the system is linear, and as such an inverse dynamic can be derived. So, if in \Cref{eq:motor_backward_euler_matrix} the currents on the next step are replaced by a reference for the current vector, the necessary applied voltage can be calculated, as in \Cref{eq:motor_with_inductances_discrete}.
 
 \begin{equation}
 	\begin{aligned}
@@ -390,6 +391,7 @@ The proposed control strategy is a Model Predictive Control (MPC) with a horizon
 			\end{bmatrix}
 		\right)
 	\end{aligned}
+	\label{eq:motor_with_inductances_discrete}
 \end{equation}
 
 This approach is commonly used in linear unconstrained MPCs to improve computation times, where a control law is precomputed and stored in memory. But in the presented case there is an important constraint that is not accounted for in the previous equation. When very short time steps are used, and there is a big reference change, the necessary voltage to achieve the target on just one discrete time step can be very high. This would lead to problems, like distortions due to overmodulation or not being able to reach the desired voltages. The solution to this problem is to saturate the voltage vector. Some authors have suggested saturating based on the closest possible vector~\cite{Fernando:fast_predictive:2013}, in this work, the saturation only limits the vector amplitude to match the DC-link voltage, maintaining the desired vector angle as shown in \Cref{eq:Vdq_saturation}.
@@ -398,10 +400,10 @@ This approach is commonly used in linear unconstrained MPCs to improve computati
 			\gamma = arctg\left(\frac{u_{d(k+1)}}{u_{q(k+1)}}\right)
 	\end{equation}
 	\begin{equation}
-		u_{sat_{d(k+1)}} = \min\left(u_{d(k+1)}\;,\; V_{dc}\cos(\gamma)\right)
+		u_{sat_{d(k+1)}} = \min\left(u_{d(k+1)}\;,\; V_{DC}\cos(\gamma)\right)
 	\end{equation}
 	\begin{equation}
-		u_{sat_{q(k+1)}} = \min\left(u_{q(k+1)}\;,\; V_{dc}\sin(\gamma)\right)
+		u_{sat_{q(k+1)}} = \min\left(u_{q(k+1)}\;,\; V_{DC}\sin(\gamma)\right)
 	\end{equation}
 	\label{eq:Vdq_saturation}
 \end{subequations}
@@ -422,25 +424,33 @@ A previously overlooked problem is the compensation of the computational time, a
 	x_{k+1} = A^{-1} \left (B x_k + C u_k + D\right )
 	\label{eq:horizon_default}
 \end{equation}
-For this equation to work the system timeline needs to be as in \Cref{fig:horizon_default_timeline}, starting with taking the current and voltage measurements, followed by applying the voltage vectors calculated in $k-1$, then extending the horizon by one timestep, and calculating the voltage vector for the next timestep~\cite{Vazquez:MPC_uses:2014}.
+For this equation to work the system timeline starts with taking the current and voltage measurements, followed by applying the voltage vectors calculated in $k-1$, then extending the horizon by one timestep, and calculating the voltage vector for the next timestep~\cite{Vazquez:MPC_uses:2014}.
 
-\begin{figure*}[!htb]
+This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced as the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$ while the sampling point of the current measurements is shifted out of phase with the application of the control action. 
+
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=.8\linewidth]{Figures/Horizon Extension default Timeline.pdf}
-	\caption[Horizon extension by one timestep.]{Horizon extension by one timestep.}
-	\label{fig:horizon_default_timeline} %chktex 24
-\end{figure*}
+	\begin{subfigmatrix}{1}
+		\subfigure[Default Horizon Extention.]{
+			\includegraphics[width=.45\textwidth]{Figures/long_horizon.eps}
+			\label{fig:normal_timeline}
+		}
+	\end{subfigmatrix}
+	\begin{subfigmatrix}{1}
+		\subfigure[Ultra Short Horizon Extention.]{
+			\includegraphics[width=.45\textwidth]{Figures/short_horizon.eps}
+			\label{fig:USH_timeline}
+		}
+	\end{subfigmatrix}
+	\caption{Horizon extension comparison, on top the measured and predicted voltages. The bottom lines are the computed control action and the applied control action}
+	\label{fig:hor_comparison}
+\end{figure}
 
-This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced because the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$, while the system timeline is shifted as in \Cref{fig:horizon_extend_timeline}. The combination of explicitly solving the MPC model equation with the hybrid horizon timestep approach, where the horizon extension has a shorter timestep than the controllable horizon is called Real-time Ultra Short Horizon extension MPC (RUSH MPC). It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extension technique.
+The final control cycle starts with sensor acquisition, followed by horizon extension, and lastly the future control action computation.
+A comparison of the different horizon extension methods is shown in \Cref{fig:hor_comparison}. The lines on the top represent the predicted and measured currents, while the lower lines are the voltages. Note that the markers in this figure are placed on the exact time the hardware finishes each computation, thus the delay between measurement, extension, and control calculation. The dashed voltage line represents the moment when the control action was computed, so in the regular horizon extension it is ahead of the applied control action. The ultra short horizon technique allows it to be applied as soon as it is computed, resulting in the computed and applied control voltages overlapping. Note that the use of a reduced horizon also improves the model mismatch, as the integration error is reduced, as shown by the reduced lag between the predicted and real currents in \Cref{fig:hor_comparison}. 
 
-\begin{figure*}[!htb]
-	\centering
-	\includegraphics[width=.8\linewidth]{Figures/Horizon Extension Timeline.pdf}
-	\caption[Horizon Extension by control time.]{Horizon Extension by control time.}
-	\label{fig:horizon_extend_timeline} %chktex 24
-\end{figure*}
-
-The final control cycle starts with sensor acquisition, followed by horizon extension, and lastly the future control action computation. Note that this delay is not a problem with simulation in \textit{Simulink}, as it can instantly do the calculations, but it is good practice to simulate it with the proper delays to increase the similarity between simulation and experimental results.
+The combination of explicitly solving the MPC model equation with the hybrid horizon timestep approach, where the horizon extension has a shorter timestep than the controllable horizon is called Real-time Ultra Short Horizon extension MPC (RUSH MPC). It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extension technique.
+% Note that this delay is not a problem with simulation in \textit{Simulink}, as it can instantly do the calculations, but it is good practice to simulate it with the proper delays to increase the similarity between simulation and experimental results.
 
 \section{Simulation}
 \label{section:simulation}%chktex 24
@@ -448,7 +458,7 @@ The final control cycle starts with sensor acquisition, followed by horizon exte
 To accelerate the development time, a model was developed in \textit{Simulink}, allowing for faster prototyping and direct comparison of the methods in a controlled environment. An adaptation of the \textit{Simscape Specialized Power Systems} block \textit{Permanent Magnet Synchronous Machine} was made to convert it to a delta-wound machine and to accept variable inductances as in \Cref{eq:motor_backward_euler_matrix}. 
 This model was combined with six MOSFET blocks in three legs to simulate the VSI. To supply the MOSFETs, a model of the battery was made, where an ideal voltage source is connected through a series resistor to the DC link, where a capacitor stabilizes the voltage. In \Cref{fig:simulation_model} the resultant system is presented, where $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$, are the gate control signals that come from the control strategy.
 
-\begin{figure*}[!htb]
+\begin{figure*}[htb]
 	\centering
 	% \fbox{
 		\includegraphics[clip, trim=0.3cm 5cm 0.5cm 5cm, width=.8\linewidth]{Figures/motor_and_inverter_simulink1.pdf}
@@ -472,7 +482,7 @@ Note that the predictive controller presents a rising time (0 to 100\%) of $200\
 
 The distortion of currents was evaluated by setting the motor at a constant speed, waiting a few periods for it to reach a steady state and then calculating the average THD of all line currents through 5 electrical periods. This was repeated in a grid pattern with some of the results shown in \Cref{table:thd_comparison}.
 
-\begin{table}[h]
+\begin{table}[htb]
 	\caption{Control Method Current THD comparison. THD is calculated until the Nyquist frequency, that is $250kHz$ and $40kHz$ for the controllers running at $50kHz$ and $8kHz$ respectively.}
 	\label{table:thd_comparison}%chktex 24
 	\renewcommand{\arraystretch}{1.2} % more space between rows
@@ -551,7 +561,7 @@ Table \ref{table:thd_comparison} exposes the advantage of continuous MPC over th
 To test the controller's robustness, a Monte Carlo analysis is proposed. A normal distribution is assigned to the motor parameters with a mean equal to the characterized value, and a standard deviation equal to 5\% of the mean. The step of \Cref{fig:rising_time_4_models} was simulated for 1000 samples with the modified parameters applied to the motor without updating the controller (\Cref{fig:montecarlo}).
 
 % \begin{@twocolumnfalse}
-    \begin{figure*}[!htb]
+    \begin{figure*}[htb]
         \centering
         \includegraphics[width=0.8\linewidth]{Figures/MonteCarlo.eps}
         \caption[Monte Carlo Robustness Analysis.]{Monte Carlo Robustness Analysis. The motor parameters are shown in percentual change from the controller's expected value.}
@@ -569,7 +579,7 @@ Regarding the current THD, the parameter influences are well balanced, with the 
 \subsection{Acceleration Event}
 \label{section:acceleration}%chktex 24
 
-A load profile that simulates the car environment was used to simulate a typical acceleration event. The torque reference was set to reach $21.3kW$ of delivered power (after inverter and motor efficiency losses), this value was chosen assuming an $80\%$ powertrain efficiency and an approximation of one-third of the car load on the rear motors. As shown in \Cref{fig:acceleration_comparison}, the RUSH MPC improved the time from $3.943s$ to $3.883s$ (\textit{1.6}\%), reaching also a higher top speed than the currently implemented control method and presenting a lower torque ripple.
+A load profile that simulates the car environment was used to simulate a typical acceleration event. The torque reference was set to reach $21.3kW$ of delivered power (after inverter and motor efficiency losses), this value was chosen assuming an $80\%$ powertrain efficiency and an approximation of one-third of the car load on the rear motors. As shown in \Cref{fig:acceleration_comparison}, the RUSH MPC improved the time from $3.943s$ to $3.883s$ (\textit{1.6}\%), reaching also a higher top speed than the currently implemented control method and presenting a lower torque ripple. While the $0.06s$ seems like a small gain, comparing with the results from Formula Studen Germany 2023 it would put FST Lisboa three positions higher in the event ranking. If the proposed control method is combined with the efficiency improvement from the use of new inverter hardware, the time is further reduced, to $3.759s$ ($4.7\%$), translating to a 6 position gain in the event ranking.
 \patchcmd{\subfigmatrix}{\hfill}{\hspace{0.2cm}}{}{}
 \begin{figure*}[!htb]
 	\centering

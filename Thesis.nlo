@@ -1,19 +1,30 @@
 \nomenclatureentry{ri_x$i_x$@[{$i_x$}]\begingroup Current\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ri_x_ref$i_{x_{ref}}$@[{$i_{x_{ref}}$}]\begingroup Current $_x$ reference\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ri_linemax$i_{line max}$@[{$i_{line max}$}]\begingroup Motor maximum line current\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ri$i$@[{$i$}]\begingroup dq Current norm\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rE_x$E_x$@[{$E_x$}]\begingroup Back EMF\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{ru_x$u_x$@[{$u_x$}]\begingroup Voltage\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rr_x$r_x$@[{$r_x$}]\begingroup Phase resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rr$r$@[{$r$}]\begingroup dq0 Stator resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rr_shunt$r_{shunt}$@[{$r_{shunt}$}]\begingroup Current Shunt resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rr_wire$r_{wire}$@[{$r_{wire}$}]\begingroup Wire resistance\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rL_x$L_x$@[{$L_x$}]\begingroup Phase self inductance\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rM_xy$M_{xy}$@[{$M_{xy}$}]\begingroup Phase mutual inductance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rt_x$t_x$@[{$t_x$}]\begingroup Period of time a Voltage vector $x$ is active\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rT_e$T_e$@[{$T_e$}]\begingroup Electromagnetic torque\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rT_load$T_{load}$@[{$T_{load}$}]\begingroup Load reaction torque\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_ref$T_{ref}$@[{$T_{ref}$}]\begingroup Reference Torque\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_ref$T_{ref}$@[{$T_{ref}$}]\begingroup Reference Torque\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rT_loss$T_{loss}$@[{$T_{loss}$}]\begingroup Losses equivalent torque\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rp$p$@[{$p$}]\begingroup Number of pole pairs\nomeqref {0}|nompageref}{xiii}
-\nomenclatureentry{rh$h$@[{$h$}]\begingroup Sampling time\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rh$h$@[{$h$}]\begingroup Sampling time period\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rk$k$@[{$k$}]\begingroup Discrete time index\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rm$m$@[{$m$}]\begingroup Modulation index\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rVref$V_{ref}$@[{$V_{ref}$}]\begingroup Voltage reference vector\nomeqref {0}|nompageref}{xiii}
-\nomenclatureentry{rK_v$K_v$@[{$K_v$}]\begingroup Voltage Constant\nomeqref {0}|nompageref}{xiii}
-\nomenclatureentry{rK_t$K_t$@[{$K_t$}]\begingroup Torque Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rVdc$V_{DC}$@[{$V_{DC}$}]\begingroup DC Link Voltage\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rVx$V_x$@[{$V_x$}]\begingroup Voltage vector $x \in [0,8]$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rk_v$k_v$@[{$k_v$}]\begingroup Voltage Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rk_t$k_t$@[{$k_t$}]\begingroup Torque Constant\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rJ$J$@[{$J$}]\begingroup Rotational Inertia\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rv$v$@[{$v$}]\begingroup Car Velocity\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rAref$A_{r}$@[{$A_{r}$}]\begingroup Car frontal reference area\nomeqref {0}|nompageref}{xiii}
@@ -25,8 +36,58 @@
 \nomenclatureentry{rJ$\mathcal{J}$@[{$\mathcal{J}$}]\begingroup MPC cost function\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rCs$\mathcal{C}_{soft}$@[{$\mathcal{C}_{soft}$}]\begingroup MPC soft contraint\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rs_x$s_x$@[{$s_x$}]\begingroup MPC cost gains\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rS_x$S_x$@[{$S_x$}]\begingroup Inverter Switches states $x \in [0,8]$\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rk_p$k_p$@[{$k_p$}]\begingroup PI proportional gain\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rk_i$k_i$@[{$k_i$}]\begingroup PI integral gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rK_shift$K_{shift}$@[{$K_{shift}$}]\begingroup Neutral point shift gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_matrix$\mathbf{T}$@[{$\mathbf{T}$}]\begingroup abc->dq0 Transformation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_matrix$\mathbf{T^*}$@[{$\mathbf{T^*}$}]\begingroup abc->dq0 Amplitude Invariant Transformation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rCo_matrix$\mathbf{Co}$@[{$\mathbf{Co}$}]\begingroup Concordia Transformation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rBl_matrix$\mathbf{Bl}$@[{$\mathbf{Bl}$}]\begingroup Blondel-Park Transformation matrix\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rR_matrix$\mathbf{R_{xyz}}$@[{$\mathbf{R_{xyz}}$}]\begingroup Resistance matrix ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rL_matrix$\mathbf{L_{xyz}}$@[{$\mathbf{L_{xyz}}$}]\begingroup Inductance matrix ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ru_vector$\mathbf{u_{xyz}}$@[{$\mathbf{u_{xyz}}$}]\begingroup Phase voltages vector ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ri_vector$\mathbf{i_{xyz}}$@[{$\mathbf{i_{xyz}}$}]\begingroup Phase currents vector ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rE_vector$\mathbf{E_{xyz}}$@[{$\mathbf{E_{xyz}}$}]\begingroup Phase back-EMF vector ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ra$a_x$@[{$a_x$}]\begingroup Exponential fit linear gain $x \in [0,4]$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rb$b_x$@[{$b_x$}]\begingroup Exponential fit exponential gain $x \in [0,4]$\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rc_down$c_{down}$@[{$c_{down}$}]\begingroup Exponential fit lower saturation gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rc_up$c_{up}$@[{$c_{up}$}]\begingroup Exponential fit upper saturation gain\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rc$c$@[{$c$}]\begingroup Exponential fit constant offset\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rF_motor$F_{motor}$@[{$F_{motor}$}]\begingroup Motor equivalent linear force at tire contact patch\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rF_rolling$F_{rolling resistance}$@[{$F_{rolling resistance}$}]\begingroup Rolling resistance force\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rF_drag$F_{drag}$@[{$F_{drag}$}]\begingroup Aerodinamic drag force\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rax$a_x$@[{$a_x$}]\begingroup Car acceleration in the x axis\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rm_wheel$m_{wheel equivalent}$@[{$m_{wheel equivalent}$}]\begingroup Wheel mass linear equivalent\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rg$g$@[{$g$}]\begingroup Gravitational acceleration\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ_eq$J_{eq}$@[{$J_{eq}$}]\begingroup Equivalent Rotational Inertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ_eqf$J_{f_{eq}}$@[{$J_{f_{eq}}$}]\begingroup Front motor Equivalent Rotational Inertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ_eqr$J_{r_{eq}}$@[{$J_{r_{eq}}$}]\begingroup Rear motor Equivalent Rotational Inertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rJ_wheels$J_{wheels}$@[{$J_{wheels}$}]\begingroup Wheels Rotational Inertia\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rd_x$d_{x}$@[{$d_{x}$}]\begingroup Phase switch duty cycle\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rf_sq$f_{sw}$@[{$f_{sw}$}]\begingroup Switching Frequency\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rt_control$t_{coontrol}$@[{$t_{coontrol}$}]\begingroup Time taken to compute a control action\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ri_prev$\overline{\hat{i}_{dq}}$@[{$\overline{\hat{i}_{dq}}$}]\begingroup Norm of the predicted dq0 currents\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rv_prev$\overline{V^*_{dq}}$@[{$\overline{V^*_{dq}}$}]\begingroup Norm of the dq0 voltage reference\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rP_ON$P_{ON}$@[{$P_{ON}$}]\begingroup Inverter Conduction Loss Power\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rP_SW$P_{SW}$@[{$P_{SW}$}]\begingroup Inverter Switching Loss Power\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rP_o$P_{o}$@[{$P_{o}$}]\begingroup Inverter Output Power\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rR_0$R_{0}$@[{$R_{0}$}]\begingroup Motor equivalent resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rR_dson$R_{DS_{on}}$@[{$R_{DS_{on}}$}]\begingroup MOSFET on state resistance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rTHD$THD$@[{$THD$}]\begingroup Total harmonic distortion of the inverter output current\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rZ_0$Z_{0}$@[{$Z_{0}$}]\begingroup Motor equivalent impedance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rF_p$F_p$@[{$F_p$}]\begingroup Motor power factor\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_on$T_{on}$@[{$T_{on}$}]\begingroup MOSFET turn-on time\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT_off$T_{off}$@[{$T_{off}$}]\begingroup MOSFET turn-off time\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rT$T$@[{$T$}]\begingroup Switching period\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rC_t$C_t$@[{$C_t$}]\begingroup Total parasitic capacitance (MOSFET + Diode)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rC_oss$C_{oss}$@[{$C_{oss}$}]\begingroup  \gls{mosfet} output parasitic capacitance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rC_d$C_d$@[{$C_d$}]\begingroup Diode parasitic capacitance\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rm_p$m_p$@[{$m_p$}]\begingroup Efficiency formulation modulation index\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rV_rms$V_{ORMS}$@[{$V_{ORMS}$}]\begingroup Line to neutral inverter output RMS voltage\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rE_g$E_{g}$@[{$E_{g}$}]\begingroup Average energy needed to switch the MOSFET gate at the switching frequency\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rQ_g$Q_{g}$@[{$Q_{g}$}]\begingroup MOSFET gate charge\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rV_ds$V_{ds}$@[{$V_{ds}$}]\begingroup MOSFET drain source voltage\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{gtheta_e$\theta_e$@[{$\theta_e$}]\begingroup Rotor electrical position\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{gtheta$\theta$@[{$\theta$}]\begingroup Rotor position\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{gomega_e$\omega_e$@[{$\omega_e$}]\begingroup Rotor electrical velocity\nomeqref {0}|nompageref}{xiii}
@@ -36,11 +97,23 @@
 \nomenclatureentry{glambda$\lambda$@[{$\lambda$}]\begingroup Lagrange Multiplier\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{grho$\rho$@[{$\rho$}]\begingroup Air density\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{geta$\eta$@[{$\eta$}]\begingroup Efficiency\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{geta_transm$\eta_{transm}$@[{$\eta_{transm}$}]\begingroup Transmission Efficiency\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{gtau$\tau$@[{$\tau$}]\begingroup Time Constant\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rpsi_vector$\mathbf{\psi_{xyz}}$@[{$\mathbf{\psi_{xyz}}$}]\begingroup Flux linkages vector ($abc$, $dq0$, or $s$)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gl$\mathcal{L}$@[{$\mathcal{L}$}]\begingroup Lagrangian function\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{gpsi*d$\psi^*_d $@[{$\psi^*_d $}]\begingroup Combined Flux linkage in the direct axis (includes the permanent magnet component and the current induced component)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ggama$\gamma$@[{$\gamma$}]\begingroup Desired voltage vector angle\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{galpha$\alpha$@[{$\alpha$}]\begingroup Exponential average smoothing factor\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{sp$a, b, c$@[{$a, b, c$}]\begingroup Phase values\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{sl$A, B, C$@[{$A, B, C$}]\begingroup Line values\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sN$N$@[{$N$}]\begingroup Neutral point\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{sdq0$d, q, 0$@[{$d, q, 0$}]\begingroup Direct axis, quadrature axis, and zero-sequence components\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{salphabeta0$\alpha, \beta, 0$@[{$\alpha, \beta, 0$}]\begingroup Alpha axis, Beta axis, and zero-sequence components\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{spm$PM$@[{$PM$}]\begingroup Permanent Magnet component\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{sf$f,r$@[{$f,r$}]\begingroup Front and Rear axle\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sn$_{n}$@[{$_{n}$}]\begingroup Null voltage vectors (Vector 0 or 8)\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{ss$_{s}$@[{$_{s}$}]\begingroup Stator value\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sr$_{r}$@[{$_{r}$}]\begingroup Rotor value\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{sact$_{act}$@[{$_{act}$}]\begingroup Active vector\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{tTT@[{T}]\begingroup Transpose\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{t$\dot{}$@[{$\dot{}$}]\begingroup Time derivative\nomeqref {0}|nompageref}{xiii}

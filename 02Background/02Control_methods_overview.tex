@@ -13,7 +13,7 @@ The quest for higher efficiency and performance has pushed the development in th
 
 \subsection{Field Oriented Control}
 
-For many years field oriented control has been one of the cornerstones of electrical machine control due to its simplicity and easy implementation~\cite{Doncker:Universal_FOC:1994}. This technique is based on the Blondel Park transformation, where it converts the currents and voltages from a stationary ABC reference frame into a rotating referential dq0. This allows the individual control of the motor magnetic flux and torque, which are proportional to $i_d$ and $i_q$ respectively. These currents usually are controlled using two separated PIDs, where the quadrature current reference comes from the desired motor torque and the direct current comes from the field weakening strategy. The PIDs compare the references with the measured values and output a voltage to be applied in each axis, voltages that are passed to a modulator (usually \gls{svm}) to calculate the duty cycle of each MOSFET and generate the control signals. An example of such a system is shown in \Cref{fig:example_PID}.
+For many years field oriented control has been one of the cornerstones of electrical machine control due to its simplicity and easy implementation~\cite{Doncker:Universal_FOC:1994}. This technique is based on the Blondel Park transformation, where it converts the currents and voltages from a stationary ABC reference frame into a rotating referential dq0. This allows the individual control of the motor magnetic flux and torque, which are proportional to $i_d$ and $i_q$ respectively. These currents usually are controlled using two separated PIDs, where the quadrature current reference comes from the desired motor torque and the direct current comes from the field weakening strategy. The PIDs compare the references with the measured values and output a voltage to be applied in each axis, voltages that are passed to a modulator (usually \gls{svm}) to calculate the duty cycle of each \gls{mosfet} and generate the control signals. An example of such a system is shown in \Cref{fig:example_PID}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/foc_texas_instruments.jpg}
@@ -52,7 +52,7 @@ With these states calculated, a simple hysteresis band is applied to each, torqu
 \end{figure}
 Note that the nature of only switching vectors when the hysteresis is surpassed results in a variable switching frequency as opposed to \gls{foc} that has a fixed switching frequency. Another feature of the \gls{dtc} is that it does not need any modulators, as it directly chooses the voltage vector to be applied.
 
-\gls{dtc} is a very accessible method, with simpler implementation than \gls{foc} a faster dynamic response and low sensitivity to motor parameters, but it falls short in steady state operation with torque and current ripple often bigger than its rival \gls{foc}~\cite{Zhong:DTC_pmsm_dynamics:1997,Niu:DTC_vs_other_DTC_vs_FOC:2016}.
+ \gls{dtc} is a very accessible method, with simpler implementation than \gls{foc} a faster dynamic response and low sensitivity to motor parameters, but it falls short in steady state operation with torque and current ripple often bigger than its rival \gls{foc}~\cite{Zhong:DTC_pmsm_dynamics:1997,Niu:DTC_vs_other_DTC_vs_FOC:2016}.
 
 
 
