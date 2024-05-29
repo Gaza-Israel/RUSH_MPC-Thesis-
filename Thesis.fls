@@ -1372,9 +1372,9 @@ INPUT ./Figures/Explicit_CSMPC.pdf
 INPUT ./Figures/Explicit_CSMPC.pdf
 INPUT ./Figures/Explicit_CSMPC.pdf
 INPUT ./Figures/Explicit_CSMPC.pdf
-INPUT ./03/03Horizon_extention.tex
-INPUT ./03/03Horizon_extention.tex
-INPUT 03/03Horizon_extention.tex
+INPUT ./03/03Horizon_extension.tex
+INPUT ./03/03Horizon_extension.tex
+INPUT 03/03Horizon_extension.tex
 INPUT ./Figures/Horizon Extension default Timeline.pdf
 INPUT ./Figures/Horizon Extension default Timeline.pdf
 INPUT ./Figures/Horizon Extension default Timeline.pdf
@@ -1385,6 +1385,28 @@ INPUT ./Figures/Horizon Extension Timeline.pdf
 INPUT ./Figures/Horizon Extension Timeline.pdf
 INPUT ./Figures/Horizon Extension Timeline.pdf
 INPUT ./Figures/Horizon Extension Timeline.pdf
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon-eps-converted-to.pdf
+INPUT ./Figures/long_horizon-eps-converted-to.pdf
+INPUT ./Figures/long_horizon.eps
+INPUT ./Figures/long_horizon-eps-converted-to.pdf
+INPUT ./Figures/long_horizon-eps-converted-to.pdf
+INPUT ./Figures/long_horizon-eps-converted-to.pdf
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon-eps-converted-to.pdf
+INPUT ./Figures/short_horizon-eps-converted-to.pdf
+INPUT ./Figures/short_horizon.eps
+INPUT ./Figures/short_horizon-eps-converted-to.pdf
+INPUT ./Figures/short_horizon-eps-converted-to.pdf
+INPUT ./Figures/short_horizon-eps-converted-to.pdf
 INPUT ./Figures/Speed_control.pdf
 INPUT ./Figures/Speed_control.pdf
 INPUT ./Figures/Speed_control.pdf

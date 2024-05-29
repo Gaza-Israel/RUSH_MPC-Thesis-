@@ -1,17 +1,17 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.1}Efficiency Equation Formulation}{\reset@font\mtcSfont 72}{section.D.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.1.1}Motor and Controller parameters}{\reset@font\mtcSSfont 73}{subsection.D.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.2}Operation Points}{\reset@font\mtcSfont 74}{section.D.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.3}Diode Selection}{\reset@font\mtcSfont 75}{section.D.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.4}MOSFET Module Selection}{\reset@font\mtcSfont 76}{section.D.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.5}Gate Driver Design}{\reset@font\mtcSfont 78}{section.D.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.6}Current and Voltage Measurement}{\reset@font\mtcSfont 80}{section.D.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.7}PCB Design}{\reset@font\mtcSfont 80}{section.D.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.8}Inverter Schematics and Layers}{\reset@font\mtcSfont 82}{section.D.8}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.1}Half Bridge Board Schematic}{\reset@font\mtcSSfont 83}{subsection.D.8.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.2}Half Bridge Board Layers}{\reset@font\mtcSSfont 84}{subsection.D.8.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.3}Gate Driver Board Schematic}{\reset@font\mtcSSfont 85}{subsection.D.8.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.4}Gate Driver Board Layers}{\reset@font\mtcSSfont 94}{subsection.D.8.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.5}Current Sensor Board Schematic}{\reset@font\mtcSSfont 95}{subsection.D.8.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.6}Current Sensor Board Layers}{\reset@font\mtcSSfont 100}{subsection.D.8.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {D.8.6.1}Top Layer}{\reset@font\mtcSSSfont 100}{subsubsection.D.8.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {D.8.6.2}Bottom Layer}{\reset@font\mtcSSSfont 100}{subsubsection.D.8.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.1}Efficiency Equation Formulation}{\reset@font\mtcSfont 73}{section.D.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.1.1}Motor and Controller parameters}{\reset@font\mtcSSfont 74}{subsection.D.1.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.2}Operation Points}{\reset@font\mtcSfont 75}{section.D.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.3}Diode Selection}{\reset@font\mtcSfont 76}{section.D.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.4}MOSFET Module Selection}{\reset@font\mtcSfont 77}{section.D.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.5}Gate Driver Design}{\reset@font\mtcSfont 79}{section.D.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.6}Current and Voltage Measurement}{\reset@font\mtcSfont 81}{section.D.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.7}PCB Design}{\reset@font\mtcSfont 81}{section.D.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D.8}Inverter Schematics and Layers}{\reset@font\mtcSfont 83}{section.D.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.1}Half Bridge Board Schematic}{\reset@font\mtcSSfont 84}{subsection.D.8.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.2}Half Bridge Board Layers}{\reset@font\mtcSSfont 85}{subsection.D.8.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.3}Gate Driver Board Schematic}{\reset@font\mtcSSfont 86}{subsection.D.8.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.4}Gate Driver Board Layers}{\reset@font\mtcSSfont 95}{subsection.D.8.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.5}Current Sensor Board Schematic}{\reset@font\mtcSSfont 96}{subsection.D.8.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {D.8.6}Current Sensor Board Layers}{\reset@font\mtcSSfont 101}{subsection.D.8.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {D.8.6.1}Top Layer}{\reset@font\mtcSSSfont 101}{subsubsection.D.8.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {D.8.6.2}Bottom Layer}{\reset@font\mtcSSSfont 101}{subsubsection.D.8.6.2}}

@@ -28,7 +28,7 @@
 
 \begin{document}
 
-\title{Real-time Ultra Short Horizon extention MPC for the control of a Formula Student Drive\\}
+\title{Real-time Ultra Short Horizon extension MPC for the control of a Formula Student Drive\\}
 
 \author{\IEEEauthorblockN{Israel Sother}
 \IEEEauthorblockA{israelsother@usp.br\\
@@ -39,7 +39,7 @@
 \thispagestyle{plain}
 \pagestyle{plain}
 \begin{abstract}
-	This work presents the development of a control strategy for the motors of the Formula Student Team of Instituto Superior Técnico. The control strategy was developed with the main goal of improving the dynamic response of the motor torque and the system efficiency. The motor was experimentally characterized and a simulation environment was created to test different control strategies. The explicit Model Predictive Controller (MPC) was selected as the most suitable strategy due to its fast response and low current ripple. A novel horizon extention technique was proposed to reduce model mismatch, which gave the name of the controller: Real-time Ultra Short Horizon extention MPC (RUSH MPC). The control strategy was implemented in a Field Gate Programmable Array (FPGA) and a test bench setup was developed. The experimental results showed a close match with the simulation results, validating the torque estimation, the current measurements, and the control strategy. The system efficiency was improved due to the reduction in current Total Harmonic Distortion (THD) and the torque response was improved by orders of magnitude compared to the current solution.
+	This work presents the development of a control strategy for the motors of the Formula Student Team of Instituto Superior Técnico. The control strategy was developed with the main goal of improving the dynamic response of the motor torque and the system efficiency. The motor was experimentally characterized and a simulation environment was created to test different control strategies. The explicit Model Predictive Controller (MPC) was selected as the most suitable strategy due to its fast response and low current ripple. A novel horizon extension technique was proposed to reduce model mismatch, which gave the name of the controller: Real-time Ultra Short Horizon extension MPC (RUSH MPC). The control strategy was implemented in a Field Gate Programmable Array (FPGA) and a test bench setup was developed. The experimental results showed a close match with the simulation results, validating the torque estimation, the current measurements, and the control strategy. The system efficiency was improved due to the reduction in current Total Harmonic Distortion (THD) and the torque response was improved by orders of magnitude compared to the current solution.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -427,11 +427,11 @@ For this equation to work the system timeline needs to be as in \Cref{fig:horizo
 \begin{figure*}[!htb]
 	\centering
 	\includegraphics[width=.8\linewidth]{Figures/Horizon Extension default Timeline.pdf}
-	\caption[Horizon extention by one timestep.]{Horizon extention by one timestep.}
+	\caption[Horizon extension by one timestep.]{Horizon extension by one timestep.}
 	\label{fig:horizon_default_timeline} %chktex 24
 \end{figure*}
 
-This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced because the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$, while the system timeline is shifted as in \Cref{fig:horizon_extend_timeline}. The combination of explicitly solving the MPC model equation with the hybrid horizon timestep approach, where the horizon extention has a shorter timestep than the controllable horizon is called Real-time Ultra Short Horizon extention MPC (RUSH MPC). It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extention technique.
+This can be improved by only extending the horizon by the necessary time to compute the control action, this way the prediction error derived from model mismatch is reduced because the amount of time to predict is smaller. To do that the prediction duration is simply reduced to $h = t_{control}$, while the system timeline is shifted as in \Cref{fig:horizon_extend_timeline}. The combination of explicitly solving the MPC model equation with the hybrid horizon timestep approach, where the horizon extension has a shorter timestep than the controllable horizon is called Real-time Ultra Short Horizon extension MPC (RUSH MPC). It has the benefits of being a continuous set model predictive control, thus reducing the ripple, while being computationally efficient, as it is explicitly calculated, and reducing the prediction error due to model mismatch as it uses the reduced horizon extension technique.
 
 \begin{figure*}[!htb]
 	\centering
@@ -440,7 +440,7 @@ This can be improved by only extending the horizon by the necessary time to comp
 	\label{fig:horizon_extend_timeline} %chktex 24
 \end{figure*}
 
-The final control cycle starts with sensor acquisition, followed by horizon extention, and lastly the future control action computation. Note that this delay is not a problem with simulation in \textit{Simulink}, as it can instantly do the calculations, but it is good practice to simulate it with the proper delays to increase the similarity between simulation and experimental results.
+The final control cycle starts with sensor acquisition, followed by horizon extension, and lastly the future control action computation. Note that this delay is not a problem with simulation in \textit{Simulink}, as it can instantly do the calculations, but it is good practice to simulate it with the proper delays to increase the similarity between simulation and experimental results.
 
 \section{Simulation}
 \label{section:simulation}%chktex 24
