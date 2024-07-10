@@ -56,7 +56,7 @@ In the example image, the oscilloscope measured a peak voltage of $10.2$, while 
 % \end{figure}
 \begin{figure}[!htb]
     \begin{subfigmatrix}{2}
-      \subfigure[Oscilloscope output @386rpm]{\includegraphics[width=0.51\textwidth]{Figures/flux_test.JPEG}\label{fig:flux_measure_oscilloscope}}
+      \subfigure[Motor terminal voltage with rotor @386rpm]{\includegraphics[width=0.51\textwidth]{Figures/flux_test.JPEG}\label{fig:flux_measure_oscilloscope}}
       \subfigure[Flux Linkage as a function of RPM.]{\includegraphics[width=0.45\textwidth]{Figures/Flux_test.eps}\label{fig:flux_linkage_rpm}}
     \end{subfigmatrix}
     \caption{Flux Linkage characterization.}
@@ -106,7 +106,7 @@ The direct axis measurement starts with the resistance measurement of the entire
 		\label{eq:rl_circuit}
 	\end{equation}
 	\begin{equation}
-		\tau = \frac{2L_d}{\frac{r}{2}+r_{wire} + r_a + r_{shunt}}
+		\tau = \frac{0.5L_d}{\frac{r}{2}+r_{wire} + r_a + r_{shunt}}
 		\label{eq:tau}
 	\end{equation}
 \end{subequations}
@@ -116,7 +116,7 @@ In \Cref{eq:rl_circuit} $u(t)$ represents the measured voltage on the shunt resi
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/induc_oscilloscope.JPEG}
-	\caption[Inductance measurement oscilloscope output.]{Inductance measurement oscilloscope output.}
+	\caption[Example of the voltage step response used for the inductance characterization.]{Example of the voltage step response used for the inductance characterization.}
 	\label{fig:inductance_oscilloscope} %chktex 24
 \end{figure}
 

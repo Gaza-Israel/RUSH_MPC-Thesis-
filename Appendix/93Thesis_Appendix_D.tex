@@ -277,13 +277,13 @@ Although it does not have the highest efficiency, the Infineon FF8MR12W1M1H\_B11
 					xlabel={RPM},
 					ylabel={Torque (Nm)},
 					shader=interp]
-					\addplot3[samples=100, contour gnuplot={levels = {95,97.5,98.5,99,99.25,99.5,99.7},draw color=black,contour label style={every node/.append style={text=black}}},contour/draw color={black},contour/label distance=200pt] table[skip first n=2,x=x, y=y, z=z] {Figures/subplot_4.dat};
+					\addplot3[samples=100, contour gnuplot={levels = {95,97.5,98.5,99,99.25,99.5,99.7},draw color=black,contour label style={every node/.append style={text=black}}},contour/draw color={black},contour/label distance=165pt] table[skip first n=2,x=x, y=y, z=z] {Figures/subplot_4.dat};
 				\end{axis}
 			\end{tikzpicture}
 			\label{fig:efficiency}
 		}
 	\end{subfigmatrix}
-	\caption{Render of the PCBs used in the new inverter design.}
+	\caption{New inverter losses analysis.}
 	\label{fig:eff_graphs}
 \end{figure}
 

@@ -34,7 +34,7 @@
 \nomenclatureentry{rrtire$r_{tire}$@[{$r_{tire}$}]\begingroup Tire radius\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rGr$G_{r}$@[{$G_{r}$}]\begingroup Transmission Gear Ratio\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rJ$\mathcal{J}$@[{$\mathcal{J}$}]\begingroup MPC cost function\nomeqref {0}|nompageref}{xiii}
-\nomenclatureentry{rCs$\mathcal{C}_{soft}$@[{$\mathcal{C}_{soft}$}]\begingroup MPC soft contraint\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rCs$\mathcal{C}_{soft}$@[{$\mathcal{C}_{soft}$}]\begingroup MPC soft constraint\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rs_x$s_x$@[{$s_x$}]\begingroup MPC cost gains\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rS_x$S_x$@[{$S_x$}]\begingroup Inverter Switches states $x \in [0,8]$\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rk_p$k_p$@[{$k_p$}]\begingroup PI proportional gain\nomeqref {0}|nompageref}{xiii}
@@ -56,7 +56,7 @@
 \nomenclatureentry{rc$c$@[{$c$}]\begingroup Exponential fit constant offset\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rF_motor$F_{motor}$@[{$F_{motor}$}]\begingroup Motor equivalent linear force at tire contact patch\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rF_rolling$F_{rolling resistance}$@[{$F_{rolling resistance}$}]\begingroup Rolling resistance force\nomeqref {0}|nompageref}{xiii}
-\nomenclatureentry{rF_drag$F_{drag}$@[{$F_{drag}$}]\begingroup Aerodinamic drag force\nomeqref {0}|nompageref}{xiii}
+\nomenclatureentry{rF_drag$F_{drag}$@[{$F_{drag}$}]\begingroup Aerodynamic drag force\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rax$a_x$@[{$a_x$}]\begingroup Car acceleration in the x axis\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rm_wheel$m_{wheel equivalent}$@[{$m_{wheel equivalent}$}]\begingroup Wheel mass linear equivalent\nomeqref {0}|nompageref}{xiii}
 \nomenclatureentry{rg$g$@[{$g$}]\begingroup Gravitational acceleration\nomeqref {0}|nompageref}{xiii}

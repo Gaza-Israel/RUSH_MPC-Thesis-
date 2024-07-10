@@ -142,7 +142,7 @@ For example, let's consider the reference vector shown in \Cref{fig:space_vector
 
 % Several approaches have been proposed to accomplish this shift and they all rely on injecting a variable offset voltage on the neutral point that has a strong third harmonic component. Although a pure third harmonic sine wave can be used it is computationally expensive when compared with other methods such as top, mid, or bottom clamp. This technique of mid-clamp aims to center the neutral point between the DC link terminals, while the top clamp shifts the neutral point to the maximum voltage and the bottom clamp to the minimum voltage. The main advantage of a top or bottom clamp is the reduced number of switching events when compared with a mid-clamp. 
 
-% The chosen approach is defined by \Cref{eq:neutral_point_shift}, where $K_{shift}$ is the shift factor, and $V_{AN}$,$V_{BN}$, and $V_{CN}$ are the phase voltages referenced to a virtual neutral point that is the average of the phase voltages with respect to the DC link negative terminal. The value of $K_{shift}$ dictates the shift method used, when it is equal to 1 the top-clamp method is used, if it is 0.5 then the mid-clamp is used, and 0 results in the bottom-clamp method.\~\citet{Microchip:ZSM_viewer:2023} has a visualization tool with the main methods shown. The calculated shift voltage is then summed to the desired phase voltages, and the modulation technique is applied as usual. In the implementation, this results in the MOSFETs dutty cycle being shifted to center at the value of $K_{shift}$.
+% The chosen approach is defined by \Cref{eq:neutral_point_shift}, where $K_{shift}$ is the shift factor, and $V_{AN}$,$V_{BN}$, and $V_{CN}$ are the phase voltages referenced to a virtual neutral point that is the average of the phase voltages with respect to the DC link negative terminal. The value of $K_{shift}$ dictates the shift method used, when it is equal to 1 the top-clamp method is used, if it is 0.5 then the mid-clamp is used, and 0 results in the bottom-clamp method.\~\citet{Microchip:ZSM_viewer:2023} has a visualization tool with the main methods shown. The calculated shift voltage is then summed to the desired phase voltages, and the modulation technique is applied as usual. In the implementation, this results in the MOSFETs duty cycle being shifted to center at the value of $K_{shift}$.
 
 % \begin{equation}
 %     \begin{split}
@@ -179,7 +179,7 @@ A model to represent the PMSM with delta-arranged windings is needed to develop 
 	\label{eq:motor_with_inductances_no_derivative}
 \end{subequations}
 
-An approximation of the differential equations is needed to discretize the equations to be able to use the model in a discrete time control system. Two usual solutions are the Backward and the Forward Euler methods. Although simpler to compute, the Forward Euler method is prone to instabilities especially in fast systems such as power converters, in contrast with the Backward alternative that is unconditionally stable. Due to this consideration, the Euler Backward technique will be prioritized. Applying this method to \Cref{eq:motor_with_inductances_no_derivative} would result in an equation that has algebraic loops so to avoid that a few approximations were made. First, the inductance change due to current variation in a timestep $h$ is assumed to be small enough so that the inductances can be calculated using the previous time step currents ($ L_{x(i_x(k+1))} \approx L_{x(i_x(k+1))} $). Similarly, the rotor speed is assumed to vary little between iterations, so that $\omega_{(k+1)} \approx \omega_{(k)}$.
+An approximation of the differential equations is needed to discretize the equations to be able to use the model in a discrete time control system. Two usual solutions are the Backward and the Forward Euler methods. Although simpler to compute, the Forward Euler method is prone to instabilities especially in fast systems such as power converters, in contrast with the Backward alternative that is unconditionally stable. Due to this consideration, the Euler Backward technique will be prioritized. Applying this method to \Cref{eq:motor_with_inductances_no_derivative} would result in an equation that has algebraic loops so to avoid that a few approximations were made. First, the inductance change due to current variation in a timestep $h$ is assumed to be small enough so that the inductances can be calculated using the previous time step currents ($ L_{x(i_x(k+1))} \approx L_{x(i_x(k))} $). Similarly, the rotor speed is assumed to vary little between iterations, so that $\omega_{(k+1)} \approx \omega_{(k)}$.
 
 With those considerations, and rearranging the equations, the system can be solved iteratively, as shown in \Cref{eq:motor_backward_euler_matrix}.
 
@@ -431,13 +431,13 @@ This can be improved by only extending the horizon by the necessary time to comp
 \begin{figure}[!htb]
 	\centering
 	\begin{subfigmatrix}{1}
-		\subfigure[Default Horizon Extention.]{
+		\subfigure[Default Horizon Extension.]{
 			\includegraphics[width=.45\textwidth]{Figures/long_horizon.eps}
 			\label{fig:normal_timeline}
 		}
 	\end{subfigmatrix}
 	\begin{subfigmatrix}{1}
-		\subfigure[Ultra Short Horizon Extention.]{
+		\subfigure[Ultra Short Horizon Extension.]{
 			\includegraphics[width=.45\textwidth]{Figures/short_horizon.eps}
 			\label{fig:USH_timeline}
 		}
@@ -476,7 +476,7 @@ With the model implemented on \textit{Simulink}, a baseline was made using the m
 	\label{fig:rising_time_4_models} %chktex 24
 \end{figure*}
 
-Note that the predictive controller presents a rising time (0 to 100\%) of $200\mu s$, while the FOC method performed much slower, at approximately $180ms$. While the rising time in the FOC can be improved by better tunning the PID (these results are with the values recommended by the manufacturer), it would result in more pronounced overshoots and settling time, and would not reach the performance of a predictive controller, where the torque rising is only limited by the machine inductances, which shows the great dynamic performance of predictive controllers.
+Note that the predictive controller presents a rising time (0 to 100\%) of $200\mu s$, while the FOC method performed much slower, at approximately $180ms$. While the rising time in the FOC can be improved by better tuning the PID (these results are with the values recommended by the manufacturer), it would result in more pronounced overshoots and settling time, and would not reach the performance of a predictive controller, where the torque rising is only limited by the machine inductances, which shows the great dynamic performance of predictive controllers.
 
 \subsection{Current THD}
 
@@ -615,10 +615,10 @@ The estimated torque is constantly smaller than the measured torque, with a diff
 The next step was to verify the current waveform. Ideally, this would be done with nominal torque, but due to a limited maximum inverter current, the motor was commanded to keep a constant torque of $7Nm$. To create a load, the phases of the other motor were short-circuited, creating a load torque that changes with the speed, this resulted in the speed stabilizing at $269RPM$. The current was measured with the developed measuring board and with an oscilloscope probe (ELDITEST CP6550), while the torque was estimated by the control algorithm and compared with the simulation results. The simulation results were obtained by running the same model used for the controller implementation, with the same parameters and inputs. The results are presented in \Cref{fig:tq_step_fig}.
 % \begin{figure}[!htb]
 % 	\begin{subfigmatrix}{2}
-% 		\subfigure[Meausurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/const_curr_7NM.eps}\label{fig:steady_state_curr_sim_meas}}
-% 		\subfigure[Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.52\linewidth]{Figures/const_curr_osc_7nm-01.eps}\label{fig:steady_state_curr_osc}}
+% 		\subfigure[Measurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/const_curr_7NM.eps}\label{fig:steady_state_curr_sim_meas}}
+% 		\subfigure[Oscilloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.52\linewidth]{Figures/const_curr_osc_7nm-01.eps}\label{fig:steady_state_curr_osc}}
 % 	\end{subfigmatrix}
-% 	\caption{Line currents measurements at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}
+% 	\caption{Line currents measured at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}
 % 	\label{fig:steady_state_curr} %chktex 24
 % \end{figure}
 
@@ -626,8 +626,8 @@ The next step was to verify the current waveform. Ideally, this would be done wi
  The currents presented in \Cref{fig:tq_step_fig} also show an almost instantaneous dynamic response, transitioning to the specified amplitude without noticeable distortions. The difference between the measured and simulated currents is small enough to consider the model valid.
 \begin{figure}[!htb]
 	\begin{subfigmatrix}{2}
-		\subfigure[Meausurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.465\linewidth]{Figures/tq_step_curr.eps}\label{fig:tq_step_curr}}
-		\subfigure[Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.515\linewidth]{Figures/tq_step_osc-01.eps}\label{fig:tq_step_osc}}
+		\subfigure[Measurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.465\linewidth]{Figures/tq_step_curr.eps}\label{fig:tq_step_curr}}
+		\subfigure[Oscilloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.515\linewidth]{Figures/tq_step_osc-01.eps}\label{fig:tq_step_osc}}
 	\end{subfigmatrix}
 	\caption{Line Current measurements with a reference torque step from $0$ to $7Nm$ at $0.02s$.}
 	\label{fig:tq_step_fig} %chktex 24
@@ -640,7 +640,7 @@ The next step was to verify the current waveform. Ideally, this would be done wi
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/Tq_step.eps}
-	\caption[Torque reference follwoing with a step from $0$ to $7Nm$.]{Torque reference follwoing with a step from $0$ to $7Nm$. The upper plot presents the experimental data, while the bottom plot is from the simulation}
+	\caption[Torque reference following with a step from $0$ to $7Nm$.]{Torque reference following with a step from $0$ to $7Nm$. The upper plot presents the experimental data, while the bottom plot is from the simulation}
 	\label{fig:tq_step_response_time} %chktex 24
 \end{figure}
 

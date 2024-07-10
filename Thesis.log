@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  29 MAY 2024 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  10 JUL 2024 21:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/israe/OneDrive/Desktop/Tese/Thesis-Israel_Sother/Thesis
+**c:/Users/israe/OneDrive/Desktop/Tese/Thesis-Israel_Sother/Thesis.tex
 (c:/Users/israe/OneDrive/Desktop/Tese/Thesis-Israel_Sother/Thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-05-08>
@@ -1321,13 +1321,13 @@ Package pdftex.def Info: Figures/Space_Vector_revised.pdf  used on input line 83
 [9 <./Figures/Space_Vector_revised.pdf>] [10]) (./02Background/02PMSM_model.tex
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Delta_model.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Delta_model.pdf, id=948, 362.3136pt x 313.17pt>
+<Figures/Delta_model.pdf, id=948, 376.52669pt x 324.25137pt>
 File: Figures/Delta_model.pdf Graphic file (type pdf)
 <use Figures/Delta_model.pdf>
 Package pdftex.def Info: Figures/Delta_model.pdf  used on input line 115.
-(pdftex.def)             Requested size: 273.14923pt x 236.09544pt.
+(pdftex.def)             Requested size: 273.14923pt x 235.24197pt.
 [11]
-Underfull \vbox (badness 1264) has occurred while \output is active []
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
  [12 <./Figures/Delta_model.pdf>] [13] [14]
 Underfull \vbox (badness 1975) has occurred while \output is active []
@@ -1380,11 +1380,11 @@ Underfull \vbox (badness 4846) has occurred while \output is active []
  [22]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Ld_measure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Ld_measure.pdf, id=1217, 434.58359pt x 313.17pt>
+<Figures/Ld_measure.pdf, id=1217, 451.6875pt x 324.25137pt>
 File: Figures/Ld_measure.pdf Graphic file (type pdf)
 <use Figures/Ld_measure.pdf>
 Package pdftex.def Info: Figures/Ld_measure.pdf  used on input line 77.
-(pdftex.def)             Requested size: 273.14923pt x 196.84416pt.
+(pdftex.def)             Requested size: 273.14923pt x 196.096pt.
 <Figures/induc_test.jpg, id=1220, 723.795pt x 542.025pt>
 File: Figures/induc_test.jpg Graphic file (type jpg)
 <use Figures/induc_test.jpg>
@@ -1413,17 +1413,17 @@ Package pdftex.def Info: Figures/Ld_id-eps-converted-to.pdf  used on input line 
  [24 <./Figures/induc_test.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Lq_measure_prep.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/Lq_measure_prep.pdf, id=1264, 434.58359pt x 313.17pt>
+<Figures/Lq_measure_prep.pdf, id=1264, 451.6875pt x 324.25137pt>
 File: Figures/Lq_measure_prep.pdf Graphic file (type pdf)
 <use Figures/Lq_measure_prep.pdf>
 Package pdftex.def Info: Figures/Lq_measure_prep.pdf  used on input line 144.
-(pdftex.def)             Requested size: 318.66948pt x 229.64914pt.
+(pdftex.def)             Requested size: 318.66948pt x 228.77536pt.
 Package epstopdf Info: Source file: <Figures/Lq_iq.eps>
-(epstopdf)                    date: 2024-04-20 17:59:04
-(epstopdf)                    size: 55715 bytes
+(epstopdf)                    date: 2024-07-10 20:22:44
+(epstopdf)                    size: 56132 bytes
 (epstopdf)             Output file: <Figures/Lq_iq-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-04-20 17:59:12
-(epstopdf)                    size: 16587 bytes
+(epstopdf)                    date: 2024-07-10 20:22:49
+(epstopdf)                    size: 15470 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Lq_iq-eps-converted-to.pdf Figures/Lq_iq.eps>
 (epstopdf)             \includegraphics on input line 153.
 Package epstopdf Info: Output file is already uptodate.
@@ -1433,7 +1433,7 @@ File: Figures/Lq_iq-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Lq_iq-eps-converted-to.pdf  used on input line 153.
 (pdftex.def)             Requested size: 455.24411pt x 213.58197pt.
 [25 <./Figures/induc_oscilloscope.JPEG> <./Figures/Ld_id-eps-converted-to.pdf>]
-Underfull \vbox (badness 1009) has occurred while \output is active []
+Underfull \vbox (badness 1102) has occurred while \output is active []
 
  [26 <./Figures/Lq_measure_prep.pdf> <./Figures/Lq_iq-eps-converted-to.pdf>]
 <Figures/stepwise_uq.jpg, id=1314, 977.6525pt x 529.98pt>
@@ -1497,11 +1497,11 @@ Underfull \vbox (badness 1082) has occurred while \output is active []
 
  [29 <./Figures/Ldq-eps-converted-to.pdf>] [30]
 Package epstopdf Info: Source file: <Figures/Torque_MTPA_simple.eps>
-(epstopdf)                    date: 2024-04-21 22:10:08
-(epstopdf)                    size: 204506 bytes
+(epstopdf)                    date: 2024-07-10 20:28:16
+(epstopdf)                    size: 202034 bytes
 (epstopdf)             Output file: <Figures/Torque_MTPA_simple-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-04-21 22:10:15
-(epstopdf)                    size: 65737 bytes
+(epstopdf)                    date: 2024-07-10 20:30:11
+(epstopdf)                    size: 64528 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Torque_MTPA_simple-eps-converted-to.pdf Figures/Torque_MTPA_simple.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
@@ -1922,11 +1922,11 @@ Package pdftex.def Info: Figures/Tq_step-eps-converted-to.pdf  used on input lin
 (pdftex.def)             Requested size: 250.38564pt x 175.58546pt.
  [54 <./Figures/tq_step_curr-eps-converted-to.pdf> <./Figures/tq_step_osc-01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Car_Tq_step.eps>
-(epstopdf)                    date: 2024-05-20 13:48:25
-(epstopdf)                    size: 39844 bytes
+(epstopdf)                    date: 2024-07-10 20:56:42
+(epstopdf)                    size: 40921 bytes
 (epstopdf)             Output file: <Figures/Car_Tq_step-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-05-20 13:48:56
-(epstopdf)                    size: 14536 bytes
+(epstopdf)                    date: 2024-07-10 20:56:45
+(epstopdf)                    size: 13576 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Car_Tq_step-eps-converted-to.pdf Figures/Car_Tq_step.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
@@ -3030,18 +3030,18 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-05-08>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B132C0EF3202E99CD06A68D077BAC1F7;14447.
+(rerunfilecheck)             Checksum: A16D2A5D4D0F3E213AE8EDA0CC2D8681;14452.
  ) 
 Here is how much of TeX's memory you used:
  53668 strings out of 473992
- 1217212 string characters out of 5745048
- 2099277 words of memory out of 5000000
+ 1217213 string characters out of 5745048
+ 2099300 words of memory out of 5000000
  74591 multiletter control sequences out of 15000+600000
  617583 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,19n,134p,2452b,2776s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,19n,134p,2456b,2776s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Thesis.pdf (119 pages, 24143230 bytes).
+Output written on Thesis.pdf (119 pages, 24169095 bytes).
 PDF statistics:
  3323 PDF objects out of 3580 (max. 8388607)
  2641 compressed objects within 27 object streams

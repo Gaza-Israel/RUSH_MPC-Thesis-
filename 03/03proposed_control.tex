@@ -49,7 +49,7 @@ In a \gls{fsmpc} each of the basic vectors defined on \Cref{table:space_vector} 
 
 Although effective, the simple Finite Set \gls{mpc} can incur heavy torque ripple, due to its limited options on which vector can be applied. That behavior can be exacerbated by low power operation points, where the active vectors result in a bigger percentual change in currents. This problem can be mitigated by introducing the possibility of sharing the sample time between the chosen active vector and a null vector. Such an approach allows the control to apply vectors that point in the direction of the native ones but have smaller amplitude.
 
-This addition of a null vector comes with the problem of now having virtually infinite vector options (depending on the \gls{pwm} resolution), but that can be solved with some approximations. This method begins as the previous one, where each of the 7 possible vectors is applied to the motor model, but before passing those results for the cost function the predicted torque is compared with the reference. If a crossing is detected, meaning the values $T_{ref} - T_{e(k)}$ and $T_{ref} - T_{e(k+1)}$ have different signals the algorithm assumes that the ideal vector has a smaller amplitude, thus computes a ratio of active vector time and null vector time. To calculate such a ratio an approximation was made that, given the short sample time, the complete system is assumed to behave linearly during that period. If the system behaves linearly, the currents and torque for a combination of null and active vectors will also be a linear combination of the individual values for each vector multiplied by its application time. This approximation is shown in \Cref{eq:linear_combination,eq:linear_combination_torque}, where $d$ is the duty cicle value for a given vector, and the subscripts $_{act}$ and $_n$ represents the active and null vectors respectively.
+This addition of a null vector comes with the problem of now having virtually infinite vector options (depending on the \gls{pwm} resolution), but that can be solved with some approximations. This method begins as the previous one, where each of the 7 possible vectors is applied to the motor model, but before passing those results for the cost function the predicted torque is compared with the reference. If a crossing is detected, meaning the values $T_{ref} - T_{e(k)}$ and $T_{ref} - T_{e(k+1)}$ have different signals the algorithm assumes that the ideal vector has a smaller amplitude, thus computes a ratio of active vector time and null vector time. To calculate such a ratio an approximation was made that, given the short sample time, the complete system is assumed to behave linearly during that period. If the system behaves linearly, the currents and torque for a combination of null and active vectors will also be a linear combination of the individual values for each vector multiplied by its application time. This approximation is shown in \Cref{eq:linear_combination,eq:linear_combination_torque}, where $d$ is the duty cycle value for a given vector, and the subscripts $_{act}$ and $_n$ represents the active and null vectors respectively.
 
 \begin{equation}
 	i_x = i_{act} d_{act} + i_n d_n
@@ -189,7 +189,7 @@ A continuous approximation of the exponential moving average can be modeled as a
 	\label{eq:exp_moving_average}
 \end{equation}
 
-To define the speed controller gains, a simplified motor model was used. As the torque controller is much faster than the speed dynamic, it is assumed to be ideal, without delay. Thus, the speed is only dependant on the motor torque ($T_{e}$), mechanical losses ($T_{loss}$), the external load ($T_{loss}$), and the system inertia ($J$), as shown in \Cref{eq:speed_model}.
+To define the speed controller gains, a simplified motor model was used. As the torque controller is much faster than the speed dynamic, it is assumed to be ideal, without delay. Thus, the speed is only dependent on the motor torque ($T_{e}$), mechanical losses ($T_{loss}$), the external load ($T_{loss}$), and the system inertia ($J$), as shown in \Cref{eq:speed_model}.
 
 \begin{equation}
 		\frac{d\omega_{unfiltered}}{dt} = \frac{T_e-T_{load} - T_{loss}}{J}
@@ -242,6 +242,6 @@ With the transfer function defined, the controller gains can be adjusted to defi
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/rlocus_speed.eps}
-	\caption[Root locus plot for the closed loop system.]{Root locus plot for the the closed loop system.}
+	\caption[Root locus plot for the closed loop system.]{Root locus plot for the closed loop system.}
 	\label{fig:root_locus_speed}%chktex 24
 \end{figure}

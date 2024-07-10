@@ -11,7 +11,7 @@
 \label{section:03load_profile}
 \vfill
 
-To properly simulate the use case of the motor, a representative load profile must be defined. This profile will be used in the motor torque balance equations inside the simulations. To derive a representative load profile for the motor a car model is necessary. In this case, a simple one-dimensional point mass model is used in \Cref{eq:load_prof_initial}.
+To properly simulate the use case of the motor, a representative load profile must be defined. This profile will be used in the motor torque balance equations inside the simulations. To derive a representative load profile for the motor a car model is necessary. In this case, a simple one-dimensional point mass model is used in \Cref{eq:load_prof_initial}, it represents the car as a point moving in a straight line.
 \begin{equation}
 	\left(m_{car}+m_{wheel\,equivalent}\right)a_x = F_{motor}\eta_{transm}-F_{rolling\,resistance}-F_{drag}
 	\label{eq:load_prof_initial}
@@ -51,7 +51,7 @@ Rearranging to solve for $J_{eq}$ results in \Cref{eq:iner_equivalent}.
 	\label{eq:iner_equivalent}
 \end{equation}
 
-From experimental tests with previous prototypes, a good rule of thumb is that when accelerating, only one-third of the power can be applied at the front axle, while the rear axle receives two-thirds. Ideally, a weight transfer function would be used, but to simplify the equations the constant distribution will be used. Thus the equivalent rotational inertia at each motor is on \Cref{eq:motor_iner_equivalent}, where \Cref{eq:motor_iner_equivalent_front} is for the front axle motors, and \Cref{eq:motor_iner_equivalent_rear} for the rear. This diference is to account the approximated load transfer when the vehicle is accelerating.
+From experimental tests with previous prototypes, a good rule of thumb is that when accelerating, only one-third of the power can be applied at the front axle, while the rear axle receives two-thirds. Ideally, a weight transfer function would be used, but to simplify the equations the constant distribution will be used. Thus the equivalent rotational inertia at each motor is on \Cref{eq:motor_iner_equivalent}, where \Cref{eq:motor_iner_equivalent_front} is for the front axle motors, and \Cref{eq:motor_iner_equivalent_rear} for the rear. This difference is to account the approximated load transfer when the vehicle is accelerating.
 
 \vspace{0.5cm}
 \begin{subequations}

@@ -402,7 +402,7 @@ Starting with \Cref{eq:flx_voltage_balance} and replacing the currents and flux 
 	\end{aligned}
 	\label{eq:voltage_balance_dq0_intermediary}
 \end{equation}
-Replacing $\dot{\theta}_e$ with $\omega_e$, and multiplying $\mathbf{T}^T_{(\theta_e)}$ to the left yelds \Cref{eq:voltage_balance_dq0_intermediary2}.
+Replacing $\dot{\theta}_e$ with $\omega_e$, and multiplying $\mathbf{T}^T_{(\theta_e)}$ to the left yields \Cref{eq:voltage_balance_dq0_intermediary2}.
 \begin{equation}
 	\begin{aligned}
 		\mathbf{u_{dq0}}
@@ -544,7 +544,7 @@ Lastly, for the sake of completeness, if the amplitude invariant dq0 transformat
 \vfill
 An approximation of the differential equations is needed to discretize the equations to be able to use the model in a discrete time control system. Two usual solutions are the Backward and the Forward Euler methods. Although simpler to compute, the Forward Euler method is prone to instabilities especially in fast systems such as power converters, in contrast with the Backward alternative that is unconditionally stable. Due to this consideration, the Euler Backward technique will be prioritized.
 
-From \Cref{eq:motor_with_inductances_no_derivative}, knowing that the currents and voltages vary with time and that the inductances are dependant on the currents the derivatives are isolated, as shown in \Cref{eq:model_derivatives}.
+From \Cref{eq:motor_with_inductances_no_derivative}, knowing that the currents and voltages vary with time and that the inductances are dependent on the currents the derivatives are isolated, as shown in \Cref{eq:model_derivatives}.
 \begin{subequations}
 	\begin{equation}
 	\frac{d i_d}{dt} = \frac{u_d - r i_d + \omega_e L_q i_q}{L_d}
@@ -584,7 +584,7 @@ Then it is possible to discretize the system with $h$ as the sampling time, and 
 	\label{eq:motor_with_inductances_discrete}
 \end{equation}
 
-This set of equations has an algebraic loop, where the currents in $k+1$ depend on the value of $\omega_{(k+1)}$, that depends on the value of $T_{e(k+1)}$ that is defined by the currents in $k+1$. The same thing happens with the inductances, as they depend on the currents, but the currents define the value of inductance. Those problems are solved by first assuming that the inductance change due to the current change in a time step is small enough so that the inductances can be calculated using the previous time step currents ($ L_{x(i_x(k+1))} \approx L_{x(i_x(k+1))} $). Similarly, the rotor speed is assumed to vary little between iterations, so that $\omega_{(k+1)} \approx \omega_{(k)}$.
+This set of equations has an algebraic loop, where the currents in $k+1$ depend on the value of $\omega_{(k+1)}$, that depends on the value of $T_{e(k+1)}$ that is defined by the currents in $k+1$. The same thing happens with the inductances, as they depend on the currents, but the currents define the value of inductance. Those problems are solved by first assuming that the inductance change due to the current change in a time step is small enough so that the inductances can be calculated using the previous time step currents ($ L_{x(i_x(k+1))} \approx L_{x(i_x(k))} $). Similarly, the rotor speed is assumed to vary little between iterations, so that $\omega_{(k+1)} \approx \omega_{(k)}$.
 
 With those considerations, and rearranging the equations, the system can be solved iteratively, as shown in \Cref{eq:motor_backward_euler_matrix}.
 

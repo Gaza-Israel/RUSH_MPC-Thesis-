@@ -36,10 +36,10 @@ The estimated torque is constantly smaller than the measured torque, with a diff
 With the torque estimation validated, the next step was to verify the currents on a steady state test, ideally, this would be done with nominal torque, but due to a limited maximum inverter current the motor was commanded to keep a constant torque of $7Nm$. To create a load, another motor was connected to the shaft and the motor phases were short-circuited, creating a load torque that changes with the speed, this resulted in the speed stabilizing at $269RPM$. The current was measured with the developed measuring board and with an oscilloscope probe (ELDITEST CP6550), while the torque was estimated by the control algorithm and compared with the simulation results. The simulation results were obtained by running the same model used for the controller implementation, with the same parameters and inputs. The results are presented in \Cref{fig:steady_state_curr}.
 \begin{figure}[!htb]
 	\begin{subfigmatrix}{2}
-		\subfigure[Meausurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/const_curr_7NM.eps}\label{fig:steady_state_curr_sim_meas}}
+		\subfigure[Measurement Board and Simulation measurements. The plot on top present values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/const_curr_7NM.eps}\label{fig:steady_state_curr_sim_meas}}
 		\subfigure[Oscilloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.52\linewidth]{Figures/const_curr_osc_7nm-01.eps}\label{fig:steady_state_curr_osc}}
 	\end{subfigmatrix}
-	\caption{Line currents measurements at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}
+	\caption{Line currents measured at steady state. Torque reference at $7Nm$ and rotor speed stable at $169RPMs$.}
 	\label{fig:steady_state_curr} %chktex 24
 \end{figure}
 
@@ -49,8 +49,8 @@ With the torque estimation validated, the next step was to verify the currents o
 Then a torque step response was applied with the motor at a standstill and with the same load as the constant current test. Once again it would be a good approach to use the nominal values but the inverter was a limitation so a reference of $7Nm$ was used. The currents presented in \Cref{fig:tq_step_fig} show an almost instantaneous dynamic response, transitioning to the specified amplitude without noticeable distortions. The oscilloscope currents are also very similar to the ones measured by the developed board, with the same form and amplitude. The simulation results are very similar to the measured ones, with the same form and amplitude, but the simulation is cleaner.  The difference between the measured and simulated currents is small enough to consider the model valid.
 \begin{figure}[!htb]
 	\begin{subfigmatrix}{2}
-		\subfigure[Meausurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/tq_step_curr.eps}\label{fig:tq_step_curr}}
-		\subfigure[Osicloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.52\linewidth]{Figures/tq_step_osc-01.eps}\label{fig:tq_step_osc}}
+		\subfigure[Measurement Board and Simulation measurements. The plot on top presents values from the measurement board, while the bottom plot is from the simulation.]{\includegraphics[width=0.47\linewidth]{Figures/tq_step_curr.eps}\label{fig:tq_step_curr}}
+		\subfigure[Oscilloscope measurements. Channel 1 (in yellow) represents the line A current, while channel 2 (in blue) is the line B current]{\includegraphics[width=0.52\linewidth]{Figures/tq_step_osc-01.eps}\label{fig:tq_step_osc}}
 	\end{subfigmatrix}
 	\caption{Line Current measurements with a reference torque step from $0$ to $7Nm$ at $0.02s$.}
 	\label{fig:tq_step_fig} %chktex 24
@@ -63,7 +63,7 @@ Then a torque step response was applied with the motor at a standstill and with 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.55\linewidth]{Figures/Tq_step.eps}
-	\caption[Torque reference follwoing with a step from $0$ to $7Nm$.]{Torque reference follwoing with a step from $0$ to $7Nm$. The upper plot presents the experimental data, while the bottom plot is from the simulation}
+	\caption[Torque reference following with a step from $0$ to $7Nm$.]{Torque reference following with a step from $0$ to $7Nm$. The upper plot presents the experimental data, while the bottom plot is from the simulation}
 	\label{fig:tq_step_response_time} %chktex 24
 \end{figure}
 
